@@ -1,0 +1,57 @@
+* C:\Users\awhitcombe\Documents\GitHub\ultra-efficient-adc\analog_switch_current_steer.asc
+M1 N011 N001 Iin Vdd PMOS l={6*A} w={2*A}
+M2 N012 N002 Iin Vdd PMOS l={6*A} w={2*A}
+M4 N011 N003 Iref Vdd PMOS l={6*A} w={2*A}
+M5 N012 N004 Iref Vdd PMOS l={6*A} w={2*A}
+M6 -V DGD2 Iref Vdd PMOS l={6*A} w={2*A}
+C1 N011 -V 10p
+C2 N012 -V 10p
+M9 In2? In1? Vdd Vdd PMOS l={6*A} w={2*A}
+M10 In2? In1? -V -V NMOS l={3*A} w={2*A}
+M24 N011 CLC1 -V -V NMOS l={3*A} w={12*A}
+M28 -V CLC2 N012 -V NMOS l={3*A} w={12*A}
+M3 -V DGD1 Iin Vdd PMOS l={6*A} w={2*A}
+M11 N001 In1? N005 -V NMOS l={3*A} w={2*A}
+M12 N005 C1? -V -V NMOS l={3*A} w={2*A}
+M13 N001 In1? Vdd Vdd PMOS l={6*A} w={2*A}
+M14 Vdd C1? N001 Vdd PMOS l={6*A} w={2*A}
+M7 N002 In1? N009 -V NMOS l={3*A} w={2*A}
+M8 N009 C2? -V -V NMOS l={3*A} w={2*A}
+M15 N002 In1? Vdd Vdd PMOS l={6*A} w={2*A}
+M17 Vdd C2? N002 Vdd PMOS l={6*A} w={2*A}
+M16 N003 In2? N007 -V NMOS l={3*A} w={2*A}
+M18 N007 C1? -V -V NMOS l={3*A} w={2*A}
+M19 N003 In2? Vdd Vdd PMOS l={6*A} w={2*A}
+M20 Vdd C1? N003 Vdd PMOS l={6*A} w={2*A}
+M21 N004 In2? N010 -V NMOS l={3*A} w={2*A}
+M22 N010 C2? -V -V NMOS l={3*A} w={2*A}
+M23 N004 In2? Vdd Vdd PMOS l={6*A} w={2*A}
+M25 Vdd C2? N004 Vdd PMOS l={6*A} w={2*A}
+M26 DGD1 N001 N006 -V NMOS l={3*A} w={2*A}
+M27 N006 N002 -V -V NMOS l={3*A} w={2*A}
+M29 DGD1 N001 Vdd Vdd PMOS l={6*A} w={2*A}
+M30 Vdd N002 DGD1 Vdd PMOS l={6*A} w={2*A}
+M31 DGD2 N003 N008 -V NMOS l={3*A} w={2*A}
+M32 N008 N004 -V -V NMOS l={3*A} w={2*A}
+M33 DGD2 N003 Vdd Vdd PMOS l={6*A} w={2*A}
+M34 Vdd N004 DGD2 Vdd PMOS l={6*A} w={2*A}
+V1 Vdd 0 3V
+V2 In1? 0 PWL(0 3 5.5u 3 5.52u 0 40u 0)
+V3 C2? 0 PWL(0 0 6u 0 6.02u 3 14u 3 14.02u 0 40u 0)
+V4 C1? 0 PWL(0 3 5u 3 5.02u 0 40u 0)
+V5 CLC1 0 PWL(0 3 0.5u 3 0.52u 0 40u 0)
+V6 CLC2 0 PWL(0 3 0.5u 3 0.52u 0 9.78u 0 9.8u 3 10.2u 3 10.22u 0 40u 0)
+Iin1 Vdd Iin 1µ
+Iref1 Vdd Iref 500n
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.mos
+.tran 0 40u 0 10n
+* DC22
+* DC21
+* DC12
+* DC11
+.include engr3426.sub
+.param A=0.2u
+.backanno
+.end
