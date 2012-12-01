@@ -1,0 +1,5 @@
+# LTSpice generated files #
+###########################
+*.log
+*.net
+*.raw
