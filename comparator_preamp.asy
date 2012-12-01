@@ -13,6 +13,7 @@ LINE Normal 95 16 128 16
 LINE Normal 95 7 95 16
 LINE Normal 96 -16 128 -16
 LINE Normal 96 -7 96 -16
+LINE Normal 48 -25 48 -48
 PIN -80 -32 LEFT 8
 PINATTR PinName Input
 PINATTR SpiceOrder 1
@@ -37,3 +38,9 @@ PINATTR SpiceOrder 7
 PIN 128 16 RIGHT 8
 PINATTR PinName Vm
 PINATTR SpiceOrder 8
+PIN 48 -48 NONE 8
+PINATTR PinName internal
+PINATTR SpiceOrder 9
+PIN 64 0 NONE 8
+PINATTR PinName internal2
+PINATTR SpiceOrder 10
