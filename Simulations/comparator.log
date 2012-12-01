@@ -1,3 +1,4 @@
 Circuit: * C:\Users\sbecht\Documents\GitHub\ultra-efficient-adc\Simulations\comparator.asc
 
-Fatal Error: Shorted voltage source: x2:v2
+Fatal Error: Voltage source V:X1:6 and voltage source V5 are paralleled making an over-defined circuit matrix.
+You will need to correct the circuit or add some series resistance.

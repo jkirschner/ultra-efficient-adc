@@ -1,0 +1,53 @@
+* C:\Users\sbecht\Documents\GitHub\ultra-efficient-adc\Simulations\comparator.asc
+XX1 Vin Vthresh Vdd 0 Cascode Bias Vp Vm comparator_preamp
+V1 Vdd 0 3
+V2 Bias 0 1.5
+V3 Cascode 0 1.2
+V4 Vin 0 PULSE(1.5 2 1u 10u 10u 1u 21u 10)
+V5 Vthresh 0 1.75
+V6 Disable 0 0
+XX2 Vp Vm Dout Vdd 0 Cascode Bias Disable comparator_gainlatch
+
+* block symbol definitions
+.subckt comparator_preamp Input Thresh pos neg Cascode Bias Vp Vm
+M1 N001 Bias pos pos pfet l=4u w=16u
+M2 N002 Cascode N001 pos pfet l=.8u w=3.2u
+M3 Vm Input N002 pos pfet l=1u w=3u
+M4 Vp Thresh N002 pos pfet l=1u w=3u
+R1 Vm neg 300k
+R2 Vp neg 300k
+C2 Vp neg 200f
+C1 Vm neg 200f
+V1 pos neg 3
+V2 Bias neg 1.5
+V3 Cascode neg 1.5
+V5 Input neg PULSE(1.5 2 1u 10u 10u 1u 21u 100)
+V6 Thresh neg 1.75
+I1 pos neg 10µ
+.include engr3426.sub
+.ends comparator_preamp
+
+.subckt comparator_gainlatch Vp Vm Dout pos neg Cascode Bias Disable
+M1 N001 N001 pos pos pfet l=.6u w=2u
+M3 N003 Bias pos pos pfet l=4u w=16u
+M2 N002 Disable pos pos pfet l=.6u w=2u
+M4 N004 Cascode N003 pos pfet l=.8u w=3.2u
+M5 Dout N001 N002 pos pfet l=.6u w=2u
+M6 N005 Vm N004 pos pfet l=.8u w=1.6u
+M7 N006 Vp N004 pos pfet l=.8u w=1.6u
+M8 N001 Dout neg neg nfet l=.4u w=4u
+M9 N001 N005 neg neg nfet l=.6u w=1u
+M10 N005 N005 neg neg nfet l=.6u w=1u
+M11 N006 N006 neg neg nfet l=.6u w=1u
+M12 Dout N006 neg neg nfet l=.6u w=1u
+M13 Dout Disable neg neg nfet l=.4u w=1.4u
+C1 Dout neg 1p
+.ends comparator_gainlatch
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.mos
+.include engr3426.sub
+.tran 0 1m 0 10n
+.backanno
+.end
