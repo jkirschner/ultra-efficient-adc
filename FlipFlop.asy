@@ -20,7 +20,8 @@ TEXT 0 73 Center 2 -
 TEXT -55 0 Left 2 CLK
 TEXT -55 32 Left 2 CLK
 TEXT -54 65 Left 2 RST
-TEXT -33 -28 Left 2 D Flip Flop
+TEXT 1 -45 Center 2 DFF
+TEXT 0 -25 Center 2 RST0
 PIN -80 -64 NONE 8
 PINATTR PinName D
 PINATTR SpiceOrder 1
