@@ -1,5 +1,5 @@
 Version 4
-SymbolType BLOCK
+SymbolType CELL
 LINE Normal 176 -16 160 -16
 LINE Normal 176 -48 160 -48
 LINE Normal 176 -80 160 -80
