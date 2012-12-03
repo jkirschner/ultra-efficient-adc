@@ -10,6 +10,7 @@ LINE Normal 32 40 32 64
 LINE Normal -64 32 -96 32
 LINE Normal -64 64 -96 64
 LINE Normal -16 -49 -16 -64
+LINE Normal 48 -27 48 -64
 PIN -96 -32 LEFT 8
 PINATTR PinName Vp
 PINATTR SpiceOrder 1
@@ -34,3 +35,6 @@ PINATTR SpiceOrder 7
 PIN -16 -64 NONE 8
 PINATTR PinName Disable
 PINATTR SpiceOrder 8
+PIN 48 -64 NONE 8
+PINATTR PinName posD
+PINATTR SpiceOrder 9
