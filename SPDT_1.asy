@@ -15,6 +15,8 @@ CIRCLE Normal -29 13 -35 19
 CIRCLE Normal -29 -19 -35 -13
 CIRCLE Normal 3 -3 -3 3
 ARC Normal -5 -14 -24 4 -5 -14 -25 4
+TEXT -48 -16 Left 2 1
+TEXT -48 16 Left 2 0
 PIN -48 -16 NONE 8
 PINATTR PinName IN1
 PINATTR SpiceOrder 1
