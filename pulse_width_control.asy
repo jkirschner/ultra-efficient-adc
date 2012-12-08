@@ -22,6 +22,8 @@ TEXT -92 48 Left 2 Vpw1
 TEXT -92 80 Left 2 Vpw2
 TEXT 92 -16 Right 2 Out
 TEXT 92 16 Right 2 OutB
+TEXT -35 -67 Left 2 Pulse Width
+TEXT -29 -52 Left 2 Generator
 PIN -112 -80 NONE 8
 PINATTR PinName Din
 PINATTR SpiceOrder 1
