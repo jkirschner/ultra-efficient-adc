@@ -1,0 +1,22 @@
+* Z:\home\awhitcombe\VLSI\Project\ultra-efficient-adc\Layout\FlipFlop_LDSHalf.asc
+M1 N002 CLK N004 neg nfet l=nmosL w=nmosW
+M2 N004 D neg neg nfet l=nmosL w=nmosW
+M3 N002 CLKb N001 pos pfet l=pmosL w=pmosW
+M4 N001 D pos pos pfet l=pmosL w=pmosW
+M5 N003 N002 neg neg nfet l=nmosL w=nmosW
+M6 N003 N002 pos pos pfet l=pmosL w=pmosW
+M11 pos N003 N005 pos pfet l=pmosL w=pmosW
+M12 N005 CLK N002 pos pfet l=pmosL w=pmosW
+M13 N006 CLKb N002 neg nfet l=nmosL w=nmosW
+M14 neg N003 N006 neg nfet l=nmosL w=nmosW
+M30 N002 RESETb pos pos pfet l=0.9u w=12.6u
+M32 N002 RESETb pos pos pfet l=0.9u w=7.8u
+M7 N002 RESETb pos pos pfet l=0.9u w=7.8u
+M8 N002 RESETb pos pos pfet l=0.9u w=7.8u
+.param nmosL=0.9u
+.param pmosL=0.9u
+.param nmosW=3u
+.param pmosW=6u
+.backanno
+.end
+

@@ -1,0 +1,17 @@
+* SPICE3 file created from FlipFLop0_half.ext - technology: scmos
+
+M1000 N002 RSTB Vpos Vpos pfet w=12.6u l=0.9u
+M1001 Vpos RSTB N002 Vpos pfet w=7.8u l=0.9u
+M1002 N002 RSTB Vpos Vpos pfet w=7.8u l=0.9u
+M1003 Vpos RSTB N002 Vpos pfet w=7.8u l=0.9u
+M1004 Vpos N002 N003 Vpos pfet w=6u l=0.9u
+M1005 N001 D Vpos Vpos pfet w=6u l=0.9u
+M1006 N002 ClkB N001 Vpos pfet w=6u l=0.9u
+M1007 N005 Clk N002 Vpos pfet w=6u l=0.9u
+M1008 Vpos N003 N005 Vpos pfet w=6u l=0.9u
+M1009 N006 N003 Vneg Vneg nfet w=3u l=0.9u
+M1010 N002 ClkB N006 Vneg nfet w=3u l=0.9u
+M1011 N004 Clk N002 Vneg nfet w=3u l=0.9u
+M1012 Vneg D N004 Vneg nfet w=3u l=0.9u
+M1013 N003 N002 Vneg Vneg nfet w=3u l=0.9u
+

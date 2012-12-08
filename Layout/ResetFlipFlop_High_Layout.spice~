@@ -1,0 +1,75 @@
+* SPICE3 file created from ResetFlipFlop_High_Layout.ext - technology: scmos
+
+M1000 Vpos a_340_n333# a_330_n301# Vpos pfet w=6u l=0.9u
++ ad=56.16p pd=94.8u as=6.66p ps=15u 
+M1001 Vpos a_376_n333# a_367_n305# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.12p ps=15u 
+M1002 a_338_n264# D Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1003 a_340_n333# ClkB a_338_n264# Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1004 a_354_n264# Clk a_340_n333# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1005 Vpos a_330_n301# a_354_n264# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1006 a_370_n264# a_330_n301# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1007 a_376_n333# Clk a_370_n264# Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1008 a_386_n264# ClkB a_376_n333# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1009 Vpos a_367_n305# a_386_n264# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1010 Qb a_367_n305# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.29p pd=15.6u as=0p ps=0u 
+M1011 Q a_376_n333# Vpos Vpos pfet w=6u l=0.9u
++ ad=8.64p pd=15u as=0p ps=0u 
+M1012 a_338_n295# a_330_n301# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=66.96p ps=119.4u 
+M1013 a_340_n333# ClkB a_338_n295# Vneg nfet w=3u l=0.9u
++ ad=21.6p pd=34.8u as=0p ps=0u 
+M1014 a_354_n295# Clk a_340_n333# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1015 Vneg D a_354_n295# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1016 a_370_n295# a_367_n305# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1017 a_376_n333# Clk a_370_n295# Vneg nfet w=3u l=0.9u
++ ad=21.6p pd=34.8u as=0p ps=0u 
+M1018 a_386_n295# ClkB a_376_n333# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1019 Vneg a_330_n301# a_386_n295# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1020 Qb a_367_n305# Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1021 a_330_n301# a_340_n333# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1022 a_367_n305# a_376_n333# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1023 Q a_376_n333# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.23p pd=9u as=0p ps=0u 
+M1024 a_340_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1025 Vneg RST a_340_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1026 a_340_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1027 Vneg RST a_340_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1028 a_376_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1029 Vneg RST a_376_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1030 a_376_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1031 Vneg RST a_376_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+C0 Q Vpos 2.1fF
+C1 Vneg a_330_n301# 4.2fF
+C2 a_340_n333# Vneg 3.0fF
+C3 a_376_n333# Vneg 4.2fF
+C4 Vneg Qb 2.6fF
+C5 a_330_n301# Vpos 2.5fF
+C6 a_367_n305# Vpos 2.6fF
+C7 a_376_n333# Vpos 2.4fF
+C8 Vneg RST 12.1fF

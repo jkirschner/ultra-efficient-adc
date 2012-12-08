@@ -1,0 +1,39 @@
+* Z:\home\awhitcombe\VLSI\Project\ultra-efficient-adc\FlipFlop_LDS.asc
+M1 N005 CLK N007 neg nfet l=nmosL w=nmosW
+M2 N007 D neg neg nfet l=nmosL w=nmosW
+M3 N005 CLKb N003 pos pfet l=pmosL w=pmosW
+M4 N003 D pos pos pfet l=pmosL w=pmosW
+M5 N002 N005 neg neg nfet l=nmosL w=nmosW
+M6 N002 N005 pos pos pfet l=pmosL w=pmosW
+M7 N001 CLKb N008 neg nfet l=nmosL w=nmosW
+M8 N008 N002 neg neg nfet l=nmosL w=nmosW
+M9 N001 CLK N004 pos pfet l=pmosL w=pmosW
+M10 N004 N002 pos pos pfet l=pmosL w=pmosW
+M11 pos N002 N010 pos pfet l=pmosL w=pmosW
+M12 N010 CLK N005 pos pfet l=pmosL w=pmosW
+M13 N012 CLKb N005 neg nfet l=nmosL w=nmosW
+M14 neg N002 N012 neg nfet l=nmosL w=nmosW
+M15 N006 N001 neg neg nfet l=nmosL w=nmosW
+M16 N006 N001 pos pos pfet l=pmosL w=pmosW
+M17 pos N006 N009 pos pfet l=pmosL w=pmosW
+M18 N009 CLKb N001 pos pfet l=pmosL w=pmosW
+M19 N011 CLK N001 neg nfet l=nmosL w=nmosW
+M20 neg N006 N011 neg nfet l=nmosL w=nmosW
+M21 Qb N006 neg neg nfet l=nmosL w=nmosW
+M22 Qb N006 pos pos pfet l=pmosL w=pmosW
+M23 Q N001 neg neg nfet l=nmosL w=nmosW
+M24 Q N001 pos pos pfet l=pmosL w=pmosW
+M28 pos RESETb N001 pos pfet l=0.9u w=28.4u
+M29 N001 RESETb pos pos pfet l=0.9u w=12.6u
+M26 N001 RESETb pos pos pfet l=0.9u w=28.4u
+M27 N001 RESETb pos pos pfet l=0.9u w=28.4u
+M25 N005 RESETb pos pos pfet l=0.9u w=28.4u
+M30 N005 RESETb pos pos pfet l=0.9u w=12.6u
+M31 N005 RESETb pos pos pfet l=0.9u w=28.4u
+M32 N005 RESETb pos pos pfet l=0.9u w=28.4u
+.param nmosL=0.9u
+.param pmosL=0.9u
+.param nmosW=3u
+.param pmosW=6u
+.backanno
+.end
