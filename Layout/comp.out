@@ -1,31 +1,11 @@
-                                                                    Iteration:   0: Element classes =    2 (+2);      Node classes =    8 (+8)
-Iteration:   1: Element classes =   16 (+14);                                                  Node classes =   17 (+9)
-Circuits match with 11 automorphisms.
-Iteration:   2: Element classes =   24 (+8);                                                  Node classes =   20 (+3)
-Circuits match with 4 automorphisms.
-Iteration:   3: Element classes =   26 (+2);                                                  Node classes =   20 (+0)
-Circuits match with 2 automorphisms.
-Iteration:   4: Element classes =   26 (+0);                                                  Node classes =   20 (+0)
-Iteration:   5: Element classes =   26 (+0);                                                  Node classes =   20 (+0)
-Graphs match with 2 automorphisms.
-Iteration:   5: Element classes =   27 (+1);                                                  Node classes =   20 (+0)
-Iteration:   6: Element classes =   27 (+0);                                                  Node classes =   20 (+0)
-  automorphisms = 2.
-Iteration:   6: Element classes =   28 (+1);                                                  Node classes =   20 (+0)
-Iteration:   7: Element classes =   28 (+0);                                                  Node classes =   20 (+0)
-  automorphisms = 2.
-Iteration:   7: Element classes =   29 (+1);                                                  Node classes =   20 (+0)
-Iteration:   8: Element classes =   29 (+0);                                                  Node classes =   20 (+0)
-  automorphisms = 1.
-Iteration:   8: Element classes =   30 (+1);                                                  Node classes =   20 (+0)
-Iteration:   9: Element classes =   30 (+0);                                                  Node classes =   20 (+0)
-  automorphisms = 1.
-Iteration:   9: Element classes =   31 (+1);                                                  Node classes =   20 (+0)
-Iteration:  10: Element classes =   31 (+0);                                                  Node classes =   20 (+0)
-  automorphisms = 1.
-Iteration:  10: Element classes =   32 (+1);                                                  Node classes =   20 (+0)
-Iteration:  11: Element classes =   32 (+0);                                                  Node classes =   20 (+0)
-Circuits match correctly.
-Iteration:  12: Element classes =   32 (+0);                                                  Node classes =   20 (+0)
-Iteration:  13: Element classes =   32 (+0);                                                  Node classes =   20 (+0)
+                                                                    Iteration:   0: Element classes =    2 (+2);      Node classes =    6 (+6)
+Iteration:   1: Element classes =    9 (+7);                                                  Node classes =   10 (+4)
+Circuits match with 7 automorphisms.
+Iteration:   2: Element classes =   14 (+5);                                                  Node classes =   12 (+2)
+Circuits match uniquely.
+Iteration:   3: Element classes =   14 (+0);                                                  Node classes =   12 (+0)
+Iteration:   4: Element classes =   14 (+0);                                                  Node classes =   12 (+0)
+Graphs match uniquely.
+Iteration:   5: Element classes =   14 (+0);                                                  Node classes =   12 (+0)
+Iteration:   6: Element classes =   14 (+0);                                                  Node classes =   12 (+0)
 Graphs match uniquely.
