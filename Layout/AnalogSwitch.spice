@@ -1,0 +1,72 @@
+* SPICE3 file created from AnalogSwitch.ext - technology: scmos
+
+M1000 a_n13_n17# Iin? Vdd Vdd pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=129.96p ps=141.6u 
+M1001 Vdd C1? a_n13_n17# Vdd pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 a_n1_n33# Iin? Vdd Vdd pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1003 Vdd C2? a_n1_n33# Vdd pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1004 a_15_n33# a_n1_n33# Vdd Vdd pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1005 Vdd a_n13_n17# a_15_n33# Vdd pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1006 a_64_n23# Iin? Vdd Vdd pfet w=6u l=0.9u
++ ad=17.28p pd=30.6u as=0p ps=0u 
+M1007 a_64_n23# a_64_n23# Vdd Vdd pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1008 Vdd C1? a_64_n23# Vdd pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1009 a_107_n1# a_64_n23# Vdd Vdd pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1010 Vdd C2? a_107_n1# Vdd pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1011 a_112_n33# a_107_n1# Vdd Vdd pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1012 Vdd a_64_n23# a_112_n33# Vdd pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1013 a_n5_n23# Iin? a_n13_n17# Gnd nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=3.42p ps=9u 
+M1014 Gnd C1? a_n5_n23# Gnd nfet w=3u l=0.9u
++ ad=37.26p pd=90u as=0p ps=0u 
+M1015 a_13_n23# Iin? Gnd Gnd nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1016 a_n1_n33# C2? a_13_n23# Gnd nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1017 a_39_n23# a_n1_n33# Gnd Gnd nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1018 a_15_n33# a_n13_n17# a_39_n23# Gnd nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1019 a_64_n23# Iin? Gnd Gnd nfet w=3u l=0.9u
++ ad=6.84p pd=18u as=0p ps=0u 
+M1020 a_81_n23# a_64_n23# Gnd Gnd nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1021 a_64_n23# C1? a_81_n23# Gnd nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1022 a_107_n23# a_64_n23# Gnd Gnd nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1023 a_107_n1# C2? a_107_n23# Gnd nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=0p ps=0u 
+M1024 a_133_n23# a_107_n1# Gnd Gnd nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1025 a_112_n33# a_64_n23# a_133_n23# Gnd nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=0p ps=0u 
+M1026 Iin a_n13_n17# VC1 Vdd pfet w=1.8u l=0.6u
++ ad=5.58p pd=13.8u as=4.68p ps=13.2u 
+M1027 VC2 a_n1_n33# Iin Vdd pfet w=1.8u l=0.6u
++ ad=5.04p pd=13.2u as=0p ps=0u 
+M1028 a_18_n42# a_15_n33# Iin Vdd pfet w=1.8u l=0.6u
++ ad=4.68p pd=13.2u as=0p ps=0u 
+M1029 Iref a_64_n23# VC1 Vdd pfet w=1.8u l=0.6u
++ ad=7.2p pd=15.6u as=0p ps=0u 
+M1030 VC2 a_64_n23# Iref Vdd pfet w=1.8u l=0.6u
++ ad=0p pd=0u as=0p ps=0u 
+M1031 a_18_n42# a_112_n33# Iref Vdd pfet w=1.8u l=0.6u
++ ad=0p pd=0u as=0p ps=0u 
+M1032 VC1 CLC1 Gnd Gnd nfet w=7.2u l=0.6u
++ ad=7.2p pd=17.4u as=0p ps=0u 
+M1033 VC2 CLC2 Gnd Gnd nfet w=7.2u l=0.6u
++ ad=7.2p pd=17.4u as=0p ps=0u 
+C1 Gnd VC2 10020.0fF
+C2 Gnd VC1 10020.2fF
