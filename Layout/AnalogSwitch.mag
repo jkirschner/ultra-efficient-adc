@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1355107684
+timestamp 1355184513
 << electrodecontact >>
 rect 11 -117 15 -113
 rect 86 -115 90 -111
@@ -383,7 +383,8 @@ rect 40 -59 44 -49
 rect 57 -53 61 -42
 rect 81 -45 85 -42
 rect 108 -45 112 -42
-rect 81 -49 112 -45
+rect 81 -49 105 -45
+rect 109 -49 112 -45
 rect 116 -53 120 -42
 rect 57 -57 120 -53
 rect -13 -63 44 -59
@@ -393,6 +394,7 @@ rect 3 -101 7 -77
 rect -302 -105 -294 -101
 rect 15 -77 19 -71
 rect 11 -113 15 -77
+rect 33 -78 105 -74
 rect 78 -101 82 -87
 rect 57 -105 78 -101
 rect 94 -87 426 -83
@@ -419,8 +421,11 @@ rect 96 -42 100 -38
 rect 11 -46 15 -42
 rect 40 -49 44 -45
 rect 21 -56 25 -52
+rect 105 -49 109 -45
 rect 3 -70 7 -66
 rect 78 -64 82 -60
+rect 29 -78 33 -74
+rect 105 -78 109 -74
 rect 90 -87 94 -83
 rect 121 -96 125 -92
 << metal2 >>
@@ -449,11 +454,14 @@ rect -297 -49 15 -46
 rect 44 -49 67 -45
 rect 96 -52 100 -42
 rect 25 -56 100 -52
-rect 61 -64 78 -60
+rect -298 -63 33 -59
 rect -297 -70 3 -66
-rect 61 -79 65 -64
-rect -297 -83 65 -79
+rect 29 -74 33 -63
+rect 61 -64 78 -60
+rect 61 -81 65 -64
+rect -297 -85 65 -81
 rect 90 -83 94 -56
+rect 105 -74 109 -49
 rect 121 -92 125 -25
 << labels >>
 rlabel metal1 -4 15 -4 15 1 Vdd
@@ -463,10 +471,11 @@ rlabel metal1 28 -22 28 -22 1 Gnd
 rlabel metal1 95 -48 95 -48 1 Iref
 rlabel metal2 -2 -48 -2 -48 1 Iin
 rlabel metal2 -29 -69 -29 -69 1 CLC1
-rlabel metal2 -29 -82 -29 -82 1 CLC2
 rlabel metal2 92 -79 92 -79 1 VC2
 rlabel metal1 13 -98 13 -98 1 VC1
 rlabel metal1 4 -99 4 -99 1 Gnd
 rlabel polysilicon -7 29 -7 29 1 Iin?
 rlabel metal2 -35 3 -35 3 1 C2?
+rlabel metal2 -29 -84 -29 -84 1 CLC2
+rlabel metal2 -294 -61 -294 -61 1 Iref
 << end >>
