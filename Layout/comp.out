@@ -1,186 +1,224 @@
-                                                                                                            Iteration:   0: Element classes =    4 (+4);      Node classes =    5 (+5)
-Iteration:   1: Element classes =   11 (+7);                                                  Node classes =   12 (+7)
-
-ILLEGAL node partition: class fragments follow (with fanouts):
-  (1): a_n13_n17#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (2): N004                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (2): N002                          ==>   pfet:drain = 2; nfet:drain = 1; pfet:gate = 2; nfet:gate = 1
-  (1): a_n1_n33#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (2): N001                          ==>   pfet:drain = 1; nfet:drain = 1; pfet:gate = 2; nfet:gate = 2
-  (1): a_64_n23#                          ==>   pfet:drain = 3; pfet:gate = 5; nfet:drain = 2; nfet:gate = 3
-  (1): a_107_n1#                          ==>   pfet:drain = 2; pfet:gate = 1; nfet:drain = 1; nfet:gate = 1
-  (1): a_18_n42#                          ==>   pfet:drain = 2
-  (1): Gnd                          ==>   nfet:bulk = 15; nfet:drain = 9; c:top = 2
-  (2): neg                          ==>   nfet:bulk = 15; nfet:drain = 9; pfet:drain = 2; C:bottom = 2
----------------------------
-Graphs do not match.
-Iteration:   2: Element classes =   19 (+8);                                                  Node classes =   17 (+5)
-
-ILLEGAL element partition: class fragments follow (with node fanout counts):
-  (1): nfet31                                         ==>  (drain, source) = (); gate = 6; source = 6; bulk = 26
-  (1): nfet33                                         ==>  (drain, source) = (); gate = 6; source = 26; bulk = 26
-  (2): nfet47                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (1): nfet38                                         ==>  (drain, source) = (); gate = 13; source = 26; bulk = 26
-  (1): nfet40                                         ==>  (drain, source) = (); gate = 13; source = 26; bulk = 26
-  (2): nfet55                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet46                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet53                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
----------------------------
-  (1): pfet40                                         ==>  (drain, source) = (); gate = 4; source = 6; bulk = 32
-  (1): pfet42                                         ==>  (drain, source) = (); gate = 4; source = 6; bulk = 32
-  (1): pfet47                                         ==>  (drain, source) = (); gate = 4; source = 13; bulk = 32
-  (1): pfet49                                         ==>  (drain, source) = (); gate = 4; source = 5; bulk = 32
-  (2): pfet61                                         ==>  (drain, source) = (); gate = 4; source = 32; bulk = 32
-  (2): pfet67                                         ==>  (drain, source) = (); gate = 4; source = 32; bulk = 32
----------------------------
-  (1): pfet39                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet41                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet45                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet60                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet64                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet46                                         ==>  (drain, source) = (); gate = 13; source = 32; bulk = 32
-  (1): pfet48                                         ==>  (drain, source) = (); gate = 13; source = 32; bulk = 32
-  (2): pfet68                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet58                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet66                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
----------------------------
-  (1): pfet43                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet44                                         ==>  (drain, source) = (); gate = 6; source = 4; bulk = 32
-  (1): pfet50                                         ==>  (drain, source) = (); gate = 5; source = 32; bulk = 32
-  (1): pfet51                                         ==>  (drain, source) = (); gate = 13; source = 4; bulk = 32
-  (2): pfet63                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet70                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
----------------------------
-  (1): pfet52                                         ==>  (drain, source) = (); gate = 6; source = 4; bulk = 32
-  (1): pfet53                                         ==>  (drain, source) = (); gate = 6; source = 3; bulk = 32
-  (1): pfet55                                         ==>  (drain, source) = (); gate = 13; source = 4; bulk = 32
-  (1): pfet56                                         ==>  (drain, source) = (); gate = 13; source = 3; bulk = 32
----------------------------
-
-ILLEGAL node partition: class fragments follow (with fanouts):
-  (1): a_n13_n17#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (1): a_n1_n33#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (2): N001                          ==>   pfet:drain = 1; nfet:drain = 1; pfet:gate = 2; nfet:gate = 2
-  (1): a_64_n23#                          ==>   pfet:drain = 3; pfet:gate = 5; nfet:drain = 2; nfet:gate = 3
-  (1): a_107_n1#                          ==>   pfet:drain = 2; pfet:gate = 1; nfet:drain = 1; nfet:gate = 1
-  (1): a_18_n42#                          ==>   pfet:drain = 2
-  (1): Gnd                          ==>   nfet:bulk = 15; nfet:drain = 9; c:top = 2
-  (2): neg                          ==>   nfet:bulk = 15; nfet:drain = 9; pfet:drain = 2; C:bottom = 2
----------------------------
-  (1): C1?                          ==>   pfet:gate = 2; nfet:gate = 2
-  (1): C2?                          ==>   pfet:gate = 2; nfet:gate = 2
-  (2): C2?                          ==>   pfet:gate = 2; nfet:gate = 2
-  (2): C1?                          ==>   pfet:gate = 2; nfet:gate = 2
----------------------------
-Graphs do not match.
-Iteration:   3: Element classes =   26 (+7);                                                  Node classes =   20 (+3)
-
-ILLEGAL element partition: class fragments follow (with node fanout counts):
-  (2): nfet47                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet55                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet46                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet53                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
----------------------------
-  (1): pfet40                                         ==>  (drain, source) = (); gate = 4; source = 6; bulk = 32
-  (1): pfet42                                         ==>  (drain, source) = (); gate = 4; source = 6; bulk = 32
-  (1): pfet47                                         ==>  (drain, source) = (); gate = 4; source = 13; bulk = 32
-  (1): pfet49                                         ==>  (drain, source) = (); gate = 4; source = 5; bulk = 32
----------------------------
-  (1): pfet39                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet41                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet45                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet64                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet60                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet68                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet58                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet66                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
----------------------------
-  (1): pfet43                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet44                                         ==>  (drain, source) = (); gate = 6; source = 4; bulk = 32
-  (1): pfet50                                         ==>  (drain, source) = (); gate = 5; source = 32; bulk = 32
-  (1): pfet51                                         ==>  (drain, source) = (); gate = 13; source = 4; bulk = 32
----------------------------
-  (1): pfet52                                         ==>  (drain, source) = (); gate = 6; source = 4; bulk = 32
-  (1): pfet53                                         ==>  (drain, source) = (); gate = 6; source = 3; bulk = 32
-  (1): pfet55                                         ==>  (drain, source) = (); gate = 13; source = 4; bulk = 32
-  (1): pfet56                                         ==>  (drain, source) = (); gate = 13; source = 3; bulk = 32
----------------------------
-
-ILLEGAL node partition: class fragments follow (with fanouts):
-  (1): a_n13_n17#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (1): a_n1_n33#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (2): N001                          ==>   pfet:drain = 1; nfet:drain = 1; pfet:gate = 2; nfet:gate = 2
-  (1): a_64_n23#                          ==>   pfet:drain = 3; pfet:gate = 5; nfet:drain = 2; nfet:gate = 3
-  (1): a_107_n1#                          ==>   pfet:drain = 2; pfet:gate = 1; nfet:drain = 1; nfet:gate = 1
-  (1): a_18_n42#                          ==>   pfet:drain = 2
-  (1): Gnd                          ==>   nfet:bulk = 15; nfet:drain = 9; c:top = 2
-  (2): neg                          ==>   nfet:bulk = 15; nfet:drain = 9; pfet:drain = 2; C:bottom = 2
----------------------------
-  (2): P001                          ==>   nfet:drain = 2
-  (2): P002                          ==>   nfet:drain = 2
-  (2): P004                          ==>   nfet:drain = 2
-  (2): P005                          ==>   nfet:drain = 2
----------------------------
-  (2): C2?                          ==>   pfet:gate = 2; nfet:gate = 2
-  (2): C1?                          ==>   pfet:gate = 2; nfet:gate = 2
----------------------------
-Graphs do not match.
-Iteration:   4: Element classes =   28 (+2);                                                  Node classes =   20 (+0)
-
-ILLEGAL element partition: class fragments follow (with node fanout counts):
-  (2): nfet49                                         ==>  (drain, source) = (); gate = 4; source = 28; bulk = 28
-  (2): nfet50                                         ==>  (drain, source) = (); gate = 4; source = 28; bulk = 28
-  (2): nfet54                                         ==>  (drain, source) = (); gate = 4; source = 28; bulk = 28
-  (2): nfet56                                         ==>  (drain, source) = (); gate = 4; source = 28; bulk = 28
----------------------------
-  (2): nfet47                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet55                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet46                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
-  (2): nfet53                                         ==>  (drain, source) = (); gate = 6; source = 2; bulk = 28
----------------------------
-  (1): pfet40                                         ==>  (drain, source) = (); gate = 4; source = 6; bulk = 32
-  (1): pfet42                                         ==>  (drain, source) = (); gate = 4; source = 6; bulk = 32
-  (1): pfet47                                         ==>  (drain, source) = (); gate = 4; source = 13; bulk = 32
-  (1): pfet49                                         ==>  (drain, source) = (); gate = 4; source = 5; bulk = 32
----------------------------
-  (1): pfet39                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet41                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet45                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet64                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet60                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet68                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet58                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (2): pfet66                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
----------------------------
-  (1): pfet43                                         ==>  (drain, source) = (); gate = 6; source = 32; bulk = 32
-  (1): pfet44                                         ==>  (drain, source) = (); gate = 6; source = 4; bulk = 32
-  (1): pfet50                                         ==>  (drain, source) = (); gate = 5; source = 32; bulk = 32
-  (1): pfet51                                         ==>  (drain, source) = (); gate = 13; source = 4; bulk = 32
----------------------------
-  (1): pfet52                                         ==>  (drain, source) = (); gate = 6; source = 4; bulk = 32
-  (1): pfet53                                         ==>  (drain, source) = (); gate = 6; source = 3; bulk = 32
-  (1): pfet55                                         ==>  (drain, source) = (); gate = 13; source = 4; bulk = 32
-  (1): pfet56                                         ==>  (drain, source) = (); gate = 13; source = 3; bulk = 32
----------------------------
-
-ILLEGAL node partition: class fragments follow (with fanouts):
-  (1): a_n13_n17#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (1): a_n1_n33#                          ==>   pfet:drain = 2; pfet:gate = 2; nfet:drain = 1; nfet:gate = 1
-  (2): N001                          ==>   pfet:drain = 1; nfet:drain = 1; pfet:gate = 2; nfet:gate = 2
-  (1): a_64_n23#                          ==>   pfet:drain = 3; pfet:gate = 5; nfet:drain = 2; nfet:gate = 3
-  (1): a_107_n1#                          ==>   pfet:drain = 2; pfet:gate = 1; nfet:drain = 1; nfet:gate = 1
-  (1): a_18_n42#                          ==>   pfet:drain = 2
-  (1): Gnd                          ==>   nfet:bulk = 15; nfet:drain = 9; c:top = 2
-  (2): neg                          ==>   nfet:bulk = 15; nfet:drain = 9; pfet:drain = 2; C:bottom = 2
----------------------------
-  (2): P001                          ==>   nfet:drain = 2
-  (2): P002                          ==>   nfet:drain = 2
-  (2): P004                          ==>   nfet:drain = 2
-  (2): P005                          ==>   nfet:drain = 2
----------------------------
-  (2): C2?                          ==>   pfet:gate = 2; nfet:gate = 2
-  (2): C1?                          ==>   pfet:gate = 2; nfet:gate = 2
----------------------------
-Graphs do not match.
-Iteration:   5: Element classes =   28 (+0);                                                  Node classes =   20 (+0)
-Iteration:   6: Element classes =   28 (+0);                                                  Node classes =   20 (+0)
+                                                                                                            Iteration:   0: Element classes =    3 (+3);      Node classes =    7 (+7)
+Iteration:   1: Element classes =   13 (+10);                                                  Node classes =   16 (+9)
+Circuits match with 20 automorphisms.
+Iteration:   2: Element classes =   31 (+18);                                                  Node classes =   23 (+7)
+Circuits match with 6 automorphisms.
+Iteration:   3: Element classes =   36 (+5);                                                  Node classes =   24 (+1)
+Circuits match uniquely.
+Property errors were found.
+Iteration:   4: Element classes =   36 (+0);                                                  Node classes =   24 (+0)
+Iteration:   5: Element classes =   36 (+0);                                                  Node classes =   24 (+0)
+Graphs match uniquely.
+There were property errors.
+c20 vs. c21:
+ value c19 vs. c22:
+ value nfet156 vs. nfet169:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet157 vs. nfet170:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet154 vs. nfet171:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet153 vs. nfet168:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet159 vs. nfet174:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet162 vs. nfet178:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet160 vs. nfet176:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet165 vs. nfet179:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet161 vs. nfet175:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet163 vs. nfet177:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet158 vs. nfet172:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet164 vs. nfet180:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet155 vs. nfet173:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet166 vs. nfet181:
+ width circuit1: 0   circuit2: 7.2e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+nfet167 vs. nfet182:
+ width circuit1: 0   circuit2: 7.2e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet195 vs. pfet213:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet193 vs. pfet211:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet191 vs. pfet210:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet187 vs. pfet207:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet185 vs. pfet204:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet194 vs. pfet214:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet192 vs. pfet212:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet188 vs. pfet206:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet186 vs. pfet205:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet197 vs. pfet215:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet196 vs. pfet216:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet190 vs. pfet209:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet189 vs. pfet208:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet202 vs. pfet221:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet201 vs. pfet220:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet199 vs. pfet218:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet198 vs. pfet217:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet200 vs. pfet219:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet203 vs. pfet222:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+Iteration:   6: Element classes =   36 (+0);                                                  Node classes =   24 (+0)
+Iteration:   7: Element classes =   36 (+0);                                                  Node classes =   24 (+0)
+Graphs match uniquely.
+There were property errors.
+c20 vs. c21:
+ value c19 vs. c22:
+ value nfet156 vs. nfet169:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet157 vs. nfet170:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet154 vs. nfet171:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet153 vs. nfet168:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet159 vs. nfet174:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet162 vs. nfet178:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet160 vs. nfet176:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet165 vs. nfet179:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet161 vs. nfet175:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet163 vs. nfet177:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet158 vs. nfet172:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet164 vs. nfet180:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet155 vs. nfet173:
+ width circuit1: 0   circuit2: 3e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+nfet166 vs. nfet181:
+ width circuit1: 0   circuit2: 7.2e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+nfet167 vs. nfet182:
+ width circuit1: 0   circuit2: 7.2e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet195 vs. pfet213:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet193 vs. pfet211:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet191 vs. pfet210:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet187 vs. pfet207:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet185 vs. pfet204:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet194 vs. pfet214:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet192 vs. pfet212:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet188 vs. pfet206:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet186 vs. pfet205:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet197 vs. pfet215:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet196 vs. pfet216:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet190 vs. pfet209:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet189 vs. pfet208:
+ width circuit1: 0   circuit2: 6e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 9e-07   (delta=inf%, cutoff= 1%)
+pfet202 vs. pfet221:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet201 vs. pfet220:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet199 vs. pfet218:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet198 vs. pfet217:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet200 vs. pfet219:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)
+pfet203 vs. pfet222:
+ width circuit1: 0   circuit2: 1.8e-06   (delta=inf%, cutoff= 1%)
+ length circuit1: 0   circuit2: 6e-07   (delta=inf%, cutoff= 1%)

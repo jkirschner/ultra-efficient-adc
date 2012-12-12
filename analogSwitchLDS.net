@@ -15,16 +15,16 @@ M13 N001 Iin? Vdd Vdd pfet l=pmosL w=pmosW
 M14 N001 Iin? neg neg nfet l=nmosL w=nmosW
 M15 N005 C1? Vdd Vdd pfet l=pmosL w=pmosW
 M16 N005 N001 Vdd Vdd pfet l=pmosL w=pmosW
-M17 N005 N001 P004 neg nfet l=nmosL w=nmosW
-M18 P004 C1? neg neg nfet l=nmosL w=nmosW
+M17 N005 C1? P004 neg nfet l=nmosL w=nmosW
+M18 P004 N001 neg neg nfet l=nmosL w=nmosW
 M19 N002 C2? Vdd Vdd pfet l=pmosL w=pmosW
 M20 N002 N001 Vdd Vdd pfet l=pmosL w=pmosW
-M21 N002 N001 P005 neg nfet l=nmosL w=nmosW
-M22 P005 C2? neg neg nfet l=nmosL w=nmosW
+M21 N002 C2? P005 neg nfet l=nmosL w=nmosW
+M22 P005 N001 neg neg nfet l=nmosL w=nmosW
 M23 N006 N005 Vdd Vdd pfet l=pmosL w=pmosW
 M24 N006 N002 Vdd Vdd pfet l=pmosL w=pmosW
-M25 N006 N002 P006 neg nfet l=nmosL w=nmosW
-M26 P006 N005 neg neg nfet l=nmosL w=nmosW
+M25 N006 N005 P006 neg nfet l=nmosL w=nmosW
+M26 P006 N002 neg neg nfet l=nmosL w=nmosW
 M27 N008 N003 Iin Vdd pfet l={2*A} w={6*A}
 M28 N009 N004 Iin Vdd pfet l={2*A} w={6*A}
 M29 neg N007 Iin Vdd pfet l={2*A} w={6*A}
@@ -33,8 +33,8 @@ M31 N009 N002 Iref Vdd pfet l={2*A} w={6*A}
 M32 neg N006 Iref Vdd pfet l={2*A} w={6*A}
 M33 N008 CLC1 neg neg nfet l={2*A} w={24*A}
 M34 neg CLC2 N009 neg nfet l={2*A} w={24*A}
-C1 N008 neg C
-C2 N009 neg C
+C1 N008 neg 10p
+C2 N009 neg 10p
 .param A=0.3u
 .param pmosL=.9u
 .param pmosW=6u
