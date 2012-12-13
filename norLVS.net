@@ -1,0 +1,7 @@
+* Z:\home\sbecht\ultra-efficient-adc\norLVS.asc
+M1 Out B 0 0 nfet l=.9u w=3u
+M2 0 A Out 0 nfet l=.9u w=3u
+M3 Vdd B N001 Vdd pfet l=.9u w=6u
+M4 N001 A Out Vdd pfet l=.9u w=6u
+.backanno
+.end
