@@ -1,0 +1,54 @@
+* SPICE3 file created from doubleBiasGen.ext - technology: scmos
+
+M1000 a_38_n9# Vdd Vdd Vdd pfet w=8.1u l=3.9u
++ ad=29.16p pd=39.6u as=68.58p ps=154.8u 
+M1001 Vdd Bias a_38_n9# Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 a_146_n9# Bias Vdd Vdd pfet w=8.1u l=3.9u
++ ad=29.16p pd=39.6u as=0p ps=0u 
+M1003 Vdd Vdd a_146_n9# Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1004 Cascode Vdd Vdd Vdd pfet w=8.1u l=3.9u
++ ad=29.16p pd=39.6u as=0p ps=0u 
+M1005 a_38_n9# Cascode Cascode Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1006 Bias Bias a_38_n9# Vdd pfet w=8.1u l=0.9u
++ ad=16.02p pd=38.4u as=0p ps=0u 
+M1007 Vdd Bias a_1_n53# Vdd pfet w=1.8u l=3.9u
++ ad=0p pd=0u as=4.68p ps=13.2u 
+M1008 a_79_n61# Bias Vdd Vdd pfet w=8.1u l=3.9u
++ ad=14.58p pd=19.8u as=0p ps=0u 
+M1009 Vdd Bias a_79_n61# Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1010 a_1_n53# Bias Vdd Vdd pfet w=1.8u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1011 a_146_n9# Bias Bias Vdd pfet w=8.1u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1012 Cascode Cascode a_146_n9# Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1013 Vdd Vdd Cascode Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1014 Cascode Gnd Gnd Gnd nfet w=2.1u l=3.9u
++ ad=7.56p pd=15.6u as=16.2p ps=44.4u 
+M1015 Gnd a_1_n53# Cascode Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1016 Bias a_1_n53# Gnd Gnd nfet w=0.9u l=8.1u
++ ad=3.42p pd=10.8u as=0p ps=0u 
+M1017 a_73_n59# a_1_n53# a_1_n53# Gnd nfet w=8.1u l=3.9u
++ ad=11.79p pd=27u as=16.02p ps=38.4u 
+M1018 a_1_n53# a_1_n53# a_111_n59# Gnd nfet w=8.1u l=3.9u
++ ad=0p pd=0u as=11.79p ps=27u 
+M1019 Gnd a_1_n53# Bias Gnd nfet w=0.9u l=8.1u
++ ad=0p pd=0u as=0p ps=0u 
+M1020 Cascode a_1_n53# Gnd Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1021 Gnd Gnd Cascode Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1022 a_73_n59# a_1_n53# Gnd Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1023 a_79_n61# a_79_n61# a_73_n59# Gnd nfet w=2.1u l=3.9u
++ ad=3.78p pd=7.8u as=0p ps=0u 
+M1024 a_111_n59# a_79_n61# a_79_n61# Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1025 Gnd a_1_n53# a_111_n59# Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
