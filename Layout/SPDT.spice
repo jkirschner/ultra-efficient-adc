@@ -1,0 +1,14 @@
+* SPICE3 file created from SPDT.ext - technology: scmos
+
+M1000 a_65_11# S Vdd Vdd pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=6.12p ps=15u 
+M1001 Out S Iin2 Vdd pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=6.12p ps=15u 
+M1002 Iin1 a_65_11# Out Vdd pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=0p ps=0u 
+M1003 a_65_11# S Gnd Gnd nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=3.42p ps=9u 
+M1004 Out S Iin1 Gnd nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=3.42p ps=9u 
+M1005 Iin2 a_65_11# Out Gnd nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=0p ps=0u 
