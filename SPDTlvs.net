@@ -1,0 +1,13 @@
+* Z:\home\sbecht\ultra-efficient-adc\SPDTlvs.asc
+M1 Vdd N002 N003 Vdd pfet l=.9u w=6u
+M2 0 N002 N003 0 nfet l=.9u w=3u
+M3 Iin1 N002 N001 0 nfet l=.9u w=3u
+M4 Iin2 N002 N001 Vdd pfet l=.9u w=6u
+M5 N001 N003 Iin2 0 nfet l=.9u w=3u
+M6 N001 N003 Iin1 Vdd pfet l=.9u w=6u
+.param pmosL=.9u
+.param pmosW=6u
+.param nmosL=.9u
+.param nmosW=3u
+.backanno
+.end

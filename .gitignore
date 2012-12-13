@@ -1,6 +1,7 @@
 # LTSpice generated files #
 ###########################
 *.log
-*.net
 *.raw
 *.op
+*.ext
+*.out
