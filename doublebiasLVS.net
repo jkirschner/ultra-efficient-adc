@@ -1,29 +1,29 @@
 * Z:\home\sbecht\ultra-efficient-adc\doublebiasLVS.asc
-M1 0 N004 Cascode 0 nfet l=3.9u w=2.1u
-M2 Bias N004 0 0 nfet l=8.1u w=.9u
+M1 neg N004 Cascode neg nfet l=3.9u w=2.1u
+M2 Bias N004 neg neg nfet l=8.1u w=.9u
 M3 Cascode Cascode N001 Vdd pfet l=3.9u w=8.1u
 M4 N001 Bias Bias Vdd pfet l=.9u w=8.1u
 M5 N001 Bias Vdd Vdd pfet l=3.9u w=8.1u
-M6 N005 N004 0 0 nfet l=3.9 w=2.1u
-M7 N005 N004 N004 0 nfet l=3.9u w=2.1u
+M6 N005 N004 neg neg nfet l=3.9u w=2.1u
+M7 N005 N004 N004 neg nfet l=3.9u w=8.1u
 M8 N004 Bias Vdd Vdd pfet l=3.9u w=1.8u
-M9 N003 N003 N005 0 nfet l=3.9u w=2.1u
+M9 N003 N003 N005 neg nfet l=3.9u w=2.1u
 M10 Vdd Bias N003 Vdd pfet l=3.9u w=8.1u
 M11 Vdd Vdd N001 Vdd pfet l=3.9u w=8.1u
 M12 Vdd Vdd Cascode Vdd pfet l=3.9u w=8.1u
-M13 Cascode 0 0 0 nfet l=3.9u w=2.1u
-M14 0 N004 Cascode 0 nfet l=3.9u w=2.1u
-M15 Bias N004 0 0 nfet l=8.1u w=.9u
+M13 Cascode neg neg neg nfet l=3.9u w=2.1u
+M14 neg N004 Cascode neg nfet l=3.9u w=2.1u
+M15 Bias N004 neg neg nfet l=8.1u w=.9u
 M16 Cascode Cascode N002 Vdd pfet l=3.9u w=8.1u
 M17 N002 Bias Bias Vdd pfet l=.9u w=8.1u
 M18 N002 Bias Vdd Vdd pfet l=3.9u w=8.1u
-M19 N006 N004 0 0 nfet l=3.9 w=2.1u
-M20 N006 N004 N004 0 nfet l=3.9u w=2.1u
+M19 N006 N004 neg neg nfet l=3.9u w=2.1u
+M20 N006 N004 N004 neg nfet l=3.9u w=8.1u
 M21 N004 Bias Vdd Vdd pfet l=3.9u w=1.8u
-M22 N003 N003 N006 0 nfet l=3.9u w=2.1u
+M22 N003 N003 N006 neg nfet l=3.9u w=2.1u
 M23 Vdd Bias N003 Vdd pfet l=3.9u w=8.1u
 M24 Vdd Vdd N002 Vdd pfet l=3.9u w=8.1u
 M25 Vdd Vdd Cascode Vdd pfet l=3.9u w=8.1u
-M26 Cascode 0 0 0 nfet l=3.9u w=2.1u
+M26 Cascode neg neg neg nfet l=3.9u w=2.1u
 .backanno
 .end

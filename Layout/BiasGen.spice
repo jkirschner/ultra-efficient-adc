@@ -1,0 +1,28 @@
+* SPICE3 file created from BiasGen.ext - technology: scmos
+
+M1000 a_38_n9# Vdd Vdd Vdd pfet w=8.1u l=3.9u
++ ad=29.16p pd=39.6u as=32.94p ps=77.4u 
+M1001 Vdd Bias a_38_n9# Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 Cascode Vdd Vdd Vdd pfet w=8.1u l=3.9u
++ ad=14.58p pd=19.8u as=0p ps=0u 
+M1003 a_38_n9# Cascode Cascode Vdd pfet w=8.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1004 Bias Bias a_38_n9# Vdd pfet w=8.1u l=0.9u
++ ad=8.01p pd=19.2u as=0p ps=0u 
+M1005 Vdd Bias a_1_n53# Vdd pfet w=1.8u l=3.9u
++ ad=0p pd=0u as=2.34p ps=6.6u 
+M1006 a_79_n61# Bias Vdd Vdd pfet w=8.1u l=3.9u
++ ad=8.01p pd=19.2u as=0p ps=0u 
+M1007 Cascode Gnd Gnd Gnd nfet w=2.1u l=3.9u
++ ad=3.78p pd=7.8u as=8.1p ps=22.2u 
+M1008 Gnd a_1_n53# Cascode Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1009 Bias a_1_n53# Gnd Gnd nfet w=0.9u l=8.1u
++ ad=1.71p pd=5.4u as=0p ps=0u 
+M1010 a_73_n59# a_1_n53# a_1_n53# Gnd nfet w=8.1u l=3.9u
++ ad=11.79p pd=27u as=8.01p ps=19.2u 
+M1011 a_73_n59# a_1_n53# Gnd Gnd nfet w=2.1u l=3.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1012 a_79_n61# a_79_n61# a_73_n59# Gnd nfet w=2.1u l=3.9u
++ ad=2.61p pd=7.2u as=0p ps=0u 

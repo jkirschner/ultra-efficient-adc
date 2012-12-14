@@ -1,0 +1,71 @@
+magic
+tech scmos
+timestamp 1355466378
+<< nwell >>
+rect 242 56 256 135
+rect 342 128 346 132
+rect 411 49 424 175
+<< pwell >>
+rect 242 1 256 56
+rect 334 12 338 16
+rect 383 -2 424 49
+rect 383 -18 543 -2
+<< psubstratepcontact >>
+rect 334 12 338 16
+<< nsubstratencontact >>
+rect 342 128 346 132
+<< metal1 >>
+rect 538 175 548 178
+rect 238 117 261 136
+rect 411 117 422 135
+rect 235 110 257 114
+rect 0 94 2 98
+rect 235 94 241 110
+rect 408 95 412 114
+rect 415 108 422 117
+rect 415 100 424 108
+rect 408 91 424 95
+rect 236 77 259 81
+rect 236 55 242 77
+rect 410 70 424 74
+rect 410 47 415 70
+rect 238 -1 259 27
+rect 397 -8 411 25
+rect 511 -8 535 -2
+rect 397 -17 535 -8
+<< m2contact >>
+rect 420 157 424 161
+rect 420 77 424 81
+<< metal2 >>
+rect 473 174 494 178
+rect 402 157 420 161
+rect 243 66 247 141
+rect 252 73 256 141
+rect 402 77 407 157
+rect 540 156 543 181
+rect 252 69 263 73
+rect 243 62 263 66
+rect 415 42 420 81
+rect 402 38 420 42
+use doubleBiasGen  doubleBiasGen_0
+timestamp 1355464966
+transform 1 0 23 0 1 71
+box -29 -71 219 64
+use doublePreamp  doublePreamp_0
+timestamp 1355464362
+transform 1 0 269 0 1 33
+box -13 -34 142 102
+use GainLatch_layout  GainLatch_layout_0
+timestamp 1355462964
+transform 0 -1 512 1 0 -9
+box 7 -31 184 88
+<< labels >>
+rlabel metal2 253 139 253 139 5 Thresh
+rlabel metal2 245 139 245 139 5 Input
+rlabel metal1 0 94 2 98 3 Bias
+rlabel metal2 482 177 482 177 5 PosD
+rlabel metal2 541 179 541 180 5 Disable
+rlabel metal1 546 177 546 177 6 Out
+rlabel space 40 3 41 4 1 Vneg
+rlabel space 303 130 304 131 1 PosA
+<< end >>

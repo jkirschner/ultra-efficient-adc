@@ -1,0 +1,87 @@
+* Z:\home\sbecht\ultra-efficient-adc\comparatorLVS.asc
+XX1 Input Thresh N003 Bias Vdd 0 N001 N002 doublecomparatorpreamplvs
+XX3 N001 N002 Disable N003 Bias Vdd VddD 0 Out comparator_gainlatch_lds
+XX2 Vdd 0 Bias N003 doublebiaslvs
+
+* block symbol definitions
+.subckt doublecomparatorpreamplvs Input Thresh Cascode Bias Vdd neg Vp Vm
+M1 Vm neg neg neg nfet l=.9u w=1.5u
+M2 neg Vm Vm neg nfet l=.9u w=1.5u
+M3 Vp Vm neg neg nfet l=.9u w=1.5u
+M4 Vdd Vdd Vm Vdd pfet l=.9u w=1.5u
+M5 Vm Input N002 Vdd pfet l=.9u w=1.5u
+M6 N002 Thresh Vp Vdd pfet l=.9u w=1.5u
+M7 Vdd Vdd Vdd Vdd pfet l=.9u w=1.8u
+M8 N001 Cascode N002 Vdd pfet l=.9u w=1.8u
+M9 Vdd Bias N001 Vdd pfet l=3.9u w=8.1u
+M10 Vm neg neg neg nfet l=.9u w=1.5u
+M11 neg Vm Vm neg nfet l=.9u w=1.5u
+M12 Vp Vm neg neg nfet l=.9u w=1.5u
+M13 Vdd Vdd Vm Vdd pfet l=.9u w=1.5u
+M14 Vm Input N002 Vdd pfet l=.9u w=1.5u
+M15 N002 Thresh Vp Vdd pfet l=.9u w=1.5u
+M16 Vdd Vdd Vdd Vdd pfet l=.9u w=1.8u
+M17 N001 Cascode N002 Vdd pfet l=.9u w=1.8u
+M18 Vdd Bias N001 Vdd pfet l=3.9u w=8.1u
+.ends doublecomparatorpreamplvs
+
+.subckt comparator_gainlatch_lds Vp Vm Disable Cascode Vbias posA posD neg Dout
+M8 Dout Disable neg neg nfet l=1.8u w=3.6u
+M6 N001 N001 posD posA pfet l=2.7u w=4.5u
+M7 N003 N001 Dout posA pfet l=0.6u w=0.9u
+M11 N003 Disable posD posA pfet l=2.7u w=4.5u
+M1 N1 Cascode N002 posA pfet l=2.4u w=4.8u
+M2 N1 Vm N2 posA pfet l=3.6u w=3.6u
+M3 N3 Vp N1 posA pfet l=3.6u w=3.6u
+M4 neg N3 Dout neg nfet l=2.7u w=2.4u
+M5 N3 N3 neg neg nfet l=2.7u w=2.4u
+M9 N002 Vbias posA posA pfet l=18u w=9u
+M10 N001 Dout neg neg nfet l=1.8u w=3.6u
+M12 neg N2 N001 neg nfet l=2.7u w=2.4u
+M13 N2 N2 neg neg nfet l=2.7u w=2.4u
+M18 Dout Disable neg neg nfet l=1.8u w=3.6u
+M19 N001 N001 posD posA pfet l=2.7u w=4.5u
+M20 N003 N001 Dout posA pfet l=0.6u w=0.9u
+M21 N003 Disable posD posA pfet l=2.7u w=4.5u
+M22 N1 Cascode N002 posA pfet l=2.4u w=4.8u
+M23 N1 Vm N2 posA pfet l=3.6u w=3.6u
+M24 N3 Vp N1 posA pfet l=3.6u w=3.6u
+M25 neg N3 Dout neg nfet l=2.7u w=2.4u
+M26 N3 N3 neg neg nfet l=2.7u w=2.4u
+M27 N002 Vbias posA posA pfet l=18u w=9u
+M28 N001 Dout neg neg nfet l=1.8u w=3.6u
+M29 neg N2 N001 neg nfet l=2.7u w=2.4u
+M30 N2 N2 neg neg nfet l=2.7u w=2.4u
+.ends comparator_gainlatch_lds
+
+.subckt doublebiaslvs Vdd neg Bias Cascode
+M1 neg N004 Cascode neg nfet l=3.9u w=2.1u
+M2 Bias N004 neg neg nfet l=8.1u w=.9u
+M3 Cascode Cascode N001 Vdd pfet l=3.9u w=8.1u
+M4 N001 Bias Bias Vdd pfet l=.9u w=8.1u
+M5 N001 Bias Vdd Vdd pfet l=3.9u w=8.1u
+M6 N005 N004 neg neg nfet l=3.9u w=2.1u
+M7 N005 N004 N004 neg nfet l=3.9u w=8.1u
+M8 N004 Bias Vdd Vdd pfet l=3.9u w=1.8u
+M9 N003 N003 N005 neg nfet l=3.9u w=2.1u
+M10 Vdd Bias N003 Vdd pfet l=3.9u w=8.1u
+M11 Vdd Vdd N001 Vdd pfet l=3.9u w=8.1u
+M12 Vdd Vdd Cascode Vdd pfet l=3.9u w=8.1u
+M13 Cascode neg neg neg nfet l=3.9u w=2.1u
+M14 neg N004 Cascode neg nfet l=3.9u w=2.1u
+M15 Bias N004 neg neg nfet l=8.1u w=.9u
+M16 Cascode Cascode N002 Vdd pfet l=3.9u w=8.1u
+M17 N002 Bias Bias Vdd pfet l=.9u w=8.1u
+M18 N002 Bias Vdd Vdd pfet l=3.9u w=8.1u
+M19 N006 N004 neg neg nfet l=3.9u w=2.1u
+M20 N006 N004 N004 neg nfet l=3.9u w=8.1u
+M21 N004 Bias Vdd Vdd pfet l=3.9u w=1.8u
+M22 N003 N003 N006 neg nfet l=3.9u w=2.1u
+M23 Vdd Bias N003 Vdd pfet l=3.9u w=8.1u
+M24 Vdd Vdd N002 Vdd pfet l=3.9u w=8.1u
+M25 Vdd Vdd Cascode Vdd pfet l=3.9u w=8.1u
+M26 Cascode neg neg neg nfet l=3.9u w=2.1u
+.ends doublebiaslvs
+
+.backanno
+.end

@@ -1,40 +1,40 @@
 * SPICE3 file created from doublePreamp.ext - technology: scmos
 
 ** SOURCE/DRAIN TIED
-M1000 Vdd Vdd Vdd Vdd pfet w=1.8u l=0.9u
+M1000 PosA PosA PosA PosA pfet w=1.8u l=0.9u
 + ad=34.2p pd=73.2u as=0p ps=0u 
-M1001 a_32_49# Bias Vdd Vdd pfet w=8.1u l=3.9u
+M1001 a_32_49# Bias PosA PosA pfet w=8.1u l=3.9u
 + ad=17.82p pd=39.6u as=0p ps=0u 
-M1002 a_24_22# Cascode a_32_49# Vdd pfet w=1.8u l=0.9u
+M1002 a_24_22# Cascode a_32_49# PosA pfet w=1.8u l=0.9u
 + ad=12.78p pd=30u as=0p ps=0u 
-M1003 a_32_49# Cascode a_24_22# Vdd pfet w=1.8u l=0.9u
+M1003 a_32_49# Cascode a_24_22# PosA pfet w=1.8u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1004 Vdd Bias a_32_49# Vdd pfet w=8.1u l=3.9u
+M1004 PosA Bias a_32_49# PosA pfet w=8.1u l=3.9u
 + ad=0p pd=0u as=0p ps=0u 
 ** SOURCE/DRAIN TIED
-M1005 Vdd Vdd Vdd Vdd pfet w=1.8u l=0.9u
+M1005 PosA PosA PosA PosA pfet w=1.8u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1006 V- Vdd Vdd Vdd pfet w=1.5u l=0.9u
+M1006 V- PosA PosA PosA pfet w=1.5u l=0.9u
 + ad=13.5p pd=24u as=0p ps=0u 
-M1007 a_24_22# Input V- Vdd pfet w=1.5u l=0.9u
+M1007 a_24_22# Input V- PosA pfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1008 V+ Thresh a_24_22# Vdd pfet w=1.5u l=0.9u
+M1008 V+ Thresh a_24_22# PosA pfet w=1.5u l=0.9u
 + ad=4.14p pd=12u as=0p ps=0u 
-M1009 a_24_22# Thresh V+ Vdd pfet w=1.5u l=0.9u
+M1009 a_24_22# Thresh V+ PosA pfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1010 V- Input a_24_22# Vdd pfet w=1.5u l=0.9u
+M1010 V- Input a_24_22# PosA pfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1011 Vdd Vdd V- Vdd pfet w=1.5u l=0.9u
+M1011 PosA PosA V- PosA pfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1012 V- Gnd Gnd Gnd nfet w=1.5u l=0.9u
+M1012 V- Vneg Vneg Vneg nfet w=1.5u l=0.9u
 + ad=5.4p pd=13.2u as=12.24p ps=28.8u 
-M1013 Gnd V- V- Gnd nfet w=1.5u l=0.9u
+M1013 Vneg V- V- Vneg nfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1014 V+ V- Gnd Gnd nfet w=1.5u l=0.9u
+M1014 V+ V- Vneg Vneg nfet w=1.5u l=0.9u
 + ad=4.14p pd=12u as=0p ps=0u 
-M1015 Gnd V- V+ Gnd nfet w=1.5u l=0.9u
+M1015 Vneg V- V+ Vneg nfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1016 V- V- Gnd Gnd nfet w=1.5u l=0.9u
+M1016 V- V- Vneg Vneg nfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1017 Gnd Gnd V- Gnd nfet w=1.5u l=0.9u
+M1017 Vneg Vneg V- Vneg nfet w=1.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 

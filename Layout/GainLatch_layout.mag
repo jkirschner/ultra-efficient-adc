@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1355453019
+timestamp 1355462964
 << nwell >>
 rect 7 17 184 88
 rect 7 9 55 17
@@ -326,6 +326,7 @@ rect 70 -15 74 -11
 rect 85 -15 89 -11
 rect 101 -15 105 -11
 rect 116 -15 120 -11
+rect 144 -30 148 -26
 << metal1 >>
 rect 79 82 83 88
 rect 66 78 83 82
@@ -406,6 +407,7 @@ rect 127 -23 138 -17
 rect 154 -19 184 -14
 rect 154 -23 158 -19
 rect 162 -23 184 -19
+rect 148 -30 184 -26
 << m2contact >>
 rect 13 63 17 67
 rect 27 68 31 72
@@ -500,4 +502,7 @@ rlabel metal2 183 18 184 39 7 PosD
 rlabel metal2 7 19 8 40 3 PosD
 rlabel metal1 109 85 117 86 5 PosA
 rlabel pdcontact 175 75 175 75 7 N1
+rlabel metal2 166 -30 166 -30 1 Disable
+rlabel metal1 152 8 152 8 1 Dout
+rlabel metal1 183 -30 184 -26 8 Dout
 << end >>
