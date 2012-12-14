@@ -1,0 +1,21 @@
+* Z:\home\sbecht\ultra-efficient-adc\doubleComparatorPreampLVS.asc
+M1 V- 0 0 0 nfet l=.9u w=1.5u
+M2 0 V- V- 0 nfet l=.9u w=1.5u
+M3 V+ V- 0 0 nfet l=.9u w=1.5u
+M4 Vdd Vdd V- Vdd pfet l=.9u w=1.5u
+M5 V- Input N002 Vdd pfet l=.9u w=1.5u
+M6 N002 Thresh V+ Vdd pfet l=.9u w=1.5u
+M7 Vdd Vdd Vdd Vdd pfet l=.9u w=1.8u
+M8 N001 Cascode N002 Vdd pfet l=.9u w=1.8u
+M9 Vdd Bias N001 Vdd pfet l=3.9u w=8.1u
+M10 V- 0 0 0 nfet l=.9u w=1.5u
+M11 0 V- V- 0 nfet l=.9u w=1.5u
+M12 V+ V- 0 0 nfet l=.9u w=1.5u
+M13 Vdd Vdd V- Vdd pfet l=.9u w=1.5u
+M14 V- Input N002 Vdd pfet l=.9u w=1.5u
+M15 N002 Thresh V+ Vdd pfet l=.9u w=1.5u
+M16 Vdd Vdd Vdd Vdd pfet l=.9u w=1.8u
+M17 N001 Cascode N002 Vdd pfet l=.9u w=1.8u
+M18 Vdd Bias N001 Vdd pfet l=3.9u w=8.1u
+.backanno
+.end
