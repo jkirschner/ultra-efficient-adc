@@ -1,0 +1,651 @@
+magic
+tech scmos
+timestamp 1355463476
+<< nwell >>
+rect -643 81 -585 135
+<< pwell >>
+rect -643 35 -585 81
+<< ntransistor >>
+rect -631 63 -595 66
+<< ptransistor >>
+rect -632 106 -596 109
+rect -632 95 -596 98
+<< ndiffusion >>
+rect -620 73 -606 74
+rect -620 69 -619 73
+rect -631 67 -619 69
+rect -607 69 -606 73
+rect -607 67 -595 69
+rect -631 66 -595 67
+rect -631 62 -595 63
+rect -631 60 -619 62
+rect -620 56 -619 60
+rect -607 60 -595 62
+rect -607 56 -606 60
+rect -620 55 -606 56
+<< pdiffusion >>
+rect -620 116 -606 117
+rect -620 112 -619 116
+rect -632 110 -619 112
+rect -607 112 -606 116
+rect -607 110 -596 112
+rect -632 109 -596 110
+rect -632 105 -596 106
+rect -632 99 -631 105
+rect -597 99 -596 105
+rect -632 98 -596 99
+rect -632 94 -596 95
+rect -632 92 -619 94
+rect -620 88 -619 92
+rect -607 92 -596 94
+rect -607 88 -606 92
+rect -620 87 -606 88
+<< ndcontact >>
+rect -619 67 -607 73
+rect -619 56 -607 62
+<< pdcontact >>
+rect -619 110 -607 116
+rect -631 99 -597 105
+rect -619 88 -607 94
+<< psubstratepcontact >>
+rect -617 41 -609 49
+<< nsubstratencontact >>
+rect -617 123 -609 131
+<< polysilicon >>
+rect -641 106 -632 109
+rect -596 106 -593 109
+rect -641 105 -635 106
+rect -641 98 -635 99
+rect -641 95 -632 98
+rect -596 95 -593 98
+rect -642 68 -634 69
+rect -642 62 -641 68
+rect -635 66 -634 68
+rect -635 63 -631 66
+rect -595 63 -592 66
+rect -635 62 -634 63
+rect -642 61 -634 62
+<< polycontact >>
+rect -641 99 -635 105
+rect -641 62 -635 68
+<< metal1 >>
+rect -1037 155 -496 178
+rect -15 174 42 182
+rect 46 174 192 182
+rect 196 174 341 182
+rect 345 174 490 182
+rect 494 174 640 182
+rect 644 174 790 182
+rect 794 174 940 182
+rect 944 174 1090 182
+rect 1094 174 1239 182
+rect 1243 174 1388 182
+rect -15 160 31 168
+rect 35 160 181 168
+rect 185 160 330 168
+rect 334 160 479 168
+rect 483 160 629 168
+rect 633 160 779 168
+rect 783 160 929 168
+rect 933 160 1079 168
+rect 1083 160 1228 168
+rect 1232 160 1377 168
+rect -617 131 -609 155
+rect -617 122 -609 123
+rect -530 135 -496 155
+rect -15 146 18 154
+rect 22 146 168 154
+rect 172 146 317 154
+rect 321 146 466 154
+rect 470 146 616 154
+rect 620 146 766 154
+rect 770 146 916 154
+rect 920 146 1066 154
+rect 1070 146 1215 154
+rect 1219 146 1364 154
+rect -530 112 3 135
+rect 104 112 153 135
+rect 254 112 303 135
+rect 402 112 451 135
+rect 552 112 601 135
+rect 703 112 752 135
+rect 853 112 902 135
+rect 1001 112 1050 135
+rect 1152 112 1201 135
+rect 1301 112 1350 135
+rect -597 99 -587 105
+rect -641 87 -635 99
+rect -657 78 -635 87
+rect -592 87 -587 99
+rect -641 68 -635 78
+rect -592 78 -570 87
+rect -592 73 -587 78
+rect -607 67 -587 73
+rect 101 61 111 84
+rect 249 61 261 84
+rect 398 61 410 84
+rect 547 61 559 84
+rect 697 61 709 84
+rect 847 61 859 84
+rect 997 61 1009 84
+rect 1147 61 1159 84
+rect 1296 61 1308 84
+rect 1445 61 1457 84
+rect -617 49 -609 56
+rect -617 29 -609 41
+rect 0 38 10 45
+rect 150 38 160 45
+rect 299 38 309 45
+rect 448 38 458 45
+rect 598 38 608 45
+rect 748 38 758 45
+rect 898 38 908 45
+rect 1048 38 1058 45
+rect 1197 38 1207 45
+rect 1346 38 1356 45
+rect -1041 2 4 29
+rect 103 1 154 29
+rect 253 2 303 29
+rect 403 2 453 29
+rect 552 2 602 29
+rect 702 2 752 29
+rect 851 2 901 29
+rect 1003 2 1053 29
+rect 1152 2 1202 29
+rect 1300 2 1350 29
+rect -1010 -72 -666 -64
+rect -657 -72 -489 -64
+rect -485 -72 -76 -64
+rect -72 -72 74 -64
+rect 78 -72 223 -64
+rect 227 -72 372 -64
+rect 376 -72 522 -64
+rect 526 -72 672 -64
+rect 676 -72 822 -64
+rect 826 -72 972 -64
+rect 976 -72 1121 -64
+rect 1125 -72 1270 -64
+rect 1274 -72 1445 -64
+rect -910 -109 -906 -72
+rect -804 -99 -800 -72
+rect -705 -108 -701 -72
+rect -496 -86 212 -78
+rect 216 -86 511 -78
+rect 515 -86 811 -78
+rect 815 -86 1110 -78
+rect 1114 -86 1434 -78
+rect -561 -100 -513 -92
+rect -509 -100 -100 -92
+rect -96 -100 50 -92
+rect 54 -100 199 -92
+rect 203 -100 348 -92
+rect 352 -100 498 -92
+rect 502 -100 648 -92
+rect 652 -100 798 -92
+rect 802 -100 948 -92
+rect 952 -100 1097 -92
+rect 1101 -100 1246 -92
+rect 1250 -100 1421 -92
+rect -1054 -134 -996 -111
+rect -838 -134 -790 -111
+rect -632 -134 -586 -111
+rect -427 -134 -116 -111
+rect -14 -134 35 -111
+rect 136 -134 185 -111
+rect 284 -134 333 -111
+rect 434 -134 483 -111
+rect 585 -134 634 -111
+rect 735 -134 784 -111
+rect 883 -134 932 -111
+rect 1034 -134 1083 -111
+rect 1183 -134 1230 -111
+rect 1333 -134 1407 -111
+rect -265 -147 -198 -134
+rect -1010 -194 -991 -176
+rect -840 -185 -832 -162
+rect -635 -185 -581 -162
+rect -430 -183 -409 -162
+rect -430 -185 -271 -183
+rect -17 -185 -7 -162
+rect 131 -185 143 -162
+rect 280 -185 292 -162
+rect 429 -185 441 -162
+rect 579 -185 591 -162
+rect 729 -185 741 -162
+rect 879 -185 891 -162
+rect 1029 -185 1041 -162
+rect 1178 -185 1190 -162
+rect 1329 -185 1339 -162
+rect 1502 -185 1514 -162
+rect -416 -187 -271 -185
+rect -840 -211 -820 -188
+rect -800 -211 -786 -188
+rect -118 -208 -114 -201
+rect 32 -208 36 -201
+rect 181 -208 191 -201
+rect 330 -208 334 -201
+rect 480 -208 490 -201
+rect 630 -208 634 -201
+rect 780 -208 790 -201
+rect 930 -208 934 -201
+rect 1079 -208 1089 -201
+rect 1228 -208 1234 -201
+rect 1403 -208 1413 -201
+rect -268 -217 -201 -208
+rect -1054 -244 -989 -217
+rect -838 -244 -790 -217
+rect -633 -244 -585 -217
+rect -427 -245 -115 -217
+rect -83 -255 -79 -243
+rect -57 -255 -53 -239
+rect -15 -245 36 -217
+rect 67 -255 71 -239
+rect 93 -255 97 -239
+rect 135 -244 185 -217
+rect 285 -244 335 -217
+rect 365 -255 369 -239
+rect 391 -255 395 -239
+rect 434 -244 484 -217
+rect 584 -244 634 -217
+rect 665 -255 669 -239
+rect 691 -255 695 -239
+rect 733 -244 783 -217
+rect 885 -244 935 -217
+rect 965 -255 969 -239
+rect 991 -255 995 -239
+rect 1034 -244 1084 -217
+rect 1182 -244 1230 -217
+rect 1263 -255 1267 -239
+rect 1289 -255 1293 -239
+rect 1381 -244 1407 -217
+rect -166 -263 1426 -255
+<< m2contact >>
+rect 42 174 46 182
+rect 192 174 196 182
+rect 341 174 345 182
+rect 490 174 494 182
+rect 640 174 644 182
+rect 790 174 794 182
+rect 940 174 944 182
+rect 1090 174 1094 182
+rect 1239 174 1243 182
+rect 1388 174 1392 182
+rect 31 160 35 168
+rect 181 160 185 168
+rect 330 160 334 168
+rect 479 160 483 168
+rect 629 160 633 168
+rect 779 160 783 168
+rect 929 160 933 168
+rect 1079 160 1083 168
+rect 1228 160 1232 168
+rect 1377 160 1381 168
+rect 18 146 22 154
+rect 168 146 172 154
+rect 317 146 321 154
+rect 466 146 470 154
+rect 616 146 620 154
+rect 766 146 770 154
+rect 916 146 920 154
+rect 1066 146 1070 154
+rect 1215 146 1219 154
+rect 1364 146 1368 154
+rect 31 138 35 142
+rect 181 138 185 142
+rect 330 138 334 142
+rect 479 138 483 142
+rect 629 138 633 142
+rect 779 138 783 142
+rect 929 138 933 142
+rect 1079 138 1083 142
+rect 1228 138 1232 142
+rect 1377 138 1381 142
+rect -619 116 -607 122
+rect -666 78 -657 87
+rect -619 82 -607 88
+rect -570 78 -561 87
+rect 111 61 118 84
+rect 261 61 268 84
+rect 410 61 417 84
+rect 559 61 566 84
+rect 709 61 716 84
+rect 859 61 866 84
+rect 1009 61 1016 84
+rect 1159 61 1166 84
+rect 1308 61 1315 84
+rect 1457 61 1464 84
+rect -7 38 0 45
+rect 143 38 150 45
+rect 292 38 299 45
+rect 441 38 448 45
+rect 591 38 598 45
+rect 741 38 748 45
+rect 891 38 898 45
+rect 1041 38 1048 45
+rect 1190 38 1197 45
+rect 1339 38 1346 45
+rect -1014 -72 -1010 -63
+rect -666 -72 -657 -64
+rect -489 -72 -485 -64
+rect -76 -72 -72 -64
+rect 74 -72 78 -64
+rect 223 -72 227 -64
+rect 372 -72 376 -64
+rect 522 -72 526 -64
+rect 672 -72 676 -64
+rect 822 -72 826 -64
+rect 972 -72 976 -64
+rect 1121 -72 1125 -64
+rect 1270 -72 1274 -64
+rect 1445 -72 1449 -64
+rect -804 -106 -800 -99
+rect -500 -86 -496 -78
+rect 212 -86 216 -78
+rect 511 -86 515 -78
+rect 811 -86 815 -78
+rect 1110 -86 1114 -78
+rect 1434 -86 1438 -78
+rect -570 -100 -561 -92
+rect -513 -100 -509 -92
+rect -100 -100 -96 -92
+rect 50 -100 54 -92
+rect 199 -100 203 -92
+rect 348 -100 352 -92
+rect 498 -100 502 -92
+rect 648 -100 652 -92
+rect 798 -100 802 -92
+rect 948 -100 952 -92
+rect 1097 -100 1101 -92
+rect 1246 -100 1250 -92
+rect 1421 -100 1425 -92
+rect 212 -108 216 -104
+rect 511 -108 515 -104
+rect 811 -108 815 -104
+rect 1110 -108 1114 -104
+rect 1434 -108 1438 -104
+rect -1014 -194 -1010 -176
+rect -832 -185 -826 -162
+rect -7 -185 0 -162
+rect 143 -185 150 -162
+rect 292 -185 299 -162
+rect 441 -185 448 -162
+rect 591 -185 598 -162
+rect 741 -185 748 -162
+rect 891 -185 898 -162
+rect 1041 -185 1048 -162
+rect 1190 -185 1197 -162
+rect 1339 -185 1346 -162
+rect 1514 -185 1521 -162
+rect -820 -211 -814 -188
+rect -804 -211 -800 -188
+rect -125 -208 -118 -201
+rect 25 -208 32 -201
+rect 174 -208 181 -201
+rect 323 -208 330 -201
+rect 473 -208 480 -201
+rect 623 -208 630 -201
+rect 773 -208 780 -201
+rect 923 -208 930 -201
+rect 1072 -208 1079 -201
+rect 1221 -208 1228 -201
+rect 1396 -208 1403 -201
+<< metal2 >>
+rect 18 138 22 146
+rect 31 142 35 160
+rect 42 138 46 174
+rect -619 88 -607 116
+rect -666 -64 -657 78
+rect -1014 -176 -1010 -72
+rect -832 -82 -690 -76
+rect -832 -162 -826 -82
+rect -820 -93 -714 -87
+rect -820 -188 -814 -93
+rect -804 -188 -800 -106
+rect -718 -109 -714 -93
+rect -694 -109 -690 -82
+rect -570 -92 -561 78
+rect 111 84 118 190
+rect 168 138 172 146
+rect 181 142 185 160
+rect 192 138 196 174
+rect 261 84 268 190
+rect 317 138 321 146
+rect 330 142 334 160
+rect 341 138 345 174
+rect 410 84 417 190
+rect 466 138 470 146
+rect 479 142 483 160
+rect 490 138 494 174
+rect 559 84 566 190
+rect 616 138 620 146
+rect 629 142 633 160
+rect 640 138 644 174
+rect 709 84 716 190
+rect 766 138 770 146
+rect 779 142 783 160
+rect 790 138 794 174
+rect 859 84 866 190
+rect 916 138 920 146
+rect 929 142 933 160
+rect 940 138 944 174
+rect 1009 84 1016 190
+rect 1066 138 1070 146
+rect 1079 142 1083 160
+rect 1090 138 1094 174
+rect 1159 84 1166 190
+rect 1215 138 1219 146
+rect 1228 142 1232 160
+rect 1239 138 1243 174
+rect 1308 84 1315 190
+rect 1364 138 1368 146
+rect 1377 142 1381 160
+rect 1388 138 1392 174
+rect 1457 84 1464 190
+rect -513 -108 -509 -100
+rect -500 -108 -496 -86
+rect -489 -108 -485 -72
+rect -100 -108 -96 -100
+rect -76 -108 -72 -72
+rect -7 -162 0 38
+rect 50 -108 54 -100
+rect 74 -108 78 -72
+rect -203 -184 -175 -178
+rect -183 -201 -175 -184
+rect 143 -162 150 38
+rect 199 -108 203 -100
+rect 212 -104 216 -86
+rect 223 -108 227 -72
+rect 292 -162 299 38
+rect 348 -108 352 -100
+rect 372 -108 376 -72
+rect 441 -162 448 38
+rect 498 -108 502 -100
+rect 511 -104 515 -86
+rect 522 -108 526 -72
+rect 591 -162 598 38
+rect 648 -108 652 -100
+rect 672 -108 676 -72
+rect 741 -162 748 38
+rect 798 -108 802 -100
+rect 811 -104 815 -86
+rect 822 -108 826 -72
+rect 891 -162 898 38
+rect 948 -108 952 -100
+rect 972 -108 976 -72
+rect 1041 -162 1048 38
+rect 1097 -108 1101 -100
+rect 1110 -104 1114 -86
+rect 1121 -108 1125 -72
+rect 1190 -162 1197 38
+rect 1246 -108 1250 -100
+rect 1270 -108 1274 -72
+rect 1339 -162 1346 38
+rect 1421 -108 1425 -100
+rect 1434 -104 1438 -86
+rect 1445 -108 1449 -72
+rect 1514 -162 1521 -101
+rect -183 -208 -125 -201
+rect 25 -248 32 -208
+rect 174 -248 181 -208
+rect 323 -248 330 -208
+rect 473 -248 480 -208
+rect 623 -248 630 -208
+rect 773 -248 780 -208
+rect 923 -248 930 -208
+rect 1072 -248 1079 -208
+rect 1221 -248 1228 -208
+rect 1396 -248 1403 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_0
+timestamp 1354992098
+transform 1 0 -211 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_1
+timestamp 1354992098
+transform 1 0 -61 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_2
+timestamp 1354992098
+transform 1 0 88 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_3
+timestamp 1354992098
+transform 1 0 237 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_4
+timestamp 1354992098
+transform 1 0 387 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_5
+timestamp 1354992098
+transform 1 0 537 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_6
+timestamp 1354992098
+transform 1 0 687 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_7
+timestamp 1354992098
+transform 1 0 837 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_8
+timestamp 1354992098
+transform 1 0 986 0 1 346
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_9
+timestamp 1354992098
+transform 1 0 1135 0 1 346
+box 213 -344 316 -208
+use ToggleFlipFlop_Low_Layout  ToggleFlipFlop_Low_Layout_0
+timestamp 1355161173
+transform 1 0 -1152 0 1 100
+box 155 -344 316 -208
+use ToggleFlipFlop_Low_Layout  ToggleFlipFlop_Low_Layout_1
+timestamp 1355161173
+transform 1 0 -947 0 1 100
+box 155 -344 316 -208
+use ToggleFlipFlop_Low_Layout  ToggleFlipFlop_Low_Layout_2
+timestamp 1355161173
+transform 1 0 -742 0 1 100
+box 155 -344 316 -208
+use SPDT  SPDT_0
+timestamp 1355342917
+transform 1 0 -306 0 1 -212
+box 35 1 108 68
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_5
+timestamp 1354990652
+transform 1 0 -438 0 1 100
+box 322 -344 425 -207
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_4
+timestamp 1354990652
+transform 1 0 -288 0 1 100
+box 322 -344 425 -207
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_12
+timestamp 1354992098
+transform 1 0 -30 0 1 100
+box 213 -344 316 -208
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_3
+timestamp 1354990652
+transform 1 0 10 0 1 100
+box 322 -344 425 -207
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_14
+timestamp 1354992098
+transform 1 0 269 0 1 100
+box 213 -344 316 -208
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_2
+timestamp 1354990652
+transform 1 0 310 0 1 100
+box 322 -344 425 -207
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_16
+timestamp 1354992098
+transform 1 0 569 0 1 100
+box 213 -344 316 -208
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_1
+timestamp 1354990652
+transform 1 0 610 0 1 100
+box 322 -344 425 -207
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_18
+timestamp 1354992098
+transform 1 0 868 0 1 100
+box 213 -344 316 -208
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_0
+timestamp 1354990652
+transform 1 0 908 0 1 100
+box 322 -344 425 -207
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_20
+timestamp 1354992098
+transform 1 0 1192 0 1 100
+box 213 -344 316 -208
+<< labels >>
+rlabel space 168 137 172 138 1 ClkB
+rlabel space 192 137 196 138 1 Clk
+rlabel space 181 137 185 138 1 RstB
+rlabel space 317 137 321 138 1 ClkB
+rlabel space 341 137 345 138 1 Clk
+rlabel space 330 137 334 138 1 RstB
+rlabel space 466 137 470 138 1 ClkB
+rlabel space 490 137 494 138 1 Clk
+rlabel space 479 137 483 138 1 RstB
+rlabel space 616 137 620 138 1 ClkB
+rlabel space 640 137 644 138 1 Clk
+rlabel space 629 137 633 138 1 RstB
+rlabel space 766 137 770 138 1 ClkB
+rlabel space 790 137 794 138 1 Clk
+rlabel space 779 137 783 138 1 RstB
+rlabel space 916 137 920 138 1 ClkB
+rlabel space 940 137 944 138 1 Clk
+rlabel space 929 137 933 138 1 RstB
+rlabel space 1066 137 1070 138 1 ClkB
+rlabel space 1090 137 1094 138 1 Clk
+rlabel space 1079 137 1083 138 1 RstB
+rlabel space 1228 137 1232 138 1 RstB
+rlabel space 1239 137 1243 138 1 Clk
+rlabel space 1215 137 1219 138 1 ClkB
+rlabel space 1377 137 1381 138 1 RstB
+rlabel space 1388 137 1392 138 1 Clk
+rlabel space 1364 137 1368 138 1 ClkB
+rlabel space 1097 -109 1101 -108 1 ClkB
+rlabel space 1121 -109 1125 -108 1 Clk
+rlabel space 1110 -109 1114 -108 1 RstB
+rlabel space 972 -109 976 -108 1 Clk
+rlabel space 948 -109 952 -108 1 ClkB
+rlabel space 811 -109 815 -108 1 RstB
+rlabel space 822 -109 826 -108 1 Clk
+rlabel space 798 -109 802 -108 1 ClkB
+rlabel space 672 -109 676 -108 1 Clk
+rlabel space 648 -109 652 -108 1 ClkB
+rlabel space 511 -109 515 -108 1 RstB
+rlabel space 522 -109 526 -108 1 Clk
+rlabel space 498 -109 502 -108 1 ClkB
+rlabel space 361 -109 365 -108 1 RstB
+rlabel space 372 -109 376 -108 1 Clk
+rlabel space 348 -109 352 -108 1 ClkB
+rlabel space 212 -109 216 -108 1 RstB
+rlabel space 223 -109 227 -108 1 Clk
+rlabel space 199 -109 203 -108 1 ClkB
+rlabel space 63 -109 67 -108 1 RstB
+rlabel space 74 -109 78 -108 1 Clk
+rlabel space 50 -109 54 -108 1 ClkB
+rlabel space 1421 -109 1425 -108 1 ClkB
+rlabel space 1445 -109 1449 -108 1 Clk
+rlabel space 1434 -109 1438 -108 1 RstB
+<< end >>
