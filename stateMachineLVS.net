@@ -1,8 +1,24 @@
 * Z:\home\sbecht\ultra-efficient-adc\stateMachineLVS.asc
-XX1 CO CLK N002 S Vdd 0 spdtlvs
-XX2 N002 N003 Vdd 0 inverter
-XX3 N003 N001 Vdd 0 inverter
-XX4 X N001 N003 Q Qb RST Vdd 0 highresetflipflop
+XX1 CO CLK N014 S Vdd 0 spdtlvs
+XX2 N014 N015 Vdd 0 inverter
+XX3 N015 N010 Vdd 0 inverter
+XX4 N001 N010 N015 N005 NC_01 RST Vdd 0 resetflipflop_high_lds
+XX5 N005 N010 N015 N006 NC_02 RSTb Vdd 0 resetflipflop_low_lds
+XX6 N006 N010 N015 Q N012 RSTb Vdd 0 resetflipflop_low_lds
+XX7 N003 N007 N012 Vdd 0 nandlvs
+XX8 N007 N010 N015 N008 Qb2 RSTb Vdd 0 resetflipflop_low_lds
+XX9 N008 N010 N015 N009 NC_03 RSTb Vdd 0 resetflipflop_low_lds
+XX10 N009 N010 N015 N002 N013 RSTb Vdd 0 resetflipflop_low_lds
+XX11 N002 N003 GO? Vdd 0 nandlvs
+XX12 GO? N004 N013 Vdd 0 norlvs
+XX13 N004 N010 N015 N001 N011 RSTb Vdd 0 resetflipflop_low_lds
+XX15 N011 N017 Vdd 0 inverter
+XX14 N017 N018 Vdd 0 inverter
+XX16 N018 N019 Vdd 0 inverter
+XX17 N019 N020 Vdd 0 inverter
+XX18 N020 NC_04 Vdd 0 inverter
+XX19 N016 NC_05 NC_06 Vdd 0 nandlvs
+XX20 N016 NC_07 NC_08 Vdd 0 nandlvs
 
 * block symbol definitions
 .subckt spdtlvs IN1 IN2 OUT S V+ V-
@@ -19,35 +35,89 @@ M1 OUT IN neg neg nfet l=.9u w=3u
 M2 OUT IN pos pos pfet l=.9u w=6u
 .ends inverter
 
-.subckt highresetflipflop D CLK CLKb Q Qb RESET pos neg
-M1 N005 CLK N007 neg nfet l=nmosL w=nmosW
-M2 N007 D neg neg nfet l=nmosL w=nmosW
-M3 N005 CLKb N003 pos pfet l=pmosL w=pmosW
-M4 N003 D pos pos pfet l=pmosL w=pmosW
-M5 N002 N005 neg neg nfet l=nmosL w=nmosW
-M6 N002 N005 pos pos pfet l=pmosL w=pmosW
-M7 N001 CLKb N008 neg nfet l=nmosL w=nmosW
-M8 N008 N002 neg neg nfet l=nmosL w=nmosW
-M9 N001 CLK N004 pos pfet l=pmosL w=pmosW
-M10 N004 N002 pos pos pfet l=pmosL w=pmosW
-M11 pos N002 N010 pos pfet l=pmosL w=pmosW
-M12 N010 CLK N005 pos pfet l=pmosL w=pmosW
-M13 N012 CLKb N005 neg nfet l=nmosL w=nmosW
-M14 neg N002 N012 neg nfet l=nmosL w=nmosW
-M15 N006 N001 neg neg nfet l=nmosL w=nmosW
-M16 N006 N001 pos pos pfet l=pmosL w=pmosW
-M17 pos N006 N009 pos pfet l=pmosL w=pmosW
-M18 N009 CLKb N001 pos pfet l=pmosL w=pmosW
-M19 N011 CLK N001 neg nfet l=nmosL w=nmosW
-M20 neg N006 N011 neg nfet l=nmosL w=nmosW
-M21 Qb N006 neg neg nfet l=nmosL w=nmosW
-M22 Qb N006 pos pos pfet l=pmosL w=pmosW
-M23 Q N001 neg neg nfet l=nmosL w=nmosW
-M24 Q N001 pos pos pfet l=pmosL w=pmosW
-M25 N005 RESET neg neg nfet l=nmosL w={6*nmosW}
-M26 N001 RESET neg neg nfet l=nmosL w={6*nmosW}
-.include engr3426.sub
-.ends highresetflipflop
+.subckt resetflipflop_high_lds D CLK CLKb Q Qb RESET pos neg
+M1 N007 D neg neg nfet l=0.9u w=3u
+M2 N003 D pos pos pfet l=0.9u w=6u
+M3 N001 RESET neg neg nfet l=0.9u w=4.5u
+M4 N005 CLKb N003 pos pfet l=0.9u w=6u
+M5 N002 N005 pos pos pfet l=0.9u w=6u
+M6 N001 CLK N004 pos pfet l=0.9u w=6u
+M7 N004 N002 pos pos pfet l=0.9u w=6u
+M8 Q N001 pos pos pfet l=0.9u w=6u
+M9 N006 N001 pos pos pfet l=0.9u w=6u
+M10 pos N002 N010 pos pfet l=0.9u w=6u
+M11 N010 CLK N005 pos pfet l=0.9u w=6u
+M12 N009 CLKb N001 pos pfet l=0.9u w=6u
+M13 pos N006 N009 pos pfet l=0.9u w=6u
+M14 Qb N006 pos pos pfet l=0.9u w=6u
+M15 N005 CLK N007 neg nfet l=0.9u w=3u
+M16 N002 N005 neg neg nfet l=0.9u w=3u
+M17 N001 CLKb N008 neg nfet l=0.9u w=3u
+M18 N008 N002 neg neg nfet l=0.9u w=3u
+M19 N006 N001 neg neg nfet l=0.9u w=3u
+M20 Qb N006 neg neg nfet l=0.9u w=3u
+M21 N001 CLK N011 neg nfet l=0.9u w=3u
+M22 N011 N006 neg neg nfet l=0.9u w=3u
+M23 N005 CLKb N012 neg nfet l=0.9u w=3u
+M24 N012 N002 neg neg nfet l=0.9u w=3u
+M25 N001 RESET neg neg nfet l=0.9u w=4.5u
+M26 N001 RESET neg neg nfet l=0.9u w=4.5u
+M27 N001 RESET neg neg nfet l=0.9u w=4.5u
+M28 N005 RESET neg neg nfet l=0.9u w=4.5u
+M29 N005 RESET neg neg nfet l=0.9u w=4.5u
+M30 N005 RESET neg neg nfet l=0.9u w=4.5u
+M31 N005 RESET neg neg nfet l=0.9u w=4.5u
+M32 Q N001 neg neg nfet l=0.9u w=3u
+.ends resetflipflop_high_lds
+
+.subckt resetflipflop_low_lds D CLK CLKb Q Qb RESETb pos neg
+M1 N005 CLK N007 neg nfet l=0.9u w=3u
+M4 N003 D pos pos pfet l=0.9u w=6u
+M28 N001 RESETb pos pos pfet l=0.9u w=7.8u
+M29 N001 RESETb pos pos pfet l=0.9u w=12.6u
+M3 N005 CLKb N003 pos pfet l=0.9u w=6u
+M6 N002 N005 pos pos pfet l=0.9u w=6u
+M9 N001 CLK N004 pos pfet l=0.9u w=6u
+M10 N004 N002 pos pos pfet l=0.9u w=6u
+M11 N006 N001 pos pos pfet l=0.9u w=6u
+M12 Q N001 pos pos pfet l=0.9u w=6u
+M16 Qb N006 pos pos pfet l=0.9u w=6u
+M17 N001 CLKb N009 pos pfet l=0.9u w=6u
+M18 N009 N006 pos pos pfet l=0.9u w=6u
+M22 N005 CLK N010 pos pfet l=0.9u w=6u
+M24 N010 N002 pos pos pfet l=0.9u w=6u
+M2 N007 D neg neg nfet l=0.9u w=3u
+M5 N002 N005 neg neg nfet l=0.9u w=3u
+M7 N001 CLKb N008 neg nfet l=0.9u w=3u
+M8 N008 N002 neg neg nfet l=0.9u w=3u
+M13 N006 N001 neg neg nfet l=0.9u w=3u
+M14 Qb N006 neg neg nfet l=0.9u w=3u
+M15 N001 CLK N011 neg nfet l=0.9u w=3u
+M19 N011 N006 neg neg nfet l=0.9u w=3u
+M20 N012 N002 neg neg nfet l=0.9u w=3u
+M21 N005 CLKb N012 neg nfet l=0.9u w=3u
+M25 N001 RESETb pos pos pfet l=0.9u w=7.8u
+M26 N001 RESETb pos pos pfet l=0.9u w=7.8u
+M27 N005 RESETb pos pos pfet l=0.9u w=7.8u
+M30 N005 RESETb pos pos pfet l=0.9u w=12.6u
+M31 N005 RESETb pos pos pfet l=0.9u w=7.8u
+M32 N005 RESETb pos pos pfet l=0.9u w=7.8u
+M23 Q N001 neg neg nfet l=0.9u w=3u
+.ends resetflipflop_low_lds
+
+.subckt nandlvs A OUT B pos neg
+M1 pos A OUT pos pfet l=.9u w=6u
+M2 OUT B pos pos pfet l=.9u w=6u
+M3 N001 A neg neg nfet l=.9u w=3u
+M4 OUT B N001 neg nfet l=.9u w=3u
+.ends nandlvs
+
+.subckt norlvs A Out B Vdd neg
+M1 Out B neg neg nfet l=.9u w=3u
+M2 neg A Out neg nfet l=.9u w=3u
+M3 Vdd B N001 Vdd pfet l=.9u w=6u
+M4 N001 A Out Vdd pfet l=.9u w=6u
+.ends norlvs
 
 .backanno
 .end

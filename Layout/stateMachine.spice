@@ -1,32 +1,208 @@
 * SPICE3 file created from stateMachine.ext - technology: scmos
 
-.subckt NOT Vdd Gnd In Out
-M1000 Out In Vdd Vdd pfet w=6u l=0.9u
+.subckt NOT In pos Vneg Out
+M1000 Out In pos pos pfet w=6u l=0.9u
 + ad=6.12p pd=15u as=8.1p ps=15.6u 
-M1001 Out In Gnd Gnd nfet w=3u l=0.9u
+M1001 Out In Vneg Vneg nfet w=3u l=0.9u
 + ad=3.42p pd=9u as=3.42p ps=9u 
+.ends
+
+.subckt NAND neg A B pos Out
+M1000 Out A pos pos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=14.04p ps=30u 
+M1001 pos B Out pos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 a_3_13# A neg neg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=3.42p ps=9u 
+M1003 Out B a_3_13# neg nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=0p ps=0u 
+.ends
+
+.subckt ResetFlipFlop_Low_Layout ClkB Vpos D Qb Vneg RstB Q Clk
+M1000 a_227_n262# RstB Vpos Vpos pfet w=12.6u l=0.9u
++ ad=44.28p pd=64.2u as=135.54p ps=211.2u 
+M1001 Vpos RstB a_227_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 a_227_n262# RstB Vpos Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1003 Vpos RstB a_227_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1004 Vpos a_227_n262# a_225_n326# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.66p ps=15u 
+M1005 a_266_n262# RstB Vpos Vpos pfet w=12.6u l=0.9u
++ ad=44.28p pd=64.2u as=0p ps=0u 
+M1006 Vpos RstB a_266_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1007 a_266_n262# RstB Vpos Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1008 Vpos RstB a_266_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1009 Vpos a_266_n262# a_258_n330# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.12p ps=15u 
+M1010 a_229_n289# D Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1011 a_227_n262# ClkB a_229_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1012 a_245_n289# Clk a_227_n262# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1013 Vpos a_225_n326# a_245_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1014 a_261_n289# a_225_n326# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1015 a_266_n262# Clk a_261_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1016 a_277_n289# ClkB a_266_n262# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1017 Vpos a_258_n330# a_277_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1018 Qb a_258_n330# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.29p pd=15.6u as=0p ps=0u 
+M1019 Q a_266_n262# Vpos Vpos pfet w=6u l=0.9u
++ ad=8.64p pd=15u as=0p ps=0u 
+M1020 a_229_n320# a_225_n326# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=30.96p ps=58.8u 
+M1021 a_227_n262# ClkB a_229_n320# Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1022 a_245_n320# Clk a_227_n262# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1023 Vneg D a_245_n320# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1024 a_261_n320# a_258_n330# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1025 a_266_n262# Clk a_261_n320# Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1026 a_277_n320# ClkB a_266_n262# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1027 Vneg a_225_n326# a_277_n320# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1028 Qb a_258_n330# Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1029 a_225_n326# a_227_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1030 a_258_n330# a_266_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1031 Q a_266_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.23p pd=9u as=0p ps=0u 
+.ends
+
+.subckt NOR neg B A pos Out
+M1000 a_5_15# B pos pos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=6.12p ps=15u 
+M1001 Out A a_5_15# pos pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=0p ps=0u 
+M1002 Out B neg neg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=7.2p ps=19.2u 
+M1003 neg A Out neg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+.ends
+
+.subckt ResetFlipFlop_High_Layout w_322_n344# ClkB Vpos D Qb Vneg Q Clk RST
+M1000 Vpos a_340_n333# a_330_n301# Vpos pfet w=6u l=0.9u
++ ad=56.16p pd=94.8u as=6.66p ps=15u 
+M1001 Vpos a_376_n333# a_367_n305# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.12p ps=15u 
+M1002 a_338_n264# D Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1003 a_340_n333# ClkB a_338_n264# Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1004 a_354_n264# Clk a_340_n333# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1005 Vpos a_330_n301# a_354_n264# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1006 a_370_n264# a_330_n301# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1007 a_376_n333# Clk a_370_n264# Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1008 a_386_n264# ClkB a_376_n333# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1009 Vpos a_367_n305# a_386_n264# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1010 Qb a_367_n305# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.29p pd=15.6u as=0p ps=0u 
+M1011 Q a_376_n333# Vpos Vpos pfet w=6u l=0.9u
++ ad=8.64p pd=15u as=0p ps=0u 
+M1012 a_338_n295# a_330_n301# Vneg w_322_n344# nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=66.96p ps=119.4u 
+M1013 a_340_n333# ClkB a_338_n295# w_322_n344# nfet w=3u l=0.9u
++ ad=21.6p pd=34.8u as=0p ps=0u 
+M1014 a_354_n295# Clk a_340_n333# w_322_n344# nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1015 Vneg D a_354_n295# w_322_n344# nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1016 a_370_n295# a_367_n305# Vneg w_322_n344# nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1017 a_376_n333# Clk a_370_n295# w_322_n344# nfet w=3u l=0.9u
++ ad=21.6p pd=34.8u as=0p ps=0u 
+M1018 a_386_n295# ClkB a_376_n333# w_322_n344# nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1019 Vneg a_330_n301# a_386_n295# w_322_n344# nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1020 Qb a_367_n305# Vneg w_322_n344# nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1021 a_330_n301# a_340_n333# Vneg w_322_n344# nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1022 a_367_n305# a_376_n333# Vneg w_322_n344# nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1023 Q a_376_n333# Vneg w_322_n344# nfet w=3u l=0.9u
++ ad=4.23p pd=9u as=0p ps=0u 
+M1024 a_340_n333# RST Vneg w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1025 Vneg RST a_340_n333# w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1026 a_340_n333# RST Vneg w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1027 Vneg RST a_340_n333# w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1028 a_376_n333# RST Vneg w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1029 Vneg RST a_376_n333# w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1030 a_376_n333# RST Vneg w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1031 Vneg RST a_376_n333# w_322_n344# nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
 .ends
 
 .subckt SPDT Vdd Gnd Out
 M1000 a_65_11# S Vdd Vdd pfet w=6u l=0.9u
 + ad=6.12p pd=15u as=6.12p ps=15u 
-M1001 Out S Iin2 Vdd pfet w=6u l=0.9u
+M1001 Out S In2 Vdd pfet w=6u l=0.9u
 + ad=10.8p pd=15.6u as=6.12p ps=15u 
-M1002 Iin1 a_65_11# Out Vdd pfet w=6u l=0.9u
+M1002 In1 a_65_11# Out Vdd pfet w=6u l=0.9u
 + ad=6.12p pd=15u as=0p ps=0u 
 M1003 a_65_11# S Gnd Gnd nfet w=3u l=0.9u
 + ad=3.42p pd=9u as=3.42p ps=9u 
-M1004 Out S Iin1 Gnd nfet w=3u l=0.9u
+M1004 Out S In1 Gnd nfet w=3u l=0.9u
 + ad=5.4p pd=9.6u as=3.42p ps=9u 
-M1005 Iin2 a_65_11# Out Gnd nfet w=3u l=0.9u
+M1005 In2 a_65_11# Out Gnd nfet w=3u l=0.9u
 + ad=3.42p pd=9u as=0p ps=0u 
 .ends
 
 
 * Top level circuit stateMachine
 
-XNOT_1 NOT_0/Vdd NOT_0/Gnd NOT_1/In NOT_1/Out NOT
-XNOT_0 NOT_0/Vdd NOT_0/Gnd NOT_0/In NOT_1/In NOT
-XSPDT_0 NOT_0/Vdd NOT_0/Gnd NOT_0/In SPDT
+XNOT_5 NOT_5/In pos Vneg In NOT
+XNAND_3 Vneg NAND_3/A NAND_3/B pos NAND_3/Out NAND
+XNOT_4 NOT_4/In pos Vneg NOT_5/In NOT
+XNOT_3 NOT_3/In pos Vneg NOT_4/In NOT
+XNOT_2 NOT_2/In pos Vneg NOT_3/In NOT
+XNAND_2 Vneg NAND_2/A NAND_3/A pos NAND_2/Out NAND
+XResetFlipFlop_Low_Layout_5 Clkb pos NOR_0/Out NOT_2/In Vneg ResetFlipFlop_Low_Layout_0/RstB ResetFlipFlop_Low_Layout_5/Q Clk ResetFlipFlop_Low_Layout
+XNOR_0 Vneg NOR_0/B GO? pos NOR_0/Out NOR
+XNAND_1 Vneg NAND_1/A GO? pos NAND_0/A NAND
+XResetFlipFlop_Low_Layout_4 Clkb pos ResetFlipFlop_Low_Layout_3/Q NOR_0/B Vneg ResetFlipFlop_Low_Layout_0/RstB NAND_1/A Clk ResetFlipFlop_Low_Layout
+XResetFlipFlop_Low_Layout_3 Clkb pos ResetFlipFlop_Low_Layout_2/Q ResetFlipFlop_Low_Layout_3/Qb Vneg ResetFlipFlop_Low_Layout_0/RstB ResetFlipFlop_Low_Layout_3/Q Clk ResetFlipFlop_Low_Layout
+XResetFlipFlop_Low_Layout_2 Clkb pos NAND_0/Out ResetFlipFlop_Low_Layout_2/Qb Vneg ResetFlipFlop_Low_Layout_0/RstB ResetFlipFlop_Low_Layout_2/Q Clk ResetFlipFlop_Low_Layout
+XNAND_0 Vneg NAND_0/A NAND_0/B pos NAND_0/Out NAND
+XResetFlipFlop_Low_Layout_1 Clkb pos ResetFlipFlop_Low_Layout_0/Q NAND_0/B Vneg ResetFlipFlop_Low_Layout_0/RstB ResetFlipFlop_Low_Layout_1/Q Clk ResetFlipFlop_Low_Layout
+XResetFlipFlop_Low_Layout_0 Clkb pos ResetFlipFlop_Low_Layout_0/D ResetFlipFlop_Low_Layout_0/Qb Vneg ResetFlipFlop_Low_Layout_0/RstB ResetFlipFlop_Low_Layout_0/Q Clk ResetFlipFlop_Low_Layout
+XResetFlipFlop_High_Layout_0 Vneg Clkb pos ResetFlipFlop_Low_Layout_5/Q ResetFlipFlop_High_Layout_0/Qb Vneg ResetFlipFlop_Low_Layout_0/D Clk ResetFlipFlop_High_Layout_0/RST ResetFlipFlop_High_Layout
+XNOT_1 Clkb pos Vneg Clk NOT
+XNOT_0 NOT_0/In pos Vneg Clkb NOT
+XSPDT_0 pos Vneg NOT_0/In SPDT
+M1000 Vneg In Out Vneg nfet w=3u l=0.9u
++ ad=300.96p pd=599.4u as=3.42p ps=9u 
+M1001 pos In Out pos pfet w=6u l=0.9u
++ ad=994.5p pd=1621.2u as=6.12p ps=15u 
 .end
 

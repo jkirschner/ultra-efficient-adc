@@ -1,30 +1,365 @@
 magic
 tech scmos
-timestamp 1355475557
+timestamp 1355489611
+<< nwell >>
+rect 154 -4 169 64
+rect 268 -44 283 22
+rect 386 -32 397 22
+rect 383 -55 399 -32
+rect 500 -40 585 19
+rect 500 -55 523 -40
+rect 577 -41 585 -40
+rect 386 -69 397 -55
+rect 688 -69 697 22
+rect 800 20 808 22
+rect 800 -33 806 20
+rect 909 -15 924 19
+rect 908 -32 990 -15
+rect 797 -55 808 -33
+rect 908 -42 989 -32
+rect 905 -46 989 -42
+rect 908 -47 989 -46
+rect 970 -49 989 -47
+rect 1037 -46 1043 19
+rect 1145 -4 1191 20
+rect 1037 -50 1045 -46
+rect 800 -69 806 -55
+rect 1175 -227 1191 -4
+rect 1101 -252 1117 -249
+rect 89 -340 746 -338
+rect 1086 -339 1118 -252
+rect 1161 -339 1193 -291
+rect 1086 -340 1196 -339
+rect 89 -365 1196 -340
+<< pwell >>
+rect 139 -44 154 0
+rect 139 -113 165 -44
+rect 268 -113 283 -69
+rect 386 -113 397 -69
+rect 500 -71 523 -56
+rect 571 -71 585 -69
+rect 500 -113 585 -71
+rect 688 -113 697 -69
+rect 800 -113 806 -69
+rect 909 -113 922 -65
+rect 970 -79 989 -50
+rect 1036 -79 1043 -53
+rect 1025 -113 1043 -79
+rect 134 -126 1145 -113
+rect 132 -147 1145 -126
+rect 134 -204 1145 -147
+rect 1010 -292 1044 -204
+rect 1054 -211 1070 -204
+rect 1010 -340 1043 -292
+rect 1129 -339 1161 -291
+<< ntransistor >>
+rect 1145 -316 1155 -313
+<< ptransistor >>
+rect 1167 -316 1187 -313
+<< ndiffusion >>
+rect 1149 -312 1155 -310
+rect 1145 -313 1155 -312
+rect 1145 -317 1155 -316
+rect 1145 -319 1151 -317
+<< pdiffusion >>
+rect 1167 -311 1176 -310
+rect 1186 -311 1187 -310
+rect 1167 -313 1187 -311
+rect 1167 -317 1187 -316
+rect 1167 -319 1168 -317
+rect 1172 -319 1187 -317
+<< ndcontact >>
+rect 1145 -312 1149 -308
+rect 1151 -321 1155 -317
+<< pdcontact >>
+rect 1176 -311 1186 -307
+rect 1168 -321 1172 -317
 << psubstratepcontact >>
-rect 24 3 28 7
+rect 1134 -326 1138 -322
 << nsubstratencontact >>
-rect 41 62 45 66
+rect 1185 -331 1189 -327
+<< polysilicon >>
+rect 1143 -316 1145 -313
+rect 1155 -314 1158 -313
+rect 1162 -314 1167 -313
+rect 1155 -316 1167 -314
+rect 1187 -316 1189 -313
+<< polycontact >>
+rect 1158 -314 1162 -310
 << metal1 >>
 rect 73 55 81 62
-rect 11 0 76 2
+rect 154 46 165 64
+rect 519 52 977 56
+rect 11 0 79 2
+rect 141 -87 154 0
+rect 161 -4 165 46
+rect 172 26 176 43
+rect 181 26 185 36
+rect 205 26 209 29
+rect 299 26 303 36
+rect 312 26 316 45
+rect 413 26 417 36
+rect 426 22 430 45
+rect 519 26 523 52
+rect 601 26 605 36
+rect 614 22 618 45
+rect 713 26 717 36
+rect 726 22 730 45
+rect 822 26 826 36
+rect 835 22 839 45
+rect 268 -4 283 19
+rect 386 -4 397 19
+rect 500 -4 585 19
+rect 688 -4 697 19
+rect 800 -4 806 19
+rect 909 -4 924 19
+rect 265 -55 285 -32
+rect 383 -55 399 -32
+rect 512 -40 571 -4
+rect 913 -32 924 -4
+rect 973 -3 977 52
+rect 1059 26 1063 36
+rect 1072 22 1076 45
+rect 970 -32 990 -15
+rect 1037 -25 1043 19
+rect 1145 -4 1191 20
+rect 1037 -29 1042 -25
+rect 1150 -31 1156 -15
+rect 554 -57 587 -53
+rect 685 -55 699 -32
+rect 797 -55 808 -33
+rect 905 -46 922 -42
+rect 973 -45 977 -40
+rect 970 -49 977 -45
+rect 1023 -53 1045 -42
+rect 1143 -55 1156 -31
+rect 519 -58 523 -57
+rect 265 -63 279 -58
+rect 265 -75 272 -63
+rect 278 -75 279 -63
+rect 265 -81 279 -75
+rect 383 -62 394 -58
+rect 383 -74 388 -62
+rect 393 -74 394 -62
+rect 497 -65 523 -58
+rect 685 -60 694 -58
+rect 383 -81 394 -74
+rect 141 -114 165 -87
+rect 268 -114 283 -87
+rect 386 -114 397 -87
+rect 500 -88 571 -71
+rect 685 -79 687 -60
+rect 692 -79 694 -60
+rect 685 -81 694 -79
+rect 500 -114 585 -88
+rect 688 -114 697 -87
+rect 800 -114 806 -87
+rect 909 -114 922 -65
+rect 970 -79 989 -64
+rect 1025 -87 1037 -79
+rect 1025 -114 1043 -87
+rect 372 -120 1145 -114
+rect 132 -134 1145 -120
+rect 132 -141 385 -134
+rect 1011 -292 1027 -134
+rect 1044 -292 1048 -204
+rect 1054 -211 1070 -134
+rect 1129 -188 1145 -134
+rect 1158 -180 1162 -118
+rect 1175 -179 1191 -4
+rect 1083 -204 1084 -200
+rect 1058 -343 1075 -340
+rect 1101 -343 1117 -249
+rect 1129 -308 1148 -291
+rect 1129 -312 1145 -308
+rect 1158 -310 1162 -291
+rect 1129 -322 1148 -312
+rect 1175 -307 1193 -291
+rect 1175 -311 1176 -307
+rect 1186 -311 1193 -307
+rect 1155 -321 1168 -317
+rect 1129 -326 1134 -322
+rect 1138 -326 1148 -322
+rect 1129 -339 1148 -326
+rect 1158 -335 1162 -321
+rect 1175 -327 1193 -311
+rect 1175 -331 1185 -327
+rect 1189 -331 1193 -327
+rect 1175 -340 1193 -331
+rect 1175 -343 1196 -340
+rect 89 -365 1196 -343
 << m2contact >>
-rect 75 29 79 33
-use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_0
-timestamp 1354990652
-transform 1 0 -165 0 1 410
-box 322 -344 425 -207
+rect 114 29 118 33
+rect 154 29 158 33
+rect 172 43 176 47
+rect 312 45 316 49
+rect 172 22 176 26
+rect 181 36 185 40
+rect 299 36 303 40
+rect 181 22 185 26
+rect 205 29 209 33
+rect 205 22 209 26
+rect 299 22 303 26
+rect 426 45 430 49
+rect 312 22 316 26
+rect 413 36 417 40
+rect 413 22 417 26
+rect 614 45 618 49
+rect 519 22 523 26
+rect 601 36 605 40
+rect 601 22 605 26
+rect 726 45 730 49
+rect 713 36 717 40
+rect 713 22 717 26
+rect 835 45 839 49
+rect 822 36 826 40
+rect 822 22 826 26
+rect 164 -60 168 -34
+rect 1072 45 1076 49
+rect 1059 36 1063 40
+rect 1059 22 1063 26
+rect 973 -7 977 -3
+rect 1150 -15 1156 -11
+rect 519 -54 523 -50
+rect 973 -40 977 -36
+rect 985 -47 989 -43
+rect 918 -53 922 -49
+rect 985 -54 989 -50
+rect 272 -75 278 -63
+rect 388 -74 393 -62
+rect 492 -78 496 -66
+rect 198 -117 202 -113
+rect 687 -79 692 -60
+rect 792 -79 797 -60
+rect 906 -62 910 -58
+rect 1138 -79 1142 -60
+rect 1044 -204 1048 -200
+rect 1158 -118 1162 -114
+rect 1079 -204 1083 -200
+rect 1158 -339 1162 -335
+<< metal2 >>
+rect 466 59 1156 63
+rect 466 56 473 59
+rect 290 52 473 56
+rect 290 47 295 52
+rect 176 43 295 47
+rect 316 45 426 49
+rect 430 45 614 49
+rect 618 45 726 49
+rect 730 45 835 49
+rect 839 45 1072 49
+rect 1076 45 1091 49
+rect 114 36 181 40
+rect 185 36 299 40
+rect 303 36 413 40
+rect 417 36 601 40
+rect 605 36 713 40
+rect 717 36 822 40
+rect 826 36 1059 40
+rect 1063 36 1103 40
+rect 114 33 118 36
+rect 158 29 205 33
+rect 209 29 1099 33
+rect 164 22 172 26
+rect 323 22 327 29
+rect 437 22 441 29
+rect 625 22 629 29
+rect 737 22 741 29
+rect 846 22 850 29
+rect 1083 22 1087 29
+rect 164 -34 168 22
+rect 519 -50 523 22
+rect 973 -36 977 -7
+rect 1150 -11 1156 59
+rect 918 -47 985 -43
+rect 918 -49 922 -47
+rect 971 -54 985 -50
+rect 971 -58 975 -54
+rect 272 -122 278 -75
+rect 388 -124 393 -74
+rect 492 -121 496 -78
+rect 687 -122 692 -79
+rect 792 -119 797 -79
+rect 910 -62 975 -58
+rect 906 -117 910 -62
+rect 1138 -114 1142 -79
+rect 1138 -118 1158 -114
+rect 1048 -204 1079 -200
 use SPDT  SPDT_0
-timestamp 1355342917
+timestamp 1355476235
 transform 1 0 -27 0 1 0
-box 35 1 108 68
+box 38 1 105 68
 use NOT  NOT_0
-timestamp 1355432294
-transform 1 0 79 0 1 23
+timestamp 1355475633
+transform 1 0 83 0 1 23
 box -5 -23 43 41
 use NOT  NOT_1
-timestamp 1355432294
-transform 1 0 107 0 1 23
+timestamp 1355475633
+transform 1 0 111 0 1 23
+box -5 -23 43 41
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_0
+timestamp 1354990652
+transform 1 0 -157 0 1 230
+box 322 -344 425 -207
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_0
+timestamp 1354992098
+transform 1 0 70 0 1 230
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_1
+timestamp 1354992098
+transform 1 0 184 0 1 230
+box 213 -344 316 -208
+use NAND  NAND_0
+timestamp 1355475793
+transform 1 0 539 0 1 -85
+box -16 -2 32 62
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_2
+timestamp 1354992098
+transform 1 0 372 0 1 230
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_3
+timestamp 1354992098
+transform 1 0 484 0 1 230
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_4
+timestamp 1354992098
+transform 1 0 593 0 1 230
+box 213 -344 316 -208
+use NAND  NAND_1
+timestamp 1355475793
+transform 1 0 938 0 1 -77
+box -16 -2 32 62
+use NOR  NOR_0
+timestamp 1355475848
+transform 1 0 1003 0 1 -57
+box -14 -22 34 42
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_5
+timestamp 1354992098
+transform 1 0 830 0 1 230
+box 213 -344 316 -208
+use NAND  NAND_2
+timestamp 1355475793
+transform 0 1 1056 -1 0 -220
+box -16 -2 32 62
+use NOT  NOT_2
+timestamp 1355475633
+transform 0 1 1152 -1 0 -184
+box -5 -23 43 41
+use NOT  NOT_3
+timestamp 1355475633
+transform 0 1 1152 -1 0 -212
+box -5 -23 43 41
+use NOT  NOT_4
+timestamp 1355475633
+transform 0 1 1152 -1 0 -240
+box -5 -23 43 41
+use NAND  NAND_3
+timestamp 1355475793
+transform 0 1 1013 -1 0 -308
+box -16 -2 32 62
+use NOT  NOT_5
+timestamp 1355475633
+transform 0 1 1152 -1 0 -268
 box -5 -23 43 41
 << labels >>
 rlabel space 15 5 15 5 1 Gnd
@@ -32,4 +367,16 @@ rlabel space 28 63 28 63 5 Vdd
 rlabel space 12 41 12 41 3 In1
 rlabel space 12 33 12 33 3 In2
 rlabel space 12 27 12 27 3 S
+rlabel metal2 158 38 158 38 1 Clkb
+rlabel metal2 169 31 169 31 1 Clk
+rlabel space 413 21 417 22 1 ClkB
+rlabel space 713 21 717 22 1 ClkB
+rlabel space 822 21 826 22 1 ClkB
+rlabel space 835 21 839 22 1 RstB
+rlabel m2contact 918 -53 922 -49 1 GO?
+rlabel space 1059 21 1063 22 1 ClkB
+rlabel metal1 1160 -292 1160 -292 5 In
+rlabel m2contact 1160 -338 1160 -338 1 Out
+rlabel metal1 1135 -299 1135 -299 3 Vneg
+rlabel metal1 1187 -300 1187 -300 3 pos
 << end >>
