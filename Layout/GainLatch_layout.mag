@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1355462964
+timestamp 1355518364
 << nwell >>
 rect 7 17 184 88
 rect 7 9 55 17
@@ -248,7 +248,8 @@ rect 80 26 92 28
 rect 98 26 110 28
 rect 116 27 128 28
 rect 116 26 120 27
-rect 80 23 110 26
+rect 80 23 86 26
+rect 90 23 110 26
 rect 124 26 128 27
 rect 142 24 151 25
 rect 142 23 143 24
@@ -312,6 +313,7 @@ rect 20 56 24 60
 rect 166 56 170 60
 rect 43 20 47 24
 rect 66 23 70 27
+rect 86 22 90 26
 rect 120 23 124 27
 rect 143 20 147 24
 rect 22 4 26 8
@@ -343,7 +345,7 @@ rect 57 20 61 28
 rect 66 31 70 78
 rect 73 44 77 45
 rect 73 40 79 44
-rect 86 23 90 88
+rect 86 26 90 88
 rect 100 82 104 88
 rect 109 85 117 88
 rect 113 81 117 85

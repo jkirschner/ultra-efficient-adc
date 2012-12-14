@@ -15,9 +15,9 @@ M1005 a_33_11# a_33_11# PosD PosA pfet w=4.5u l=2.7u
 + ad=13.5p pd=24u as=0p ps=0u 
 M1006 N1 Vp N3 PosA pfet w=3.6u l=3.6u
 + ad=0p pd=0u as=10.8p ps=20.4u 
-M1007 N2 a_80_23# N1 PosA pfet w=3.6u l=3.6u
+M1007 N2 Vm N1 PosA pfet w=3.6u l=3.6u
 + ad=6.48p pd=10.8u as=0p ps=0u 
-M1008 N1 a_80_23# N2 PosA pfet w=3.6u l=3.6u
+M1008 N1 Vm N2 PosA pfet w=3.6u l=3.6u
 + ad=0p pd=0u as=0p ps=0u 
 M1009 N3 Vp N1 PosA pfet w=3.6u l=3.6u
 + ad=0p pd=0u as=0p ps=0u 
