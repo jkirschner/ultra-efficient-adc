@@ -1,0 +1,108 @@
+magic
+tech scmos
+timestamp 1355455137
+<< metal1 >>
+rect -295 159 32 163
+rect 36 159 172 163
+rect -295 150 56 154
+rect 60 150 196 154
+rect -295 141 189 145
+rect 45 136 49 141
+rect 185 136 189 141
+rect -295 110 17 133
+rect 119 110 156 133
+rect -295 107 -242 110
+rect -295 -58 -283 -53
+rect -269 -76 -242 107
+rect 116 59 135 82
+rect 256 59 278 82
+rect -64 36 20 47
+rect 143 36 164 43
+rect 119 0 156 27
+rect 259 0 301 27
+rect -144 -58 59 -53
+rect -148 -74 -144 -58
+rect 55 -73 59 -58
+rect -269 -99 -233 -76
+rect -75 -99 -29 -76
+rect -80 -150 -71 -127
+rect 125 -150 136 -127
+rect -57 -153 -50 -150
+rect -295 -172 -252 -164
+rect -247 -172 -229 -164
+rect -233 -178 -229 -172
+rect -78 -176 -50 -153
+rect -38 -172 -26 -160
+rect -32 -178 -26 -172
+rect 274 -182 301 0
+rect -295 -209 -228 -182
+rect -76 -209 -29 -182
+rect 128 -209 301 -182
+<< m2contact >>
+rect 32 159 36 163
+rect 172 159 176 163
+rect 56 150 60 154
+rect 196 150 200 154
+rect -283 -58 -278 -53
+rect 135 59 142 82
+rect 278 59 285 82
+rect -71 36 -64 47
+rect 136 36 143 43
+rect -148 -58 -144 -53
+rect -71 -150 -64 -127
+rect -57 -150 -50 -127
+rect 136 -150 143 -127
+rect -252 -172 -247 -164
+rect -44 -172 -38 -160
+<< metal2 >>
+rect 32 136 36 159
+rect 56 133 60 150
+rect 135 82 142 222
+rect 172 136 176 159
+rect 196 134 200 150
+rect 278 82 285 222
+rect -71 -42 -64 36
+rect -295 -48 -133 -43
+rect -278 -58 -148 -53
+rect -295 -68 -157 -63
+rect -161 -74 -157 -68
+rect -137 -74 -133 -48
+rect -71 -48 70 -42
+rect -71 -127 -64 -48
+rect -57 -69 46 -63
+rect -57 -127 -50 -69
+rect 42 -75 46 -69
+rect 66 -75 70 -48
+rect 136 -127 143 36
+rect -252 -218 -247 -172
+rect -44 -218 -38 -172
+rect -252 -224 -38 -218
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_0
+timestamp 1354992098
+transform 1 0 -197 0 1 344
+box 213 -344 316 -208
+use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_1
+timestamp 1354992098
+transform 1 0 -57 0 1 344
+box 213 -344 316 -208
+use ToggleFlipFlop_Low_Layout  ToggleFlipFlop_Low_Layout_1
+timestamp 1355161173
+transform 1 0 -390 0 1 135
+box 155 -344 316 -208
+use ToggleFlipFlop_Low_Layout  ToggleFlipFlop_Low_Layout_0
+timestamp 1355161173
+transform 1 0 -187 0 1 135
+box 155 -344 316 -208
+<< labels >>
+rlabel metal1 -291 120 -291 120 7 pos
+rlabel metal1 -292 -195 -292 -195 7 neg
+rlabel metal1 -293 -168 -293 -168 7 MSB_CLK
+rlabel metal1 -294 -56 -294 -56 7 RST_IRb
+rlabel metal2 -294 -65 -294 -65 7 SYS_CLKb
+rlabel metal2 -294 -46 -294 -46 7 SYS_CLK
+rlabel metal1 -294 143 -294 143 7 RST_ORb
+rlabel metal1 -294 152 -294 152 7 W_CLK
+rlabel metal1 -294 161 -294 161 7 W_CLKb
+rlabel metal2 281 219 281 220 1 Bit0
+rlabel metal2 138 219 138 220 1 Bit1
+<< end >>
