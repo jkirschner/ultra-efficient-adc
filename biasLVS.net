@@ -1,0 +1,16 @@
+* Z:\home\sbecht\ultra-efficient-adc\biasLVS.asc
+M1 0 N002 Cascode 0 nfet l=4u w=2.1u
+M2 Bias N002 0 0 nfet l=4u w=.6u
+M3 Cascode Cascode N001 Vdd pfet l=4u w=8u
+M4 N001 Bias Bias Vdd pfet l=1u w=8u
+M5 N001 Bias Vdd Vdd pfet l=4u w=8u
+M6 N004 N002 0 0 nfet l=4u w=2.1u
+M7 N004 N002 N002 0 nfet l=4u w=2.1u
+M8 N002 Bias Vdd Vdd pfet l=4u w=1.8u
+M9 N003 N003 N004 0 nfet l=4u w=2.1u
+M10 Vdd Bias N003 Vdd pfet l=4u w=8u
+M11 Vdd Vdd N001 Vdd pfet l=4u w=8u
+M12 Vdd Vdd Cascode Vdd pfet l=4u w=8u
+M13 Cascode 0 0 0 nfet l=4u w=2.1u
+.backanno
+.end

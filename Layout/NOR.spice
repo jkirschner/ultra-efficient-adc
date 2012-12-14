@@ -1,0 +1,10 @@
+* SPICE3 file created from NOR.ext - technology: scmos
+
+M1000 a_5_15# B Vdd Vdd pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=6.12p ps=15u 
+M1001 Out A a_5_15# Vdd pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=0p ps=0u 
+M1002 Out B Gnd Gnd nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=7.2p ps=19.2u 
+M1003 Gnd A Out Gnd nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 

@@ -1,0 +1,7 @@
+* Z:\home\sbecht\ultra-efficient-adc\nandLVS.asc
+M1 Vdd A Out Vdd pfet l=.9u w=6u
+M2 Out B Vdd Vdd pfet l=.9u w=6u
+M3 N001 A 0 0 nfet l=.9u w=3u
+M4 Out B N001 0 nfet l=.9u w=3u
+.backanno
+.end

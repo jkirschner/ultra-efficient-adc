@@ -1,0 +1,5 @@
+* Z:\home\sbecht\ultra-efficient-adc\inverterLVS.asc
+M1 Out In 0 0 nfet l=.9u w=3u
+M2 Vdd In Out Vdd pfet l=.9u w=6u
+.backanno
+.end
