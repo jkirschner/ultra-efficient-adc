@@ -1,24 +1,23 @@
 * Z:\home\sbecht\ultra-efficient-adc\stateMachineLVS.asc
-XX1 CO CLK N014 S Vdd 0 spdtlvs
-XX2 N014 N015 Vdd 0 inverter
-XX3 N015 N010 Vdd 0 inverter
-XX4 N001 N010 N015 N005 NC_01 RST Vdd 0 resetflipflop_high_lds
-XX5 N005 N010 N015 N006 NC_02 RSTb Vdd 0 resetflipflop_low_lds
-XX6 N006 N010 N015 Q N012 RSTb Vdd 0 resetflipflop_low_lds
+XX1 CO CLK N015 N014 Vdd 0 spdtlvs
+XX2 N015 N016 Vdd 0 inverter
+XX3 N016 N010 Vdd 0 inverter
+XX4 N001 N010 N016 N005 N017 RST Vdd 0 resetflipflop_high_lds
+XX5 N005 N010 N016 N006 N019 RSTb Vdd 0 resetflipflop_low_lds
+XX6 N006 N010 N016 Q N012 RSTb Vdd 0 resetflipflop_low_lds
 XX7 N003 N007 N012 Vdd 0 nandlvs
-XX8 N007 N010 N015 N008 Qb2 RSTb Vdd 0 resetflipflop_low_lds
-XX9 N008 N010 N015 N009 NC_03 RSTb Vdd 0 resetflipflop_low_lds
-XX10 N009 N010 N015 N002 N013 RSTb Vdd 0 resetflipflop_low_lds
+XX8 N007 N010 N016 N008 N020 RSTb Vdd 0 resetflipflop_low_lds
+XX9 N008 N010 N016 N009 N018 RSTb Vdd 0 resetflipflop_low_lds
+XX10 N009 N010 N016 N002 N013 RSTb Vdd 0 resetflipflop_low_lds
 XX11 N002 N003 GO? Vdd 0 nandlvs
 XX12 GO? N004 N013 Vdd 0 norlvs
-XX13 N004 N010 N015 N001 N011 RSTb Vdd 0 resetflipflop_low_lds
-XX15 N011 N017 Vdd 0 inverter
-XX14 N017 N018 Vdd 0 inverter
-XX16 N018 N019 Vdd 0 inverter
-XX17 N019 N020 Vdd 0 inverter
-XX18 N020 NC_04 Vdd 0 inverter
-XX19 N016 NC_05 NC_06 Vdd 0 nandlvs
-XX20 N016 NC_07 NC_08 Vdd 0 nandlvs
+XX13 N004 N010 N016 N001 N011 RSTb Vdd 0 resetflipflop_low_lds
+XX15 N011 N021 Vdd 0 inverter
+XX14 N021 N022 Vdd 0 inverter
+XX16 N022 N023 Vdd 0 inverter
+XX17 N023 N024 Vdd 0 inverter
+XX18 N024 NC_01 Vdd 0 inverter
+XX19 N012 N018 N013 Vdd 0 N014 nand3lvs
 
 * block symbol definitions
 .subckt spdtlvs IN1 IN2 OUT S V+ V-
@@ -118,6 +117,15 @@ M2 neg A Out neg nfet l=.9u w=3u
 M3 Vdd B N001 Vdd pfet l=.9u w=6u
 M4 N001 A Out Vdd pfet l=.9u w=6u
 .ends norlvs
+
+.subckt nand3lvs A B C pos neg OUT
+M1 pos A OUT pos pfet l=.9u w=6u
+M2 OUT B pos pos pfet l=.9u w=6u
+M3 pos C OUT pos pfet l=.9u w=6u
+M4 N001 A neg neg nfet l=.9u w=3u
+M5 N002 B N001 neg nfet l=.9u w=3u
+M6 OUT C N002 neg nfet l=.9u w=3u
+.ends nand3lvs
 
 .backanno
 .end

@@ -8,6 +8,8 @@ LINE Normal 41 0 65 0
 LINE Normal 0 -17 0 -48
 LINE Normal 0 16 0 48
 CIRCLE Normal 41 4 32 -5
+TEXT -16 -14 Left 2 +
+TEXT -11 9 Left 2 -
 PIN -64 0 NONE 8
 PINATTR PinName IN
 PINATTR SpiceOrder 1
