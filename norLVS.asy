@@ -10,6 +10,8 @@ LINE Normal 0 48 0 32
 CIRCLE Normal 57 -5 47 5
 ARC Normal -16 32 47 -32 16 32 16 -32
 ARC Normal -33 32 -64 -32 -48 32 -48 -32
+TEXT -34 -15 Left 2 A
+TEXT -34 16 Left 2 B
 PIN -80 -16 NONE 8
 PINATTR PinName A
 PINATTR SpiceOrder 1
