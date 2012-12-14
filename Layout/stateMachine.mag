@@ -1,0 +1,35 @@
+magic
+tech scmos
+timestamp 1355475557
+<< psubstratepcontact >>
+rect 24 3 28 7
+<< nsubstratencontact >>
+rect 41 62 45 66
+<< metal1 >>
+rect 73 55 81 62
+rect 11 0 76 2
+<< m2contact >>
+rect 75 29 79 33
+use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_0
+timestamp 1354990652
+transform 1 0 -165 0 1 410
+box 322 -344 425 -207
+use SPDT  SPDT_0
+timestamp 1355342917
+transform 1 0 -27 0 1 0
+box 35 1 108 68
+use NOT  NOT_0
+timestamp 1355432294
+transform 1 0 79 0 1 23
+box -5 -23 43 41
+use NOT  NOT_1
+timestamp 1355432294
+transform 1 0 107 0 1 23
+box -5 -23 43 41
+<< labels >>
+rlabel space 15 5 15 5 1 Gnd
+rlabel space 28 63 28 63 5 Vdd
+rlabel space 12 41 12 41 3 In1
+rlabel space 12 33 12 33 3 In2
+rlabel space 12 27 12 27 3 S
+<< end >>
