@@ -1,5 +1,78 @@
 * SPICE3 file created from Comparator.ext - technology: scmos
 
+.subckt NOT In pos Vneg Out
+M1000 Out In pos pos pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=8.1p ps=15.6u 
+M1001 Out In Vneg Vneg nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=3.42p ps=9u 
+.ends
+
+.subckt NAND neg A B pos Out
+M1000 Out A pos pos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=14.04p ps=30u 
+M1001 pos B Out pos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 a_3_13# A neg neg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=3.42p ps=9u 
+M1003 Out B a_3_13# neg nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=0p ps=0u 
+.ends
+
+.subckt PulseWidthControl_Layout OutB Vpos Reset ResetB Vneg Vpw1 Din Out
+M1000 a_3_28# a_1_26# Vpos Vpos pfet w=1.8u l=0.6u
++ ad=4.68p pd=13.2u as=30.06p ps=61.2u 
+M1001 a_19_77# OutB a_18_41# Vpos pfet w=1.8u l=0.6u
++ ad=2.34p pd=6.6u as=5.4p ps=13.8u 
+M1002 a_1_26# Din Vpos Vpos pfet w=1.8u l=0.6u
++ ad=2.34p pd=6.6u as=0p ps=0u 
+M1003 Vneg Out Din Vneg nfet w=4.5u l=2.4u
++ ad=27.09p pd=61.2u as=6.75p ps=12u 
+M1004 a_1_26# Din Vneg Vneg nfet w=0.9u l=0.6u
++ ad=1.71p pd=5.4u as=0p ps=0u 
+M1005 Vpos a_30_70# a_32_67# Vpos pfet w=7.2u l=3.6u
++ ad=0p pd=0u as=10.62p ps=22.8u 
+M1006 Vpos Vpw2 a_61_55# Vpos pfet w=4.8u l=1.8u
++ ad=0p pd=0u as=12.24p ps=25.8u 
+M1007 Vpos Reset a_87_54# Vpos pfet w=1.8u l=0.6u
++ ad=0p pd=0u as=5.58p ps=13.8u 
+M1008 OutB Out Vpos Vpos pfet w=3.6u l=0.6u
++ ad=3.96p pd=10.2u as=0p ps=0u 
+M1009 a_18_41# Out a_3_28# Vpos pfet w=1.8u l=0.6u
++ ad=0p pd=0u as=0p ps=0u 
+M1010 a_32_67# a_32_52# a_18_41# Vpos pfet w=1.2u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1011 a_18_41# OutB a_3_28# Vneg nfet w=0.9u l=0.6u
++ ad=3.42p pd=10.8u as=3.42p ps=10.8u 
+M1012 Vpos a_18_41# a_32_52# Vpos pfet w=1.8u l=0.6u
++ ad=0p pd=0u as=2.34p ps=6.6u 
+M1013 a_30_70# a_32_52# a_61_55# Vpos pfet w=1.8u l=0.9u
++ ad=3.24p pd=7.2u as=0p ps=0u 
+M1014 a_61_55# a_32_52# a_30_70# Vpos pfet w=1.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1015 a_19_77# Out a_18_41# Vneg nfet w=0.9u l=0.6u
++ ad=9.18p pd=15u as=0p ps=0u 
+M1016 a_3_28# a_1_26# Vneg Vneg nfet w=0.9u l=0.6u
++ ad=0p pd=0u as=0p ps=0u 
+M1017 Vneg Vpw1 a_19_77# Vneg nfet w=4.5u l=2.4u
++ ad=0p pd=0u as=0p ps=0u 
+M1018 a_32_52# a_18_41# Vneg Vneg nfet w=0.9u l=0.6u
++ ad=1.71p pd=5.4u as=0p ps=0u 
+M1019 a_30_70# a_32_52# Vneg Vneg nfet w=0.9u l=0.9u
++ ad=1.98p pd=6u as=0p ps=0u 
+M1020 Vneg a_32_52# a_30_70# Vneg nfet w=0.9u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1021 Out a_32_52# a_87_54# Vpos pfet w=1.8u l=0.6u
++ ad=2.34p pd=6.6u as=0p ps=0u 
+M1022 Out a_32_52# a_78_28# Vneg nfet w=0.9u l=0.6u
++ ad=3.69p pd=8.4u as=3.78p ps=11.4u 
+M1023 OutB Out Vneg Vneg nfet w=1.8u l=0.6u
++ ad=2.7p pd=7.2u as=0p ps=0u 
+M1024 Out Reset Vneg Vneg nfet w=0.9u l=0.6u
++ ad=0p pd=0u as=0p ps=0u 
+M1025 a_78_28# ResetB Vneg Vneg nfet w=0.9u l=0.6u
++ ad=0p pd=0u as=0p ps=0u 
+.ends
+
 .subckt GainLatch_layout PosA PosD Disable Vm Vp Dout Vneg Vbias Cascode
 M1000 a_26_61# Cascode N1 PosA pfet w=4.8u l=2.4u
 + ad=29.52p pd=43.2u as=27p ps=46.8u 
@@ -154,8 +227,14 @@ M1025 Vneg a_1_n53# a_111_n59# Vneg nfet w=2.1u l=3.9u
 
 * Top level circuit Comparator
 
-XGainLatch_layout_0 doublePreamp_0/PosA PosD Disable doublePreamp_0/V- doublePreamp_0/V+ Out doublePreamp_0/Vneg Bias doublePreamp_0/Cascode GainLatch_layout
-XdoublePreamp_0 doublePreamp_0/PosA doublePreamp_0/V+ Thresh doublePreamp_0/V- Bias doublePreamp_0/Vneg Input doublePreamp_0/Cascode doublePreamp
-XdoubleBiasGen_0 doublePreamp_0/PosA Bias doublePreamp_0/Vneg doublePreamp_0/Cascode doubleBiasGen
+XNOT_2 Disable PosD NOT_3/Vneg NOT_2/Out NOT
+XNAND_0 NOT_3/Vneg NAND_0/A NAND_0/B PosD NAND_0/Out NAND
+XNOT_3 Disable PosD NOT_3/Vneg NAND_0/A NOT
+XPulseWidthControl_Layout_0 NAND_0/B PosD Disable NOT_2/Out NOT_3/Vneg Vpw1 NOT_1/Out Out PulseWidthControl_Layout
+XNOT_1 NOT_1/In PosD NOT_3/Vneg NOT_1/Out NOT
+XNOT_0 NOT_0/In PosD NOT_3/Vneg NOT_1/In NOT
+XGainLatch_layout_0 doublePreamp_0/PosA PosD NAND_0/Out doublePreamp_0/V- doublePreamp_0/V+ NOT_0/In NOT_3/Vneg Bias doublePreamp_0/Cascode GainLatch_layout
+XdoublePreamp_0 doublePreamp_0/PosA doublePreamp_0/V+ Thresh doublePreamp_0/V- Bias NOT_3/Vneg Input doublePreamp_0/Cascode doublePreamp
+XdoubleBiasGen_0 doublePreamp_0/PosA Bias NOT_3/Vneg doublePreamp_0/Cascode doubleBiasGen
 .end
 

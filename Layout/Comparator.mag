@@ -1,23 +1,48 @@
 magic
 tech scmos
-timestamp 1355518500
+timestamp 1355605154
 << nwell >>
 rect 242 56 256 135
 rect 342 128 346 132
 rect 411 49 424 175
+rect 473 147 494 176
+rect 552 138 583 156
+rect 638 138 645 161
+rect 552 124 574 138
+rect 792 129 807 165
+rect 789 124 807 129
+rect 552 49 564 124
+rect 792 120 807 124
+rect 601 48 714 79
+rect 793 81 807 120
+rect 734 49 807 81
 << pwell >>
 rect 242 1 256 56
+rect 640 92 645 111
 rect 334 12 338 16
 rect 383 -2 424 49
-rect 383 -18 543 -2
+rect 542 18 558 48
+rect 606 18 614 48
+rect 714 18 734 93
+rect 542 16 782 18
+rect 543 -1 782 16
+rect 511 -2 782 -1
+rect 383 -18 782 -2
 << psubstratepcontact >>
 rect 334 12 338 16
 << nsubstratencontact >>
 rect 342 128 346 132
 << metal1 >>
+rect 473 183 583 195
 rect 538 175 548 178
 rect 238 117 261 136
 rect 411 117 422 135
+rect 545 125 548 175
+rect 567 138 583 183
+rect 638 138 645 161
+rect 792 145 807 161
+rect 545 121 567 125
+rect 639 119 643 127
 rect 235 110 257 114
 rect 0 94 2 98
 rect 235 94 241 110
@@ -25,17 +50,58 @@ rect 408 95 412 114
 rect 415 108 422 117
 rect 415 100 424 108
 rect 408 91 424 95
+rect 745 88 749 92
+rect 729 84 749 88
+rect 758 88 762 92
+rect 758 84 789 88
+rect 796 81 807 145
 rect 236 77 259 81
+rect 714 80 734 81
 rect 236 55 242 77
 rect 410 70 424 74
 rect 410 47 415 70
+rect 606 63 734 80
+rect 766 63 807 81
+rect 601 49 614 53
+rect 548 45 558 49
+rect 662 46 666 50
+rect 729 46 734 50
+rect 782 46 789 50
 rect 238 -1 259 27
 rect 397 -8 411 25
-rect 511 -8 535 -2
-rect 397 -17 535 -8
+rect 548 5 552 45
+rect 613 42 614 46
+rect 606 16 614 32
+rect 511 -2 543 -1
+rect 558 -2 576 16
+rect 593 8 666 12
+rect 606 1 725 5
+rect 511 -4 576 -2
+rect 734 -4 747 18
+rect 511 -8 747 -4
+rect 397 -17 747 -8
+rect 613 -24 809 -20
 << m2contact >>
+rect 473 178 494 183
 rect 420 157 424 161
+rect 789 124 793 129
+rect 788 113 792 118
+rect 640 92 645 111
+rect 708 89 712 93
+rect 725 84 729 88
+rect 789 84 793 88
 rect 420 77 424 81
+rect 666 46 670 50
+rect 725 46 729 50
+rect 789 46 793 50
+rect 609 42 613 46
+rect 548 1 552 5
+rect 589 8 593 12
+rect 666 8 670 12
+rect 602 1 606 5
+rect 725 1 729 5
+rect 609 -24 613 -20
+rect 809 -24 814 -20
 << metal2 >>
 rect 473 174 494 178
 rect 402 157 420 161
@@ -43,10 +109,23 @@ rect 243 66 247 141
 rect 252 73 256 141
 rect 402 77 407 157
 rect 540 156 543 181
+rect 793 124 815 129
+rect 792 113 814 118
 rect 252 69 263 73
 rect 243 62 263 66
 rect 415 42 420 81
 rect 402 38 420 42
+rect 543 8 589 12
+rect 552 1 602 5
+rect 548 -24 552 1
+rect 609 -20 613 42
+rect 666 12 670 46
+rect 708 -28 712 89
+rect 725 50 729 84
+rect 789 50 793 84
+rect 789 5 793 46
+rect 729 1 793 5
+rect 809 -20 814 113
 use doubleBiasGen  doubleBiasGen_0
 timestamp 1355464966
 transform 1 0 23 0 1 71
@@ -59,13 +138,39 @@ use GainLatch_layout  GainLatch_layout_0
 timestamp 1355518364
 transform 0 -1 512 1 0 -9
 box 7 -31 184 88
+use NOT  NOT_0
+timestamp 1355475633
+transform 1 0 572 0 1 115
+box -5 -23 43 41
+use NOT  NOT_1
+timestamp 1355475633
+transform 1 0 600 0 1 115
+box -5 -23 43 41
+use PulseWidthControl_Layout  PulseWidthControl_Layout_0
+timestamp 1355369771
+transform 1 0 670 0 1 72
+box -27 20 122 93
+use NOT  NOT_3
+timestamp 1355475633
+transform 1 0 563 0 1 39
+box -5 -23 43 41
+use NAND  NAND_0
+timestamp 1355475793
+transform 1 0 630 0 1 18
+box -16 -2 32 62
+use NOT  NOT_2
+timestamp 1355475633
+transform -1 0 777 0 1 40
+box -5 -23 43 41
 << labels >>
 rlabel metal2 253 139 253 139 5 Thresh
 rlabel metal2 245 139 245 139 5 Input
 rlabel metal1 0 94 2 98 3 Bias
 rlabel metal2 482 177 482 177 5 PosD
-rlabel metal2 541 179 541 180 5 Disable
-rlabel metal1 546 177 546 177 6 Out
 rlabel space 40 3 41 4 1 Vneg
 rlabel space 303 130 304 131 1 PosA
+rlabel metal2 548 -24 552 -23 1 Disable
+rlabel metal2 708 -28 712 -27 1 Vpw1
+rlabel metal2 813 124 815 129 7 Out
+rlabel space 754 164 758 165 1 Vpw2
 << end >>

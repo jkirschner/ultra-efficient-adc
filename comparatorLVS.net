@@ -1,24 +1,30 @@
 * Z:\home\sbecht\ultra-efficient-adc\comparatorLVS.asc
-XX1 Input Thresh N003 Bias Vdd 0 N001 N002 doublecomparatorpreamplvs
-XX3 N001 N002 Disable N003 Bias Vdd VddD 0 Out comparator_gainlatch_lds
-XX2 Vdd 0 Bias N003 doublebiaslvs
+XX1 Input Thresh N007 Bias posA neg N001 N002 doublecomparatorpreamplvs
+XX3 N001 N002 N003 N007 Bias posA posD neg N004 comparator_gainlatch_lds
+XX2 posA neg Bias N007 doublebiaslvs
+XX4 N004 N005 posD neg inverter
+XX5 N005 N006 posD neg inverter
+XX6 N006 Disable N008 Vpw1 Vpw2 posD neg Out N010 pulsewidthcontrol_lds
+XX7 Disable N008 posD neg inverter
+XX8 Disable N009 posD neg inverter
+XX9 N009 N003 N010 posD neg nandlvs
 
 * block symbol definitions
-.subckt doublecomparatorpreamplvs Input Thresh Cascode Bias Vdd neg Vp Vm
-M1 Vm neg neg neg nfet l=.9u w=1.5u
-M2 neg Vm Vm neg nfet l=.9u w=1.5u
-M3 Vp Vm neg neg nfet l=.9u w=1.5u
-M4 Vdd Vdd Vm Vdd pfet l=.9u w=1.5u
-M5 Vm Input N002 Vdd pfet l=.9u w=1.5u
+.subckt doublecomparatorpreamplvs Input Thresh Cascode Bias Vdd neg Vp V-
+M1 V- neg neg neg nfet l=.9u w=1.5u
+M2 neg V- V- neg nfet l=.9u w=1.5u
+M3 Vp V- neg neg nfet l=.9u w=1.5u
+M4 Vdd Vdd V- Vdd pfet l=.9u w=1.5u
+M5 V- Input N002 Vdd pfet l=.9u w=1.5u
 M6 N002 Thresh Vp Vdd pfet l=.9u w=1.5u
 M7 Vdd Vdd Vdd Vdd pfet l=.9u w=1.8u
 M8 N001 Cascode N002 Vdd pfet l=.9u w=1.8u
 M9 Vdd Bias N001 Vdd pfet l=3.9u w=8.1u
-M10 Vm neg neg neg nfet l=.9u w=1.5u
-M11 neg Vm Vm neg nfet l=.9u w=1.5u
-M12 Vp Vm neg neg nfet l=.9u w=1.5u
-M13 Vdd Vdd Vm Vdd pfet l=.9u w=1.5u
-M14 Vm Input N002 Vdd pfet l=.9u w=1.5u
+M10 V- neg neg neg nfet l=.9u w=1.5u
+M11 neg V- V- neg nfet l=.9u w=1.5u
+M12 Vp V- neg neg nfet l=.9u w=1.5u
+M13 Vdd Vdd V- Vdd pfet l=.9u w=1.5u
+M14 V- Input N002 Vdd pfet l=.9u w=1.5u
 M15 N002 Thresh Vp Vdd pfet l=.9u w=1.5u
 M16 Vdd Vdd Vdd Vdd pfet l=.9u w=1.8u
 M17 N001 Cascode N002 Vdd pfet l=.9u w=1.8u
@@ -82,6 +88,47 @@ M24 Vdd Vdd N002 Vdd pfet l=3.9u w=8.1u
 M25 Vdd Vdd Cascode Vdd pfet l=3.9u w=8.1u
 M26 Cascode neg neg neg nfet l=3.9u w=2.1u
 .ends doublebiaslvs
+
+.subckt inverter IN OUT pos neg
+M1 OUT IN neg neg nfet l=.9u w=3u
+M2 OUT IN pos pos pfet l=.9u w=6u
+.ends inverter
+
+.subckt pulsewidthcontrol_lds Din Reset ResetB Vpw1 Vpw2 pos neg Out OutB
+M21 N004 Din neg neg nfet l=0.6u w=0.9u
+M25 Din Out neg neg nfet l=2.4u w=4.5u
+M27 N001 Y X pos pfet l=0.9u w=1.2u
+M28 pos H N001 pos pfet l=3.6u w=7.2u
+M30 Y X pos pos pfet l=0.6u w=1.8u
+M31 neg Y H neg nfet l=0.9u w=0.9u
+M32 N002 Y H pos pfet l=0.9u w=1.8u
+M33 pos Vpw2 N002 pos pfet l=1.8u w=4.8u
+M36 N003 Reset pos pos pfet l=0.6u w=1.8u
+M1 Out Y N006 neg nfet l=0.6u w=1.8u
+M2 Out Y N003 pos pfet l=0.6u w=3.6u
+M3 OutB Out pos pos pfet l=0.6u w=1.8u
+M4 N005 N004 pos pos pfet l=0.6u w=1.8u
+M5 N004 Din pos pos pfet l=0.6u w=1.8u
+M6 N005 Out X pos pfet l=0.6u w=1.8u
+M7 N007 OutB X pos pfet l=0.6u w=1.8u
+M8 N005 N004 neg neg nfet l=0.6u w=0.9u
+M9 N005 OutB X neg nfet l=0.6u w=0.9u
+M10 N007 Out X neg nfet l=0.6u w=0.9u
+M11 Y X neg neg nfet l=0.6u w=0.9u
+M12 OutB Out neg neg nfet l=0.6u w=0.9u
+M13 Out Reset neg neg nfet l=0.6u w=0.9u
+M14 N006 ResetB neg neg nfet l=0.6u w=0.9u
+M15 N007 Vpw1 neg neg nfet l=2.4u w=4.5u
+M16 neg Y H neg nfet l=0.9u w=0.9u
+M17 N002 Y H pos pfet l=0.9u w=1.8u
+.ends pulsewidthcontrol_lds
+
+.subckt nandlvs A OUT B pos neg
+M1 pos A OUT pos pfet l=.9u w=6u
+M2 OUT B pos pos pfet l=.9u w=6u
+M3 N001 A neg neg nfet l=.9u w=3u
+M4 OUT B N001 neg nfet l=.9u w=3u
+.ends nandlvs
 
 .backanno
 .end
