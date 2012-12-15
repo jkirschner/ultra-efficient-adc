@@ -1,0 +1,39 @@
+* Z:\home\sbecht\ultra-efficient-adc\analogSwitchLDS.asc
+M1 N003 Iin? pos pos pfet l=.9u w=6u
+M2 N003 C1? pos pos pfet l=.9u w=6u
+M3 N004 Iin? pos pos pfet l=.9u w=6u
+M4 N004 C2? pos pos pfet l=.9u w=6u
+M5 N007 N003 pos pos pfet l=.9u w=6u
+M6 N007 N004 pos pos pfet l=.9u w=6u
+M7 N003 Iin? P001 neg nfet l=.9u w=3u
+M8 N004 Iin? P002 neg nfet l=.9u w=3u
+M9 N007 N004 P003 neg nfet l=.9u w=3u
+M10 P001 C1? neg neg nfet l=.9u w=3u
+M11 P002 C2? neg neg nfet l=.9u w=3u
+M12 P003 N003 neg neg nfet l=.9u w=3u
+M13 N001 Iin? pos pos pfet l=.9u w=6u
+M14 N001 Iin? neg neg nfet l=.9u w=3u
+M15 N005 C1? pos pos pfet l=.9u w=6u
+M16 N005 N001 pos pos pfet l=.9u w=6u
+M17 N005 C1? P004 neg nfet l=.9u w=3u
+M18 P004 N001 neg neg nfet l=.9u w=3u
+M19 N002 C2? pos pos pfet l=.9u w=6u
+M20 N002 N001 pos pos pfet l=.9u w=6u
+M21 N002 C2? P005 neg nfet l=.9u w=3u
+M22 P005 N001 neg neg nfet l=.9u w=3u
+M23 N006 N005 pos pos pfet l=.9u w=6u
+M24 N006 N002 pos pos pfet l=.9u w=6u
+M25 N006 N005 P006 neg nfet l=.9u w=3u
+M26 P006 N002 neg neg nfet l=.9u w=3u
+M27 N008 N003 Iin pos pfet l={2*A} w={6*A}
+M28 N009 N004 Iin pos pfet l={2*A} w={6*A}
+M29 neg N007 Iin pos pfet l={2*A} w={6*A}
+M30 N008 N005 Iref pos pfet l={2*A} w={6*A}
+M31 N009 N002 Iref pos pfet l={2*A} w={6*A}
+M32 neg N006 Iref pos pfet l={2*A} w={6*A}
+M33 N008 CLC1 neg neg nfet l={2*A} w={24*A}
+M34 neg CLC2 N009 neg nfet l={2*A} w={24*A}
+C1 N008 neg 10p
+C2 N009 neg 10p
+.backanno
+.end
