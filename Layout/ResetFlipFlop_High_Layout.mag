@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1354990652
+timestamp 1355516091
 << nwell >>
 rect 322 -274 425 -208
 << pwell >>
@@ -219,6 +219,8 @@ rect 415 -256 419 -238
 rect 403 -266 407 -262
 << nsubstratendiff >>
 rect 416 -222 420 -218
+<< psubstratepcontact >>
+rect 414 -333 418 -329
 << nsubstratencontact >>
 rect 412 -222 416 -218
 << polysilicon >>
@@ -402,8 +404,11 @@ rect 408 -326 425 -322
 rect 372 -332 386 -326
 rect 390 -328 425 -326
 rect 390 -332 404 -328
-rect 408 -332 425 -328
-rect 322 -334 425 -332
+rect 408 -329 425 -328
+rect 408 -332 414 -329
+rect 322 -333 414 -332
+rect 418 -333 425 -329
+rect 322 -334 425 -333
 rect 322 -344 336 -334
 rect 345 -341 350 -339
 rect 354 -341 359 -339

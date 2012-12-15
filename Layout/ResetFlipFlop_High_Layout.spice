@@ -1,5 +1,8 @@
 * SPICE3 file created from ResetFlipFlop_High_Layout.ext - technology: scmos
 
+
+* Top level circuit ResetFlipFlop_High_Layout
+
 M1000 Vpos a_340_n333# a_330_n301# Vpos pfet w=6u l=0.9u
 + ad=56.16p pd=94.8u as=6.66p ps=15u 
 M1001 Vpos a_376_n333# a_367_n305# Vpos pfet w=6u l=0.9u
@@ -64,4 +67,5 @@ M1030 a_376_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
 M1031 Vneg RST a_376_n333# Vneg nfet w=4.5u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
+.end
 

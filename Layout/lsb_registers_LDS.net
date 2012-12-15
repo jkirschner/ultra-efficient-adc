@@ -1,0 +1,157 @@
+* Z:\home\awhitcombe\VLSI\Project\ultra-efficient-adc\Layout\lsb_registers_LDS.asc
+XX15 N001 W_CLK W_CLKb Bit11 NC_01 RST_ORb pos neg resetflipflop_low_lds
+XX16 N002 W_CLK W_CLKb Bit10 NC_02 RST_ORb pos neg resetflipflop_low_lds
+XX17 N003 W_CLK W_CLKb Bit9 NC_03 RST_ORb pos neg resetflipflop_low_lds
+XX18 N004 W_CLK W_CLKb Bit8 NC_04 RST_ORb pos neg resetflipflop_low_lds
+XX19 N005 W_CLK W_CLKb Bit7 NC_05 RST_ORb pos neg resetflipflop_low_lds
+XX20 N006 W_CLK W_CLKb Bit6 NC_06 RST_ORb pos neg resetflipflop_low_lds
+XX21 N007 W_CLK W_CLKb Bit5 NC_07 RST_ORb pos neg resetflipflop_low_lds
+XX22 N008 W_CLK W_CLKb Bit4 NC_08 RST_ORb pos neg resetflipflop_low_lds
+XX23 N009 W_CLK W_CLKb Bit3 NC_09 RST_ORb pos neg resetflipflop_low_lds
+XX24 N010 W_CLK W_CLKb Bit2 NC_10 RST_ORb pos neg resetflipflop_low_lds
+XX4 N017 LSB_CLK N026 N003 N018 RST_IRb pos neg resetflipflop_low_lds
+XX6 N019 LSB_CLK N026 N005 N020 RST_IRb pos neg resetflipflop_low_lds
+XX8 N021 LSB_CLK N026 N007 N022 RST_IRb pos neg resetflipflop_low_lds
+XX10 N023 LSB_CLK N026 N009 N024 RST_IRb pos neg resetflipflop_low_lds
+XX12 N025 N026 LSB_CLK Done? N027 RST_IRb pos neg resetflipflop_low_lds
+XX2 N014 N026 N013 NC_11 neg pos LSB_CLK RST_IRb toggleflipflop_low_lds_symbol
+XX3 LSB_CLK N012 N014 NC_12 neg pos N011 LSB_CLK toggleflipflop_low_lds_symbol
+XX1 LSB_CLK SYS_CLKb N011 N012 neg pos SYS_CLK LSB_CLK toggleflipflop_low_lds_symbol
+XX5 N015 LSB_CLK N026 N001 N016 RST_IR pos neg resetflipflop_high_lds
+XX7 N016 LSB_CLK N026 N002 N017 RST_IR pos neg resetflipflop_high_lds
+XX9 N018 LSB_CLK N026 N004 N019 RST_IR pos neg resetflipflop_high_lds
+XX11 N020 LSB_CLK N026 N006 N021 RST_IR pos neg resetflipflop_high_lds
+XX14 N022 LSB_CLK N026 N008 N023 RST_IR pos neg resetflipflop_high_lds
+XX26 N024 N026 LSB_CLK N010 N025 RST_IR pos neg resetflipflop_high_lds
+XX25 N012 N011 N015 N013 pos neg spdt_lvs
+M1 N026 LSB_CLK neg neg nfet l=0.9u w=10.8u
+M2 N026 LSB_CLK pos pos pfet l=0.9u w=10.8u
+M3 N026 LSB_CLK pos pos pfet l=0.9u w=10.8u
+
+* block symbol definitions
+.subckt resetflipflop_low_lds D CLK CLKb Q Qb RESETb pos neg
+M1 N005 CLK N007 neg nfet l=0.9u w=3u
+M4 N003 D pos pos pfet l=0.9u w=6u
+M28 N001 RESETb pos pos pfet l=0.9u w=7.8u
+M29 N001 RESETb pos pos pfet l=0.9u w=12.6u
+M3 N005 CLKb N003 pos pfet l=0.9u w=6u
+M6 N002 N005 pos pos pfet l=0.9u w=6u
+M9 N001 CLK N004 pos pfet l=0.9u w=6u
+M10 N004 N002 pos pos pfet l=0.9u w=6u
+M11 N006 N001 pos pos pfet l=0.9u w=6u
+M12 Q N001 pos pos pfet l=0.9u w=6u
+M16 Qb N006 pos pos pfet l=0.9u w=6u
+M17 N001 CLKb N009 pos pfet l=0.9u w=6u
+M18 N009 N006 pos pos pfet l=0.9u w=6u
+M22 N005 CLK N010 pos pfet l=0.9u w=6u
+M24 N010 N002 pos pos pfet l=0.9u w=6u
+M2 N007 D neg neg nfet l=0.9u w=3u
+M5 N002 N005 neg neg nfet l=0.9u w=3u
+M7 N001 CLKb N008 neg nfet l=0.9u w=3u
+M8 N008 N002 neg neg nfet l=0.9u w=3u
+M13 N006 N001 neg neg nfet l=0.9u w=3u
+M14 Qb N006 neg neg nfet l=0.9u w=3u
+M15 N001 CLK N011 neg nfet l=0.9u w=3u
+M19 N011 N006 neg neg nfet l=0.9u w=3u
+M20 N012 N002 neg neg nfet l=0.9u w=3u
+M21 N005 CLKb N012 neg nfet l=0.9u w=3u
+M25 N001 RESETb pos pos pfet l=0.9u w=7.8u
+M26 N001 RESETb pos pos pfet l=0.9u w=7.8u
+M27 N005 RESETb pos pos pfet l=0.9u w=7.8u
+M30 N005 RESETb pos pos pfet l=0.9u w=12.6u
+M31 N005 RESETb pos pos pfet l=0.9u w=7.8u
+M32 N005 RESETb pos pos pfet l=0.9u w=7.8u
+M23 Q N001 neg neg nfet l=0.9u w=3u
+.ends resetflipflop_low_lds
+
+.subckt toggleflipflop_low_lds_symbol T CB Q QB V- V+ C Rb
+M1 N001 Q N005 V- nfet l=0.9u w=3u
+M2 N005 T V- V- nfet l=0.9u w=3u
+M3 N001 T V+ V+ pfet l=0.9u w=6u
+M4 N001 Q V+ V+ pfet l=0.9u w=6u
+M5 N003 T V- V- nfet l=0.9u w=3u
+M6 N003 T V+ V+ pfet l=0.9u w=6u
+M7 N004 QB N007 V- nfet l=0.9u w=3u
+M8 N007 N003 V- V- nfet l=0.9u w=3u
+M9 N004 N003 V+ V+ pfet l=0.9u w=6u
+M10 N004 QB V+ V+ pfet l=0.9u w=6u
+M11 N002 N004 N006 V- nfet l=0.9u w=3u
+M12 N006 N001 V- V- nfet l=0.9u w=3u
+M13 N002 N001 V+ V+ pfet l=0.9u w=6u
+M14 N002 N004 V+ V+ pfet l=0.9u w=6u
+XX1 N002 C CB Q QB Rb V+ V- resetflipflop_low_lds
+.ends toggleflipflop_low_lds_symbol
+
+.subckt resetflipflop_high_lds D CLK CLKb Q Qb RESET pos neg
+M1 N007 D neg neg nfet l=0.9u w=3u
+M2 N003 D pos pos pfet l=0.9u w=6u
+M3 N001 RESET neg neg nfet l=0.9u w=4.5u
+M4 N005 CLKb N003 pos pfet l=0.9u w=6u
+M5 N002 N005 pos pos pfet l=0.9u w=6u
+M6 N001 CLK N004 pos pfet l=0.9u w=6u
+M7 N004 N002 pos pos pfet l=0.9u w=6u
+M8 Q N001 pos pos pfet l=0.9u w=6u
+M9 N006 N001 pos pos pfet l=0.9u w=6u
+M10 pos N002 N010 pos pfet l=0.9u w=6u
+M11 N010 CLK N005 pos pfet l=0.9u w=6u
+M12 N009 CLKb N001 pos pfet l=0.9u w=6u
+M13 pos N006 N009 pos pfet l=0.9u w=6u
+M14 Qb N006 pos pos pfet l=0.9u w=6u
+M15 N005 CLK N007 neg nfet l=0.9u w=3u
+M16 N002 N005 neg neg nfet l=0.9u w=3u
+M17 N001 CLKb N008 neg nfet l=0.9u w=3u
+M18 N008 N002 neg neg nfet l=0.9u w=3u
+M19 N006 N001 neg neg nfet l=0.9u w=3u
+M20 Qb N006 neg neg nfet l=0.9u w=3u
+M21 N001 CLK N011 neg nfet l=0.9u w=3u
+M22 N011 N006 neg neg nfet l=0.9u w=3u
+M23 N005 CLKb N012 neg nfet l=0.9u w=3u
+M24 N012 N002 neg neg nfet l=0.9u w=3u
+M25 N001 RESET neg neg nfet l=0.9u w=4.5u
+M26 N001 RESET neg neg nfet l=0.9u w=4.5u
+M27 N001 RESET neg neg nfet l=0.9u w=4.5u
+M28 N005 RESET neg neg nfet l=0.9u w=4.5u
+M29 N005 RESET neg neg nfet l=0.9u w=4.5u
+M30 N005 RESET neg neg nfet l=0.9u w=4.5u
+M31 N005 RESET neg neg nfet l=0.9u w=4.5u
+M32 Q N001 neg neg nfet l=0.9u w=3u
+.ends resetflipflop_high_lds
+
+.subckt spdt_lvs IN1 IN2 OUT S V+ V-
+M1 OUT S IN1 V- nfet l=0.9u w=3u
+M2 IN1 N001 OUT V+ pfet l=0.9u w=6u
+M3 OUT S IN2 V+ pfet l=0.9u w=6u
+M4 IN2 N001 OUT V- nfet l=0.9u w=3u
+XX1 S N001 V+ V- inverter
+.ends spdt_lvs
+
+.subckt inverter IN OUT pos neg
+M1 OUT IN neg neg nfet l=0.9u w=3u
+M2 OUT IN pos pos pfet l=0.9u w=6u
+.ends inverter
+
+* Bit11
+* Bit10
+* Bit9
+* Bit8
+* Bit7
+* Bit6
+* Bit5
+* Bit4
+* Bit3
+* Bit2
+* Done?
+* Done? 1/2 cycle early
+* Inputs: LSB_CLK, SYS_CLK, SYS_CLKb, W_CLK, W_CLKb, RST_IR, RST_IRb, RST_ORb
+* Bit11
+* Bit10
+* Bit9
+* Bit8
+* Bit7
+* Bit6
+* Bit5
+* Bit4
+* Bit3
+* Bit2
+.backanno
+.end
