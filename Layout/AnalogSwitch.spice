@@ -1,72 +1,95 @@
 * SPICE3 file created from AnalogSwitch.ext - technology: scmos
 
-M1000 a_n13_n17# Iin? pos pos pfet w=6u l=0.9u
-+ ad=10.8p pd=15.6u as=129.96p ps=141.6u 
-M1001 pos C1? a_n13_n17# pos pfet w=6u l=0.9u
-+ ad=0p pd=0u as=0p ps=0u 
-M1002 a_n1_n33# C2? pos pos pfet w=6u l=0.9u
+M1000 NOT_0/Out NOT_0/In pos pos pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=146.16p ps=172.8u 
+M1001 NOT_0/Out NOT_0/In neg neg nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=44.1p ps=108u 
+M1002 CLC2 NOT_1/In pos pos pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=0p ps=0u 
+M1003 CLC2 NOT_1/In neg neg nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=0p ps=0u 
+M1004 a_n13_n17# Iin? pos pos pfet w=6u l=0.9u
 + ad=10.8p pd=15.6u as=0p ps=0u 
-M1003 pos Iin? a_n1_n33# pos pfet w=6u l=0.9u
+M1005 pos C1? a_n13_n17# pos pfet w=6u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1004 a_15_n33# a_n13_n17# pos pos pfet w=6u l=0.9u
+M1006 a_n1_n33# C2? pos pos pfet w=6u l=0.9u
 + ad=10.8p pd=15.6u as=0p ps=0u 
-M1005 pos a_n1_n33# a_15_n33# pos pfet w=6u l=0.9u
+M1007 pos Iin? a_n1_n33# pos pfet w=6u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1006 a_64_n23# Iin? pos pos pfet w=6u l=0.9u
+M1008 a_15_n33# a_n13_n17# pos pos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1009 pos a_n1_n33# a_15_n33# pos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1010 a_64_n23# Iin? pos pos pfet w=6u l=0.9u
 + ad=6.48p pd=15u as=0p ps=0u 
-M1007 a_77_n33# a_64_n23# pos pos pfet w=6u l=0.9u
+M1011 a_77_n33# a_64_n23# pos pos pfet w=6u l=0.9u
 + ad=10.8p pd=15.6u as=0p ps=0u 
-M1008 pos C1? a_77_n33# pos pfet w=6u l=0.9u
+M1012 pos C1? a_77_n33# pos pfet w=6u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1009 a_88_n33# a_64_n23# pos pos pfet w=6u l=0.9u
+M1013 a_88_n33# a_64_n23# pos pos pfet w=6u l=0.9u
 + ad=10.8p pd=15.6u as=0p ps=0u 
-M1010 pos C2? a_88_n33# pos pfet w=6u l=0.9u
+M1014 pos C2? a_88_n33# pos pfet w=6u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1011 a_112_n33# a_88_n33# pos pos pfet w=6u l=0.9u
+M1015 a_112_n33# a_88_n33# pos pos pfet w=6u l=0.9u
 + ad=10.8p pd=15.6u as=0p ps=0u 
-M1012 pos a_77_n33# a_112_n33# pos pfet w=6u l=0.9u
+M1016 pos a_77_n33# a_112_n33# pos pfet w=6u l=0.9u
 + ad=0p pd=0u as=0p ps=0u 
-M1013 a_n5_n23# Iin? a_n13_n17# neg nfet w=3u l=0.9u
+M1017 a_n5_n23# Iin? a_n13_n17# neg nfet w=3u l=0.9u
 + ad=5.4p pd=9.6u as=3.42p ps=9u 
-M1014 neg C1? a_n5_n23# neg nfet w=3u l=0.9u
-+ ad=37.26p pd=90u as=0p ps=0u 
-M1015 a_13_n23# C2? neg neg nfet w=3u l=0.9u
+M1018 neg C1? a_n5_n23# neg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1019 a_13_n23# C2? neg neg nfet w=3u l=0.9u
 + ad=5.4p pd=9.6u as=0p ps=0u 
-M1016 a_n1_n33# Iin? a_13_n23# neg nfet w=3u l=0.9u
+M1020 a_n1_n33# Iin? a_13_n23# neg nfet w=3u l=0.9u
 + ad=4.5p pd=9u as=0p ps=0u 
-M1017 a_39_n23# a_n13_n17# neg neg nfet w=3u l=0.9u
+M1021 a_39_n23# a_n13_n17# neg neg nfet w=3u l=0.9u
 + ad=3.6p pd=8.4u as=0p ps=0u 
-M1018 a_15_n33# a_n1_n33# a_39_n23# neg nfet w=3u l=0.9u
+M1022 a_15_n33# a_n1_n33# a_39_n23# neg nfet w=3u l=0.9u
 + ad=4.41p pd=9u as=0p ps=0u 
-M1019 a_64_n23# Iin? neg neg nfet w=3u l=0.9u
+M1023 a_64_n23# Iin? neg neg nfet w=3u l=0.9u
 + ad=3.42p pd=9u as=0p ps=0u 
-M1020 a_81_n23# a_64_n23# neg neg nfet w=3u l=0.9u
+M1024 a_81_n23# a_64_n23# neg neg nfet w=3u l=0.9u
 + ad=5.4p pd=9.6u as=0p ps=0u 
-M1021 a_77_n33# C1? a_81_n23# neg nfet w=3u l=0.9u
+M1025 a_77_n33# C1? a_81_n23# neg nfet w=3u l=0.9u
 + ad=3.42p pd=9u as=0p ps=0u 
-M1022 a_107_n23# a_64_n23# neg neg nfet w=3u l=0.9u
+M1026 a_107_n23# a_64_n23# neg neg nfet w=3u l=0.9u
 + ad=5.4p pd=9.6u as=0p ps=0u 
-M1023 a_88_n33# C2? a_107_n23# neg nfet w=3u l=0.9u
+M1027 a_88_n33# C2? a_107_n23# neg nfet w=3u l=0.9u
 + ad=3.42p pd=9u as=0p ps=0u 
-M1024 a_133_n23# a_88_n33# neg neg nfet w=3u l=0.9u
+M1028 a_133_n23# a_88_n33# neg neg nfet w=3u l=0.9u
 + ad=5.4p pd=9.6u as=0p ps=0u 
-M1025 a_112_n33# a_77_n33# a_133_n23# neg nfet w=3u l=0.9u
+M1029 a_112_n33# a_77_n33# a_133_n23# neg nfet w=3u l=0.9u
 + ad=3.42p pd=9u as=0p ps=0u 
-M1026 Iin a_n13_n17# Vc1 pos pfet w=1.8u l=0.6u
+M1030 Iin a_n13_n17# Vc1 pos pfet w=1.8u l=0.6u
 + ad=5.58p pd=13.8u as=4.68p ps=13.2u 
-M1027 Vc2 a_n1_n33# Iin pos pfet w=1.8u l=0.6u
+M1031 Vc2 a_n1_n33# Iin pos pfet w=1.8u l=0.6u
 + ad=5.04p pd=13.2u as=0p ps=0u 
-M1028 neg a_15_n33# Iin pos pfet w=1.8u l=0.6u
-+ ad=6.12p pd=18u as=0p ps=0u 
-M1029 Iref a_77_n33# Vc1 pos pfet w=1.8u l=0.6u
+M1032 neg a_15_n33# Iin pos pfet w=1.8u l=0.6u
++ ad=9p pd=27.6u as=0p ps=0u 
+M1033 Iref a_77_n33# Vc1 pos pfet w=1.8u l=0.6u
 + ad=7.2p pd=15.6u as=0p ps=0u 
-M1030 Vc2 a_88_n33# Iref pos pfet w=1.8u l=0.6u
+M1034 Vc2 a_88_n33# Iref pos pfet w=1.8u l=0.6u
 + ad=0p pd=0u as=0p ps=0u 
-M1031 neg a_112_n33# Iref pos pfet w=1.8u l=0.6u
+M1035 neg a_112_n33# Iref pos pfet w=1.8u l=0.6u
 + ad=0p pd=0u as=0p ps=0u 
-M1032 Vc1 CLC1 neg neg nfet w=7.2u l=0.6u
+M1036 Vc1 NOT_0/Out neg neg nfet w=7.2u l=0.6u
 + ad=7.2p pd=17.4u as=0p ps=0u 
-M1033 Vc2 CLC2 neg neg nfet w=7.2u l=0.6u
+M1037 Vc2 CLC2 neg neg nfet w=7.2u l=0.6u
 + ad=7.2p pd=17.4u as=0p ps=0u 
-C3 Vc1 neg 10000fF
-C4 neg Vc2 10000fF
+C0 Vc2 neg 10030.9fF
+C1 a_88_n33# pos 2.6fF
+C2 a_n1_n33# pos 2.4fF
+C3 Iin? pos 6.3fF
+C4 a_15_n33# pos 2.7fF
+C5 a_64_n23# pos 3.5fF
+C6 Iref neg 8.4fF
+C7 a_77_n33# pos 4.4fF
+C8 Vc1 neg 10033.7fF
+C9 neg pos 4.5fF
+C10 Iref pos 2.3fF
+C11 a_n13_n17# pos 3.9fF
+C12 Vc1 pos 2.9fF
+C13 NOT_0/Out neg 5.3fF
+C14 Iin pos 2.9fF
+C15 a_88_n33# neg 2.4fF
+C16 a_n1_n33# neg 2.5fF
