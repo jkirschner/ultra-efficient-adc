@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1355466378
+timestamp 1355518500
 << nwell >>
 rect 242 56 256 135
 rect 342 128 346 132
@@ -52,11 +52,11 @@ timestamp 1355464966
 transform 1 0 23 0 1 71
 box -29 -71 219 64
 use doublePreamp  doublePreamp_0
-timestamp 1355464362
+timestamp 1355467216
 transform 1 0 269 0 1 33
 box -13 -34 142 102
 use GainLatch_layout  GainLatch_layout_0
-timestamp 1355462964
+timestamp 1355518364
 transform 0 -1 512 1 0 -9
 box 7 -31 184 88
 << labels >>
