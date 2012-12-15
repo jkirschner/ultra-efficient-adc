@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1355525328
+timestamp 1355540337
 << nwell >>
 rect -8 27 11 68
 rect -8 -8 4 27
@@ -503,7 +503,7 @@ rect 873 -429 877 -378
 rect 957 -428 961 -386
 rect 1158 -432 1162 -396
 use SPDT  SPDT_0
-timestamp 1355476235
+timestamp 1355531441
 transform 1 0 -27 0 1 0
 box 38 1 105 68
 use NOT  NOT_0
@@ -519,7 +519,7 @@ timestamp 1355475992
 transform -1 0 91 0 1 -72
 box -12 -42 36 26
 use ResetFlipFlop_High_Layout  ResetFlipFlop_High_Layout_0
-timestamp 1354990652
+timestamp 1355516091
 transform 1 0 -157 0 1 230
 box 322 -344 425 -207
 use ResetFlipFlop_Low_Layout  ResetFlipFlop_Low_Layout_0

@@ -1,0 +1,282 @@
+* SPICE3 file created from lsb_registers_Layout.ext - technology: scmos
+
+.subckt ResetFlipFlop_Low_Layout ClkB Vpos D Qb Vneg RstB Q Clk
+M1000 a_227_n262# RstB Vpos Vpos pfet w=12.6u l=0.9u
++ ad=44.28p pd=64.2u as=135.54p ps=211.2u 
+M1001 Vpos RstB a_227_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 a_227_n262# RstB Vpos Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1003 Vpos RstB a_227_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1004 Vpos a_227_n262# a_225_n326# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.66p ps=15u 
+M1005 a_266_n262# RstB Vpos Vpos pfet w=12.6u l=0.9u
++ ad=44.28p pd=64.2u as=0p ps=0u 
+M1006 Vpos RstB a_266_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1007 a_266_n262# RstB Vpos Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1008 Vpos RstB a_266_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1009 Vpos a_266_n262# a_258_n330# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.12p ps=15u 
+M1010 a_229_n289# D Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1011 a_227_n262# ClkB a_229_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1012 a_245_n289# Clk a_227_n262# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1013 Vpos a_225_n326# a_245_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1014 a_261_n289# a_225_n326# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1015 a_266_n262# Clk a_261_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1016 a_277_n289# ClkB a_266_n262# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1017 Vpos a_258_n330# a_277_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1018 Qb a_258_n330# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.29p pd=15.6u as=0p ps=0u 
+M1019 Q a_266_n262# Vpos Vpos pfet w=6u l=0.9u
++ ad=8.64p pd=15u as=0p ps=0u 
+M1020 a_229_n320# a_225_n326# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=30.96p ps=58.8u 
+M1021 a_227_n262# ClkB a_229_n320# Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1022 a_245_n320# Clk a_227_n262# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1023 Vneg D a_245_n320# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1024 a_261_n320# a_258_n330# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1025 a_266_n262# Clk a_261_n320# Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1026 a_277_n320# ClkB a_266_n262# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1027 Vneg a_225_n326# a_277_n320# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1028 Qb a_258_n330# Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1029 a_225_n326# a_227_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1030 a_258_n330# a_266_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1031 Q a_266_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.23p pd=9u as=0p ps=0u 
+.ends
+
+.subckt ResetFlipFlop_High_Layout ClkB Vpos D Qb Vneg Q Clk RST
+M1000 Vpos a_340_n333# a_330_n301# Vpos pfet w=6u l=0.9u
++ ad=56.16p pd=94.8u as=6.66p ps=15u 
+M1001 Vpos a_376_n333# a_367_n305# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.12p ps=15u 
+M1002 a_338_n264# D Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1003 a_340_n333# ClkB a_338_n264# Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1004 a_354_n264# Clk a_340_n333# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1005 Vpos a_330_n301# a_354_n264# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1006 a_370_n264# a_330_n301# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1007 a_376_n333# Clk a_370_n264# Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1008 a_386_n264# ClkB a_376_n333# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1009 Vpos a_367_n305# a_386_n264# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1010 Qb a_367_n305# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.29p pd=15.6u as=0p ps=0u 
+M1011 Q a_376_n333# Vpos Vpos pfet w=6u l=0.9u
++ ad=8.64p pd=15u as=0p ps=0u 
+M1012 a_338_n295# a_330_n301# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=66.96p ps=119.4u 
+M1013 a_340_n333# ClkB a_338_n295# Vneg nfet w=3u l=0.9u
++ ad=21.6p pd=34.8u as=0p ps=0u 
+M1014 a_354_n295# Clk a_340_n333# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1015 Vneg D a_354_n295# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1016 a_370_n295# a_367_n305# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1017 a_376_n333# Clk a_370_n295# Vneg nfet w=3u l=0.9u
++ ad=21.6p pd=34.8u as=0p ps=0u 
+M1018 a_386_n295# ClkB a_376_n333# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1019 Vneg a_330_n301# a_386_n295# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1020 Qb a_367_n305# Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1021 a_330_n301# a_340_n333# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1022 a_367_n305# a_376_n333# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1023 Q a_376_n333# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.23p pd=9u as=0p ps=0u 
+M1024 a_340_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1025 Vneg RST a_340_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1026 a_340_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1027 Vneg RST a_340_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1028 a_376_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1029 Vneg RST a_376_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1030 a_376_n333# RST Vneg Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1031 Vneg RST a_376_n333# Vneg nfet w=4.5u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+.ends
+
+.subckt SPDT Vpos In1 In2 Vneg S Out
+M1000 a_65_11# S Vpos Vpos pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=6.12p ps=15u 
+M1001 Out S In2 Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=6.12p ps=15u 
+M1002 In1 a_65_11# Out Vpos pfet w=6u l=0.9u
++ ad=6.12p pd=15u as=0p ps=0u 
+M1003 a_65_11# S Vneg Vneg nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=3.42p ps=9u 
+M1004 Out S In1 Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=3.42p ps=9u 
+M1005 In2 a_65_11# Out Vneg nfet w=3u l=0.9u
++ ad=3.42p pd=9u as=0p ps=0u 
+.ends
+
+.subckt ToggleFlipFlop_Low_Layout ClkB Vpos Qb Vneg RstB Q Clk T
+M1000 a_177_n338# T Vpos Vpos pfet w=6u l=0.9u
++ ad=9p pd=15u as=189.36p ps=301.8u 
+M1001 a_194_n255# a_177_n289# Vpos Vpos pfet w=6u l=0.9u
++ ad=18p pd=18u as=0p ps=0u 
+M1002 Vpos a_195_n289# a_194_n255# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1003 a_227_n262# RstB Vpos Vpos pfet w=12.6u l=0.9u
++ ad=44.28p pd=64.2u as=0p ps=0u 
+M1004 Vpos RstB a_227_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1005 a_227_n262# RstB Vpos Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1006 Vpos RstB a_227_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1007 Vpos a_227_n262# a_225_n326# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.66p ps=15u 
+M1008 a_266_n262# RstB Vpos Vpos pfet w=12.6u l=0.9u
++ ad=44.28p pd=64.2u as=0p ps=0u 
+M1009 Vpos RstB a_266_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1010 a_266_n262# RstB Vpos Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1011 Vpos RstB a_266_n262# Vpos pfet w=7.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1012 Vpos a_266_n262# a_258_n330# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=6.12p ps=15u 
+M1013 a_177_n289# T Vpos Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1014 Vpos Q a_177_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1015 a_195_n289# a_177_n338# Vpos Vpos pfet w=6u l=0.9u
++ ad=10.8p pd=15.6u as=0p ps=0u 
+M1016 Vpos Qb a_195_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1017 a_229_n289# a_194_n255# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1018 a_227_n262# ClkB a_229_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1019 a_245_n289# Clk a_227_n262# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1020 Vpos a_225_n326# a_245_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1021 a_261_n289# a_225_n326# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1022 a_266_n262# Clk a_261_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1023 a_277_n289# ClkB a_266_n262# Vpos pfet w=6u l=0.9u
++ ad=7.2p pd=14.4u as=0p ps=0u 
+M1024 Vpos a_258_n330# a_277_n289# Vpos pfet w=6u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1025 a_172_n313# T Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=48.96p ps=94.8u 
+M1026 a_177_n289# Q a_172_n313# Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1027 a_198_n313# a_177_n338# Vneg Vneg nfet w=3u l=0.9u
++ ad=2.7p pd=7.8u as=0p ps=0u 
+M1028 a_195_n289# Qb a_198_n313# Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1029 Qb a_258_n330# Vpos Vpos pfet w=6u l=0.9u
++ ad=7.29p pd=15.6u as=0p ps=0u 
+M1030 Q a_266_n262# Vpos Vpos pfet w=6u l=0.9u
++ ad=8.64p pd=15u as=0p ps=0u 
+M1031 a_229_n320# a_225_n326# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1032 a_227_n262# ClkB a_229_n320# Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1033 a_245_n320# Clk a_227_n262# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1034 Vneg a_194_n255# a_245_n320# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1035 a_261_n320# a_258_n330# Vneg Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1036 a_266_n262# Clk a_261_n320# Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1037 a_277_n320# ClkB a_266_n262# Vneg nfet w=3u l=0.9u
++ ad=3.6p pd=8.4u as=0p ps=0u 
+M1038 Vneg a_225_n326# a_277_n320# Vneg nfet w=3u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1039 Qb a_258_n330# Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1040 a_177_n338# T Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1041 a_195_n338# a_177_n289# Vneg Vneg nfet w=3u l=0.9u
++ ad=5.4p pd=9.6u as=0p ps=0u 
+M1042 a_194_n255# a_195_n289# a_195_n338# Vneg nfet w=3u l=0.9u
++ ad=3.78p pd=9u as=0p ps=0u 
+M1043 a_225_n326# a_227_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1044 a_258_n330# a_266_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.5p pd=9u as=0p ps=0u 
+M1045 Q a_266_n262# Vneg Vneg nfet w=3u l=0.9u
++ ad=4.23p pd=9u as=0p ps=0u 
+.ends
+
+
+* Top level circuit lsb_registers_Layout
+
+X0 LSB_CLK Vpos ResetFlipFlop_Low_Layout_20/D ResetFlipFlop_Low_Layout_20/Qb Vneg ToggleFlipFlop_Low_Layout_2/RstB ResetFlipFlop_Low_Layout_20/Q ResetFlipFlop_High_Layout_0/Clk ResetFlipFlop_Low_Layout
+X1 LSB_CLK Vpos ResetFlipFlop_High_Layout_0/D ResetFlipFlop_Low_Layout_20/D Vneg ResetFlipFlop_Low_Layout_9/D ResetFlipFlop_High_Layout_0/Clk ResetFlipFlop_High_Layout_5/RST ResetFlipFlop_High_Layout
+X2 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_Low_Layout_18/D ResetFlipFlop_High_Layout_0/D Vneg ToggleFlipFlop_Low_Layout_2/RstB ResetFlipFlop_Low_Layout_8/D LSB_CLK ResetFlipFlop_Low_Layout
+X3 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_High_Layout_1/D ResetFlipFlop_Low_Layout_18/D Vneg ResetFlipFlop_Low_Layout_7/D LSB_CLK ResetFlipFlop_High_Layout_5/RST ResetFlipFlop_High_Layout
+X4 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_Low_Layout_16/D ResetFlipFlop_High_Layout_1/D Vneg ToggleFlipFlop_Low_Layout_2/RstB ResetFlipFlop_Low_Layout_6/D LSB_CLK ResetFlipFlop_Low_Layout
+X5 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_High_Layout_2/D ResetFlipFlop_Low_Layout_16/D Vneg ResetFlipFlop_Low_Layout_5/D LSB_CLK ResetFlipFlop_High_Layout_5/RST ResetFlipFlop_High_Layout
+X6 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_Low_Layout_14/D ResetFlipFlop_High_Layout_2/D Vneg ToggleFlipFlop_Low_Layout_2/RstB ResetFlipFlop_Low_Layout_4/D LSB_CLK ResetFlipFlop_Low_Layout
+X7 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_High_Layout_3/D ResetFlipFlop_Low_Layout_14/D Vneg ResetFlipFlop_Low_Layout_3/D LSB_CLK ResetFlipFlop_High_Layout_5/RST ResetFlipFlop_High_Layout
+X8 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_Low_Layout_12/D ResetFlipFlop_High_Layout_3/D Vneg ToggleFlipFlop_Low_Layout_2/RstB ResetFlipFlop_Low_Layout_2/D LSB_CLK ResetFlipFlop_Low_Layout
+X9 ResetFlipFlop_High_Layout_0/Clk Vpos ResetFlipFlop_High_Layout_4/D ResetFlipFlop_Low_Layout_12/D Vneg ResetFlipFlop_Low_Layout_1/D LSB_CLK ResetFlipFlop_High_Layout_5/RST ResetFlipFlop_High_Layout
+X10 ResetFlipFlop_High_Layout_0/Clk Vpos SPDT_0/Out ResetFlipFlop_High_Layout_4/D Vneg ResetFlipFlop_Low_Layout_0/D LSB_CLK ResetFlipFlop_High_Layout_5/RST ResetFlipFlop_High_Layout
+X11 Vpos SPDT_0/In1 SPDT_0/In2 Vneg SPDT_0/S SPDT_0/Out SPDT
+X12 ResetFlipFlop_High_Layout_0/Clk Vpos ToggleFlipFlop_Low_Layout_2/Qb Vneg ToggleFlipFlop_Low_Layout_2/RstB SPDT_0/S LSB_CLK ToggleFlipFlop_Low_Layout_1/Q ToggleFlipFlop_Low_Layout
+X13 SPDT_0/In1 Vpos ToggleFlipFlop_Low_Layout_1/Qb Vneg LSB_CLK ToggleFlipFlop_Low_Layout_1/Q SPDT_0/In2 LSB_CLK ToggleFlipFlop_Low_Layout
+X14 SYS_CLKb Vpos SPDT_0/In1 Vneg LSB_CLK SPDT_0/In2 SYS_CLK LSB_CLK ToggleFlipFlop_Low_Layout
+X15 W_CLKb Vpos ResetFlipFlop_Low_Layout_9/D ResetFlipFlop_Low_Layout_9/Qb Vneg RST_ORb Bit2 W_CLK ResetFlipFlop_Low_Layout
+X16 W_CLKb Vpos ResetFlipFlop_Low_Layout_8/D ResetFlipFlop_Low_Layout_8/Qb Vneg RST_ORb Bit3 W_CLK ResetFlipFlop_Low_Layout
+X17 W_CLKb Vpos ResetFlipFlop_Low_Layout_7/D ResetFlipFlop_Low_Layout_7/Qb Vneg RST_ORb ResetFlipFlop_Low_Layout_7/Q W_CLK ResetFlipFlop_Low_Layout
+X18 W_CLKb Vpos ResetFlipFlop_Low_Layout_6/D ResetFlipFlop_Low_Layout_6/Qb Vneg RST_ORb ResetFlipFlop_Low_Layout_6/Q W_CLK ResetFlipFlop_Low_Layout
+X19 W_CLKb Vpos ResetFlipFlop_Low_Layout_5/D ResetFlipFlop_Low_Layout_5/Qb Vneg RST_ORb ResetFlipFlop_Low_Layout_5/Q W_CLK ResetFlipFlop_Low_Layout
+X20 W_CLKb Vpos ResetFlipFlop_Low_Layout_4/D ResetFlipFlop_Low_Layout_4/Qb Vneg RST_ORb Bit7 W_CLK ResetFlipFlop_Low_Layout
+X21 W_CLKb Vpos ResetFlipFlop_Low_Layout_3/D ResetFlipFlop_Low_Layout_3/Qb Vneg RST_ORb Bit8 W_CLK ResetFlipFlop_Low_Layout
+X22 W_CLKb Vpos ResetFlipFlop_Low_Layout_2/D ResetFlipFlop_Low_Layout_2/Qb Vneg RST_ORb Bit9 W_CLK ResetFlipFlop_Low_Layout
+X23 W_CLKb Vpos ResetFlipFlop_Low_Layout_1/D ResetFlipFlop_Low_Layout_1/Qb Vneg RST_ORb Bit10 W_CLK ResetFlipFlop_Low_Layout
+X24 W_CLKb Vpos ResetFlipFlop_Low_Layout_0/D ResetFlipFlop_Low_Layout_0/Qb Vneg RST_ORb Bit11 W_CLK ResetFlipFlop_Low_Layout
+M1000 Vpos LSB_CLK ResetFlipFlop_High_Layout_0/Clk Vpos pfet w=10.8u l=0.9u
++ ad=2976.3p pd=4710u as=25.92p ps=26.4u 
+M1001 ResetFlipFlop_High_Layout_0/Clk LSB_CLK Vpos Vpos pfet w=10.8u l=0.9u
++ ad=0p pd=0u as=0p ps=0u 
+M1002 ResetFlipFlop_High_Layout_0/Clk LSB_CLK Vneg Vneg nfet w=10.8u l=0.9u
++ ad=16.02p pd=26.4u as=1032.48p ps=1918.2u 
+.end
+
