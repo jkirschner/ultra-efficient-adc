@@ -35,14 +35,27 @@ M33 N008 CLC1 neg neg nfet l={2*A} w={24*A}
 M34 neg CLC2 N009 neg nfet l={2*A} w={24*A}
 C1 N008 neg 10p
 C2 N009 neg 10p
-XX1 NC_01 CLC1 pos neg inverter
-XX2 NC_02 CLC2 pos neg inverter
+XX1 N010 CLC1 pos neg inverter
+XX2 P007 CLC2 pos neg inverter
+XX3 RST_IR N010 N011 pos neg norlvs
+XX4 N014 P007 RST_IR pos neg norlvs
+XX5 COb N011 N012 pos neg norlvs
+XX6 N013 N014 COb pos neg norlvs
+XX7 RST_C1_CO? N012 pos neg inverter
+XX8 RST_C2_CO? N013 pos neg inverter
 
 * block symbol definitions
 .subckt inverter IN OUT pos neg
 M1 OUT IN neg neg nfet l=.9u w=3u
 M2 OUT IN pos pos pfet l=.9u w=6u
 .ends inverter
+
+.subckt norlvs A Out B Vdd neg
+M1 Out B neg neg nfet l=.9u w=3u
+M2 neg A Out neg nfet l=.9u w=3u
+M3 Vdd B N001 Vdd pfet l=.9u w=6u
+M4 N001 A Out Vdd pfet l=.9u w=6u
+.ends norlvs
 
 .param A=0.3u
 .param pmosL=.9u

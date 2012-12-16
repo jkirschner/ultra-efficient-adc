@@ -1,21 +1,37 @@
 magic
 tech scmos
-timestamp 1355608955
+timestamp 1355620377
 << nwell >>
-rect -40 -7 165 47
-rect -40 -26 -28 -7
-rect -114 -69 -107 -26
-rect -59 -30 -28 -26
-rect -59 -51 153 -30
+rect -56 35 165 47
+rect -271 4 -246 32
+rect -270 2 -246 4
+rect -198 2 -175 30
+rect -264 -3 -246 2
+rect -203 -2 -175 2
+rect -264 -37 -252 -3
+rect -192 -5 -175 -2
+rect -127 -1 -108 30
+rect -127 -2 -109 -1
+rect -62 -2 165 35
+rect -192 -51 -180 -5
+rect -127 -37 -115 -2
+rect -51 -7 165 -2
+rect -51 -30 -28 -7
+rect -51 -51 153 -30
+rect -51 -55 -40 -51
 << pwell >>
+rect -318 -69 -306 -28
+rect -318 -83 -300 -69
+rect -246 -71 -234 -31
+rect -252 -72 -234 -71
+rect -175 -72 -163 -34
 rect -28 -30 165 -7
+rect -104 -69 -92 -34
 rect 153 -51 165 -30
-rect -40 -58 165 -51
-rect -114 -78 -107 -69
-rect -127 -82 -107 -78
-rect -127 -87 -106 -82
-rect -59 -87 165 -58
-rect -127 -101 165 -87
+rect -104 -72 -88 -69
+rect -318 -105 -297 -83
+rect -252 -101 -88 -72
+rect -40 -101 165 -51
 << electrodecontact >>
 rect 11 -117 15 -113
 rect 86 -115 90 -111
@@ -302,7 +318,8 @@ rect 83 -91 85 -89
 rect 8 -97 10 -95
 rect -297 -105 -294 -101
 rect -290 -105 -130 -101
-rect -126 -105 3 -101
+rect -126 -105 -46 -101
+rect -42 -105 3 -101
 rect 7 -105 53 -101
 rect 57 -105 62 -101
 rect -297 -461 62 -105
@@ -332,25 +349,42 @@ rect 82 -64 86 -60
 rect 7 -70 11 -66
 rect -294 -105 -290 -101
 rect -130 -105 -126 -101
+rect -46 -105 -42 -101
 rect 3 -105 7 -101
 rect 53 -105 57 -101
 rect 78 -105 82 -101
 rect 121 -105 125 -101
 << metal1 >>
 rect 125 43 134 44
-rect -299 35 -67 43
-rect -59 35 -39 43
+rect -299 35 -39 43
 rect -33 35 134 43
-rect 143 35 429 44
-rect -299 28 -17 32
+rect 143 35 165 44
+rect -270 33 -180 35
+rect -270 19 -246 33
+rect -198 30 -180 33
+rect -121 30 -62 35
+rect -198 19 -175 30
+rect -325 1 -318 5
+rect -318 -82 -306 -28
+rect -264 -37 -252 19
+rect -192 16 -175 19
+rect -127 16 -108 30
+rect -246 -82 -234 -31
+rect -192 -51 -180 16
+rect -121 12 -108 16
+rect -318 -83 -300 -82
+rect -318 -101 -297 -83
+rect -252 -86 -234 -82
+rect -175 -86 -163 -34
+rect -121 -37 -113 12
+rect -104 -82 -93 -34
+rect -51 -55 -40 35
 rect 0 27 90 31
 rect 0 24 4 27
-rect -299 20 0 24
+rect -24 20 0 24
 rect 89 19 147 20
 rect 89 18 91 19
 rect 30 17 73 18
-rect -114 -54 -107 -26
-rect -67 -44 -59 10
 rect -9 9 5 17
 rect 9 9 23 17
 rect 27 10 41 17
@@ -406,7 +440,6 @@ rect 27 -25 60 -23
 rect 27 -38 31 -25
 rect 134 -29 138 -17
 rect 116 -33 138 -29
-rect -59 -66 -53 -57
 rect -13 -59 -9 -41
 rect 3 -52 7 -42
 rect 23 -42 61 -38
@@ -420,29 +453,49 @@ rect 109 -49 112 -45
 rect 116 -53 120 -42
 rect 57 -57 116 -53
 rect -13 -63 44 -59
-rect -59 -68 7 -66
-rect -56 -70 7 -68
+rect -40 -70 7 -66
 rect 15 -67 19 -63
-rect 15 -71 426 -67
-rect -127 -98 -106 -82
-rect -130 -101 -106 -98
+rect -40 -72 -36 -70
+rect 15 -71 165 -67
+rect -104 -86 -88 -82
+rect -252 -101 -228 -86
+rect -180 -101 -158 -86
+rect -110 -101 -88 -86
+rect -46 -101 -42 -99
+rect -318 -105 -294 -101
 rect 3 -101 7 -77
-rect -302 -105 -294 -101
 rect 15 -77 19 -71
 rect 11 -113 15 -77
 rect 33 -78 105 -74
 rect 78 -94 82 -87
 rect 78 -101 82 -98
 rect 57 -105 78 -101
-rect 94 -87 426 -83
+rect 94 -87 165 -83
 rect 86 -111 90 -87
 rect 121 -101 125 -96
 << m2contact >>
-rect -67 35 -59 43
 rect -39 35 -33 43
+rect -274 1 -270 5
+rect -246 1 -242 5
+rect -203 -2 -198 2
+rect -239 -6 -235 -2
+rect -300 -72 -296 -68
+rect -261 -72 -257 -68
+rect -175 -2 -171 2
+rect -131 -5 -127 -1
+rect -168 -9 -164 -5
+rect -228 -69 -224 -65
+rect -188 -72 -184 -68
+rect -228 -76 -224 -72
+rect -110 -5 -106 -1
+rect -76 -5 -72 -1
+rect -158 -69 -154 -65
+rect -114 -72 -110 -68
+rect -158 -76 -154 -72
+rect -21 28 -17 32
+rect -28 20 -24 24
 rect 14 20 18 24
 rect 108 24 112 28
-rect -67 10 -59 14
 rect -17 9 -13 17
 rect -13 -6 -9 -2
 rect 32 -6 36 -2
@@ -463,20 +516,40 @@ rect 40 -49 44 -45
 rect 21 -56 25 -52
 rect 105 -49 109 -45
 rect 116 -57 120 -53
-rect -118 -72 -114 -68
+rect -88 -72 -84 -68
 rect 78 -64 82 -60
 rect 29 -78 33 -74
 rect 105 -78 109 -74
 rect 90 -87 94 -83
 rect 121 -96 125 -92
 << metal2 >>
-rect -67 14 -59 35
+rect -270 1 -246 5
+rect -239 -2 -235 43
+rect -198 -2 -175 2
+rect -250 -6 -239 -2
+rect -168 -5 -164 43
+rect -127 -5 -110 -1
+rect -250 -65 -246 -6
+rect -180 -9 -168 -5
+rect -180 -65 -175 -9
+rect -324 -72 -300 -68
+rect -250 -69 -228 -65
+rect -180 -69 -158 -65
+rect -110 -72 -88 -68
+rect -261 -76 -228 -72
+rect -188 -76 -158 -72
+rect -76 -81 -72 -5
+rect -60 -59 -56 46
+rect -53 -45 -49 46
+rect -46 6 -42 46
 rect -39 17 -33 35
+rect -28 24 -24 45
+rect -21 32 -17 45
 rect 12 20 14 24
 rect 18 20 112 24
 rect -39 9 -17 17
 rect 12 6 16 20
-rect -298 2 17 6
+rect -46 2 17 6
 rect -9 -6 32 -2
 rect 76 -3 103 -2
 rect 76 -6 107 -3
@@ -489,32 +562,54 @@ rect 114 -17 121 -13
 rect 110 -25 114 -17
 rect 92 -29 114 -25
 rect 63 -42 69 -38
-rect -40 -46 -5 -45
+rect -53 -46 -5 -45
 rect -1 -46 11 -45
 rect 63 -45 67 -42
-rect -40 -49 15 -46
+rect -53 -49 15 -46
 rect 44 -49 67 -45
 rect 96 -52 100 -42
 rect 25 -56 100 -52
-rect -40 -63 33 -59
-rect -114 -72 -65 -68
-rect -69 -81 -65 -72
+rect -60 -63 33 -59
 rect 29 -74 33 -63
 rect 61 -64 78 -60
 rect 61 -81 65 -64
-rect -69 -85 65 -81
+rect -76 -85 65 -81
 rect 90 -83 94 -56
 rect 105 -74 109 -49
 rect 121 -53 125 -25
 rect 120 -57 125 -53
 rect 121 -92 125 -57
+use NOT  NOT_3
+timestamp 1355475633
+transform 1 0 -313 0 1 -5
+box -5 -23 43 41
+use NOR  NOR_3
+timestamp 1355475848
+transform 1 0 -232 0 1 -9
+box -14 -22 34 42
+use NOR  NOR_1
+timestamp 1355475848
+transform 1 0 -161 0 1 -12
+box -14 -22 34 42
 use NOT  NOT_1
 timestamp 1355475633
-transform 1 0 -157 0 1 -78
+transform 1 0 -105 0 1 -11
 box -5 -23 43 41
+use NOT  NOT_2
+timestamp 1355475633
+transform 1 0 -295 0 1 -78
+box -5 -23 43 41
+use NOR  NOR_2
+timestamp 1355475848
+transform 1 0 -214 0 1 -79
+box -14 -22 34 42
+use NOR  NOR_0
+timestamp 1355475848
+transform 1 0 -144 0 1 -79
+box -14 -22 34 42
 use NOT  NOT_0
 timestamp 1355475633
-transform 1 0 -102 0 1 -67
+transform 1 0 -83 0 1 -78
 box -5 -23 43 41
 << labels >>
 rlabel polycontact 2 20 3 21 1 C1?
@@ -522,11 +617,23 @@ rlabel metal2 -2 -48 -2 -48 1 Iin
 rlabel polysilicon -7 29 -7 29 1 Iin?
 rlabel metal2 -35 3 -35 3 1 C2?
 rlabel metal2 -29 -84 -29 -84 1 CLC2
-rlabel metal1 423 -85 423 -85 1 Vc2
-rlabel metal1 424 -69 424 -69 7 Vc1
 rlabel polycontact 11 20 12 21 1 C2?
 rlabel metal1 5 -99 5 -98 1 neg
 rlabel metal1 -1 40 -1 40 1 pos
 rlabel metal1 80 -93 80 -93 1 neg
 rlabel metal2 -18 -61 -18 -60 1 Iref
+rlabel metal2 -46 45 -42 46 5 C2?
+rlabel metal2 -21 44 -17 45 5 Iin?
+rlabel metal2 -28 44 -24 45 5 C1?
+rlabel metal2 -53 45 -49 46 5 Iin
+rlabel metal2 -60 45 -56 46 5 Iref
+rlabel metal1 -33 -69 -33 -69 1 CLC1
+rlabel metal2 -179 -6 -179 -6 1 RST_IR
+rlabel metal2 -248 -33 -248 -33 1 COb
+rlabel metal2 -168 42 -164 43 5 RST_IR
+rlabel metal2 -239 42 -236 43 5 COb
+rlabel metal2 -324 -72 -323 -68 3 RST_C1_CO?
+rlabel metal1 -325 1 -324 5 3 RST_C2_CO?
+rlabel metal1 161 -69 161 -69 1 VC1
+rlabel metal1 159 -85 159 -85 1 VC2
 << end >>
