@@ -116,5 +116,5 @@ M1056 VC1 CLC1 neg neg nfet w=7.2u l=0.6u
 + ad=7.2p pd=17.4u as=0p ps=0u 
 M1057 VC2 CLC2 neg neg nfet w=7.2u l=0.6u
 + ad=7.2p pd=17.4u as=0p ps=0u 
-C0 neg VC1 10033.7fF
-C1 neg VC2 10030.9fF
+C0 VC2 neg 10030.9fF
+C1 VC1 neg 10033.7fF
