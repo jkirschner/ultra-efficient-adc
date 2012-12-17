@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1355605154
+timestamp 1355695794
 << nwell >>
 rect 242 56 256 135
 rect 342 128 346 132
@@ -105,14 +105,14 @@ rect 809 -24 814 -20
 << metal2 >>
 rect 473 174 494 178
 rect 402 157 420 161
-rect 243 66 247 141
-rect 252 73 256 141
 rect 402 77 407 157
 rect 540 156 543 181
 rect 793 124 815 129
 rect 792 113 814 118
-rect 252 69 263 73
-rect 243 62 263 66
+rect 245 69 263 73
+rect 245 -17 249 69
+rect 252 62 263 66
+rect 252 -17 256 62
 rect 415 42 420 81
 rect 402 38 420 42
 rect 543 8 589 12
@@ -163,8 +163,6 @@ timestamp 1355475633
 transform -1 0 777 0 1 40
 box -5 -23 43 41
 << labels >>
-rlabel metal2 253 139 253 139 5 Thresh
-rlabel metal2 245 139 245 139 5 Input
 rlabel metal1 0 94 2 98 3 Bias
 rlabel metal2 482 177 482 177 5 PosD
 rlabel space 40 3 41 4 1 Vneg
@@ -173,4 +171,6 @@ rlabel metal2 548 -24 552 -23 1 Disable
 rlabel metal2 708 -28 712 -27 1 Vpw1
 rlabel metal2 813 124 815 129 7 Out
 rlabel space 754 164 758 165 1 Vpw2
+rlabel metal2 254 -15 254 -15 1 Input
+rlabel metal2 247 -15 247 -15 1 Thresh
 << end >>
